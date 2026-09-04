@@ -1,0 +1,166 @@
+{
+  "kod": "229",
+  "nazov": "Ashwagandha",
+  "typ": "product",
+  "url_slug": "ashwagandha",
+  "archetyp": "E",
+  "obrazky_base": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/Obr%C3%A1zky/",
+  "seo": {
+    "title": "Ashwagandha od Silwer. Doplnok s horčíkom a B6 na podporu psychickej činnosti a zníženie únavy. Pre ľudí nad 50 rokov.",
+    "meta_description": "Ashwagandha od Silwer s glycinátom horečnatým, B6 a zinkom. Horčík a B6 prispievajú k správnej psychickej činnosti a k zníženiu únavy. 2 kapsuly denne.",
+    "xml_feed_name": "Silwer Ashwagandha, s magnéziom, B6 a zinkom, 60 kapsúl"
+  },
+  "blok": [
+    {
+      "typ": "split",
+      "strana": "right",
+      "obrazok": "02-makro-koren.jpg",
+      "alt": "Sušený koreň ashwagandhy — makro",
+      "nadpis": "Čo je v kapsule",
+      "text": [
+        "Ashwagandha (<em>Withania somnifera</em>), známa aj ako indický ženšen, je rastlina s dlhou tradíciou v ajurvéde. V doplnkoch sa nepoužíva sušená bylina, ale štandardizovaný extrakt z koreňa — a práve štandardizácia rozhoduje o tom, čo v kapsule naozaj je. V tejto receptúre je 300 mg extraktu s obsahom 15 mg withanolidov, teda látok, podľa ktorých sa kvalita ashwagandhy meria. Tradične sa zaraďuje do večerných režimov a do období, ktoré človek vníma ako náročnejšie.",
+        "Horčík je v produkte vo forme <strong>glycinátu horečnatého</strong> — naviazaný na aminokyselinu glycín. Táto forma je šetrná k tráveniu, čo je pri horčíku podstatné, lebo lacnejšie soli často spôsobujú tráviace ťažkosti a ľudia ich prestanú užívať. Dve kapsuly dodajú 60 mg elementárneho horčíka. <strong>Horčík prispieva k správnej činnosti nervovej sústavy, k správnej psychickej činnosti a k zníženiu vyčerpania a únavy.</strong> Vitamín B6 s ním pracuje v tandeme — <strong>prispieva k správnej psychickej činnosti a k regulácii hormonálnej aktivity</strong>. Zinok receptúru uzatvára: <strong>prispieva k ochrane buniek pred oxidačným stresom</strong>."
+      ]
+    },
+    {
+      "typ": "split",
+      "strana": "left",
+      "obrazok": "03-lifestyle-vecer.jpg",
+      "alt": "Ashwagandha s magnéziom a B6 od Silwer — večerný pokoj",
+      "nadpis": "Prečo to telo potrebuje po päťdesiatke",
+      "text": [
+        "Po päťdesiatke sa mení spôsob, akým telo hospodári s horčíkom. Vstrebávanie z čreva klesá, obličky ho vylučujú viac a k tomu sa pridáva bežná realita jedálnička — menej strukovín, orechov a celozrnných obilnín, teda presne tých potravín, z ktorých horčík pochádza. Časť liekov, ktoré ľudia v tomto veku užívajú dlhodobo, jeho hladinu znižuje tiež.",
+        "V bežnom dni sa to neprejaví jednou veľkou vecou, ale drobnosťami: večer trvá dlhšie, kým sa hlava upokojí, popoludní príde útlm, ktorý predtým nebýval, svaly sú po záhrade tuhšie ako kedysi. Nie je to diagnóza — je to súhrn drobných posunov, ktoré človek pozná najlepšie sám na sebe.",
+        "Práve sem mieri kombinácia v tomto produkte. <strong>Horčík prispieva k zníženiu vyčerpania a únavy a k správnej činnosti nervovej sústavy, vitamín B6 k správnej psychickej činnosti</strong> — a ashwagandha je zložka, ktorú si ľudia do večerného režimu zaraďujú tradične. Účinok je individuálny a závisí aj od životného štýlu a stravy."
+      ]
+    },
+    {
+      "typ": "table",
+      "nadpis": "Zloženie",
+      "hlavicka": [
+        "Dve kapsuly obsahujú",
+        "Hmot./2 kps.",
+        "% RVH*/2 kps."
+      ],
+      "riadky": [
+        {
+          "bunky": [
+            "Ashwagandha extrakt",
+            "300 mg",
+            "**"
+          ]
+        },
+        {
+          "bunky": [
+            "z toho withanolidy",
+            "15 mg",
+            "**"
+          ],
+          "sub": true
+        },
+        {
+          "bunky": [
+            "Glycinát horečnatý komplex",
+            "300 mg",
+            "**"
+          ]
+        },
+        {
+          "bunky": [
+            "z toho elementárne magnézium",
+            "60 mg",
+            "16"
+          ],
+          "sub": true
+        },
+        {
+          "bunky": [
+            "Vitamín B6",
+            "0,40 mg",
+            "16"
+          ]
+        },
+        {
+          "bunky": [
+            "Zinok",
+            "2 mg",
+            "20"
+          ]
+        }
+      ],
+      "legenda": [
+        "* % referenčnej výživovej hodnoty pre denný príjem.",
+        "** RVH nebola stanovená."
+      ],
+      "text": [
+        "Receptúra stojí na jednom rastlinnom extrakte a troch mikroživinách, ktoré sa dopĺňajú. Ashwagandha je štandardizovaná na withanolidy, takže obsah účinných látok je v každej šarži porovnateľný. Horčík je zámerne v glycinátovej forme — nie preto, že je drahšia, ale preto, že sa dá užívať dlhodobo bez zaťaženia trávenia."
+      ]
+    },
+    {
+      "typ": "benefits",
+      "nadpis": "Čo produkt prináša",
+      "polozky": [
+        "Horčík prispieva k zníženiu vyčerpania a únavy",
+        "Horčík a vitamín B6 prispievajú k správnej psychickej činnosti",
+        "Horčík prispieva k správnej činnosti nervovej sústavy a k normálnej funkcii svalov",
+        "Zinok prispieva k ochrane buniek pred oxidačným stresom",
+        "Ashwagandha extrakt štandardizovaný na 15 mg withanolidov — tradične sa zaraďuje do večerných režimov",
+        "Glycinát horečnatý — horčík naviazaný na glycín, šetrný k tráveniu aj pri dlhodobom užívaní",
+        "2 kapsuly denne, 60 kapsúl v balení — vystačí na mesiac"
+      ]
+    },
+    {
+      "typ": "dose",
+      "nadpis": "Ako a kedy užívať",
+      "bunky": [
+        {
+          "label": "Koľko",
+          "value": "2 kapsuly denne"
+        },
+        {
+          "label": "Kedy",
+          "value": "Po obede a po večernom jedle, 1–2 hodiny pred odpočinkom"
+        },
+        {
+          "label": "Ako dlho",
+          "value": "Aspoň 2–3 mesiace súvisle"
+        }
+      ],
+      "text": [
+        "Kapsuly užívajte s dostatočným množstvom vody a s jedlom, nie nalačno. Horčík neužívajte v rovnakom čase s antibiotikami zo skupiny tetracyklínov a chinolónov ani s prípravkami železa — odstup dvoch hodín stačí."
+      ]
+    },
+    {
+      "typ": "faq",
+      "nadpis": "Časté otázky",
+      "polozky": [
+        {
+          "otazka": "Čo je Silwer Ashwagandha a pre koho je?",
+          "odpoved": "Je to výživový doplnok, ktorý spája štandardizovaný extrakt z koreňa ashwagandhy s horčíkom vo forme glycinátu, vitamínom B6 a zinkom. Je určený ľuďom po päťdesiatke, ktorým sa mení hospodárenie s horčíkom a ktorí chcú mať doplnenie mikroživín pod kontrolou. Horčík a vitamín B6 prispievajú k správnej psychickej činnosti a k zníženiu vyčerpania a únavy."
+        },
+        {
+          "otazka": "Prečo práve glycinát horečnatý a nie bežný horčík?",
+          "odpoved": "Glycinát je horčík naviazaný na aminokyselinu glycín. Oproti lacnejším formám, ako je oxid horečnatý, je šetrnejší k tráveniu — a to je pri doplnku, ktorý sa užíva mesiace, rozhodujúce. Doplnok, ktorý človek prestane užívať po týždni, nemá ako fungovať."
+        },
+        {
+          "otazka": "Ako a kedy ho užívať?",
+          "odpoved": "Dve kapsuly denne s jedlom a dostatkom vody — jednu po obede, druhú po večeri, 1–2 hodiny pred odpočinkom. Nie nalačno. Ak užívate antibiotiká alebo železo, nechajte medzi nimi a horčíkom odstup aspoň dvoch hodín."
+        },
+        {
+          "otazka": "Ako dlho ho užívať?",
+          "odpoved": "Odporúčame aspoň dva až tri mesiace súvislého užívania. Mikroživiny sa dopĺňajú postupne a krátke užívanie nemá zmysel hodnotiť. Účinok je individuálny a závisí aj od životného štýlu a stravy."
+        },
+        {
+          "otazka": "Pre koho nie je vhodný?",
+          "odpoved": "Nie je určený pre deti, tehotné a dojčiace ženy. Ak užívate lieky na štítnu žľazu, sedatíva alebo lieky ovplyvňujúce imunitu, poraďte sa pred užívaním s lekárom alebo lekárnikom. Pri ochorení obličiek konzultujte dopĺňanie horčíka s lekárom."
+        }
+      ]
+    },
+    {
+      "typ": "note",
+      "text": [
+        "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Silwer — blok pod produktom (sw-pdp)
+
+   ⚠️ VEĽKOSTI PÍSMA — dve pravidlá, obe vydreté na živej stránke 4.9.2026:
+   1. ŽIADNE rem. Samba má html{font-size:62.5%} → 1rem = 10px, nie 16px.
+   2. .sw-pdp NENASTAVUJE font-size — dedí ju zo šablóny (dnes 16px, po redizajne
+      koľko bude). Odchýlky výhradne cez em. Natvrdo daných 18px spôsobilo, že blok
+      bol väčší než krátky popis nad tlačidlom a stránka pôsobila zlepene.
+   Nasadiť RAZ na Shoptet CDN, linkovať z Vzhľad → HTML kódy → Záhlavie.
+   Popisy produktov nesú len markup, žiadne inline štýly.
+
+   Návrh je zámerne "tenký": font dedí zo šablóny, akcent berie premennú
+   šablóny s fallbackom. Po redizajne (Museo Sans, #D40000) sa blok
+   prispôsobí sám, bez zásahu do 113 popisov.
+   ========================================================================== */
+
+.sw-pdp{
+  --sw-accent: var(--color-secondary, #e60f0f);
+  --sw-ink:#1a1a1c;
+  --sw-muted:#55555a;
+  --sw-line:#e5e3de;
+  --sw-field:#f5f4f1;
+  --sw-radius:12px;
+  --sw-rhythm:60px;
+
+  font-family:inherit;
+  /* font-size zámerne nenastavené — dedí sa */
+  line-height:1.6;
+  color:var(--sw-ink);
+  max-width:1240px;
+  margin:0 auto;
+}
+.sw-pdp *{box-sizing:border-box}
+.sw-pdp > * + *{margin-top:var(--sw-rhythm)}
+.sw-pdp p{margin:0 0 1em;max-width:66ch}
+.sw-pdp p:last-child{margin-bottom:0}
+.sw-pdp img{max-width:100%;height:auto;display:block}
+.sw-pdp h2{
+  font-size:1.75em;
+  line-height:1.15;letter-spacing:-.02em;font-weight:800;
+  margin:0 0 .6em;text-wrap:balance;
+}
+.sw-pdp h3{font-size:1.15em;font-weight:800;line-height:1.3;margin:0 0 .5em}
+.sw-pdp a{color:inherit}
+
+/* --- hero: nadpis + podnadpis ------------------------------------------- */
+.sw-pdp-hero{text-align:center;max-width:820px;margin-left:auto;margin-right:auto}
+.sw-pdp-hero p{margin-left:auto;margin-right:auto;color:var(--sw-muted)}
+
+/* --- split: obrázok + text --------------------------------------------- */
+.sw-pdp-split{display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.sw-pdp-split > *{flex:1 1 340px;min-width:0}
+/* Text je v HTML vždy prvý → pri zalomení na mobile vyjde nadpis → text → obrázok.
+   Strana sa mení smerom flexu, nie poradím v DOM. */
+.sw-pdp-split--left{flex-direction:row-reverse}
+.sw-pdp-split__media img{border-radius:var(--sw-radius);width:100%}
+.sw-pdp-split__body p{max-width:none}
+
+/* --- stats: číselné karty ----------------------------------------------- */
+.sw-pdp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.sw-pdp-stat__num{
+  font-size:2.8em;font-weight:800;line-height:1;
+  letter-spacing:-.03em;color:var(--sw-accent);display:block;margin-bottom:.3em;
+}
+.sw-pdp-stat__label{font-weight:800;font-size:1.05em;line-height:1.3;display:block;margin-bottom:.5em}
+.sw-pdp-stat__note{font-size:.85em;line-height:1.45;color:var(--sw-muted);display:block}
+
+/* --- benefity ------------------------------------------------------------ */
+.sw-pdp-benefits ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.sw-pdp-benefits li{position:relative;padding-left:38px;max-width:66ch}
+.sw-pdp-benefits li::before{
+  content:"";position:absolute;left:0;top:.42em;width:22px;height:22px;border-radius:50%;
+  background:var(--sw-field);
+  /* check ikona ako inline SVG maska — stroke 1.75 podľa DESIGN.md */
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232E8B57' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  background-size:14px 14px;background-position:center;background-repeat:no-repeat;
+}
+
+/* --- tabuľka zloženia ---------------------------------------------------- */
+.sw-pdp-table{overflow-x:auto}
+.sw-pdp-table table{border-collapse:collapse;width:100%;min-width:460px;font-size:1em}
+.sw-pdp-table th,.sw-pdp-table td{padding:14px 16px;border-bottom:1px solid var(--sw-line);text-align:left}
+.sw-pdp-table th{
+  font-size:.8em;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--sw-muted);border-bottom-width:2px;
+}
+.sw-pdp-table td:not(:first-child),
+.sw-pdp-table th:not(:first-child){text-align:right;white-space:nowrap}
+.sw-pdp-table tr:last-child td{border-bottom:0}
+.sw-pdp-table .sw-pdp-sub td:first-child{padding-left:34px;color:var(--sw-muted)}
+.sw-pdp-legend{font-size:.85em;color:var(--sw-muted);margin-top:12px}
+.sw-pdp-legend span{display:block}
+
+/* --- dávkovací box ------------------------------------------------------- */
+.sw-pdp-dose{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border:1.5px solid var(--sw-line);border-radius:var(--sw-radius);overflow:hidden;
+}
+.sw-pdp-dose__cell{padding:22px 24px;border-right:1px solid var(--sw-line)}
+.sw-pdp-dose__cell:last-child{border-right:0}
+.sw-pdp-dose__label{
+  font-size:.72em;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--sw-muted);display:block;margin-bottom:6px;
+}
+.sw-pdp-dose__value{font-size:1.05em;font-weight:700;line-height:1.35;display:block}
+
+/* --- FAQ ----------------------------------------------------------------- */
+.sw-pdp-faq details{border-bottom:1px solid var(--sw-line)}
+.sw-pdp-faq details:first-of-type{border-top:1px solid var(--sw-line)}
+.sw-pdp-faq summary{
+  cursor:pointer;list-style:none;padding:20px 44px 20px 0;position:relative;
+  font-weight:700;font-size:1.15em;line-height:1.4;min-height:56px;
+}
+.sw-pdp-faq summary::-webkit-details-marker{display:none}
+.sw-pdp-faq summary::after{
+  content:"";position:absolute;right:8px;top:26px;width:14px;height:14px;
+  border-right:2px solid var(--sw-ink);border-bottom:2px solid var(--sw-ink);
+  transform:rotate(45deg);transform-origin:center;transition:transform .2s ease;
+}
+.sw-pdp-faq details[open] summary::after{transform:rotate(-135deg);top:30px}
+.sw-pdp-faq details > div{padding:0 0 22px}
+.sw-pdp-faq details > div p:last-child{margin-bottom:0}
+
+/* --- galéria ------------------------------------------------------------- */
+.sw-pdp-gallery{display:grid;gap:24px}
+.sw-pdp-gallery--2{grid-template-columns:1fr 1fr}
+.sw-pdp-gallery img{border-radius:var(--sw-radius);width:100%}
+
+/* --- video --------------------------------------------------------------- */
+.sw-pdp-video{position:relative;padding-top:56.25%;border-radius:var(--sw-radius);overflow:hidden}
+.sw-pdp-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* --- recenzie ------------------------------------------------------------ */
+.sw-pdp-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sw-pdp-review{border:1.5px solid var(--sw-line);border-radius:var(--sw-radius);padding:24px}
+.sw-pdp-review__stars{color:#f2b03d;letter-spacing:2px;margin-bottom:10px}
+.sw-pdp-review__name{font-size:.9em;color:var(--sw-muted);margin-top:12px}
+
+/* --- štúdie -------------------------------------------------------------- */
+.sw-pdp-studies li{margin-bottom:18px}
+.sw-pdp-studies a{color:var(--sw-muted);font-size:.9em;word-break:break-word}
+
+/* --- disclaimer ---------------------------------------------------------- */
+.sw-pdp-note{
+  background:var(--sw-field);border-radius:var(--sw-radius);padding:20px 24px;
+  font-size:.9em;color:var(--sw-muted);
+}
+.sw-pdp-note p{max-width:none;margin:0}
+
+/* --- responsive ---------------------------------------------------------- */
+@media (max-width:1024px){
+  .sw-pdp{--sw-rhythm:48px}
+  .sw-pdp-stats{grid-template-columns:repeat(2,1fr);gap:32px 24px}
+  .sw-pdp-reviews{grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  .sw-pdp-split{gap:28px}
+  .sw-pdp-dose{grid-template-columns:1fr}
+  .sw-pdp-dose__cell{border-right:0;border-bottom:1px solid var(--sw-line)}
+  .sw-pdp-dose__cell:last-child{border-bottom:0}
+  .sw-pdp-gallery--2{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .sw-pdp{--sw-rhythm:40px;font-size:.95em}
+  .sw-pdp-stats{gap:28px 16px}
+}
