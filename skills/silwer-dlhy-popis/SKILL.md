@@ -1,185 +1,197 @@
 ---
 name: silwer-dlhy-popis
-description: "Premení hotovú produktovú kartu zo skillu silwer-detail-produktu na nasadený HTML blok pod tlačidlom Do košíka na silwer.sk. Nadväzujúci skill — vstupom je karta.md, výstupom je blok vložený do Detailného popisu v Shoptete. Obsahuje SEO krok (kontrola GSC dát pred prepisom, aby sa nestratili výrazy, na ktoré stránka reálne rankuje), 13 komponentov, renderer z produkt.json, workflow nahrávania obrázkov cez Vzhľad a obsah → Správca súborov a technické pravidlá Shoptet Samby, ktoré sa dajú porušiť len raz — zákaz rem (root je 10px), zákaz nastavovať font-size na obale, poradie textu a obrázka kvôli mobilu. Nahrádza Pobo Page Builder. Triggerovať pri: dlhý popis produktu, blok pod produktom, nasadenie popisu do Shoptetu, prepis Pobo stránky, HTML blok na e-shop."
+description: "Postaví celý dlhý popis produktu pre silwer.sk — texty z karty, vygenerované fotky, infografiky a hotový HTML blok do poľa Detailný popis v Shoptete. Nadväzuje na silwer-detail-produktu. Obsahuje generátor obrázkov cez OpenAI API (gpt-image-2), zamrazený katalóg 14 komponentov so stabilným CSS, ktoré sa needituje, renderer z produkt.json, SEO kontrolu cez GSC a technické pravidlá Shoptet Samby, ktoré sa dajú porušiť len raz: zákaz rem (root je 10 px), dedenie veľkosti písma namiesto natvrdo danej, poradie textu a obrázka kvôli mobilu, ročná cache na CSS. Infografiky robí ako HTML, nie ako AI obrázky — kvôli diakritike, vyhľadateľnosti a responzivite. Nahrádza Pobo Page Builder. Triggerovať pri: dlhý popis produktu, blok pod produktom, produktová stránka, obrázky k produktu, infografika pod produkt, nasadenie popisu do Shoptetu, prepis Pobo stránky."
 ---
 
-# Silwer — Dlhý popis pod produktom (v1.0)
+# Silwer — Dlhý popis pod produktom (v2.0)
 
 Si **technický redaktor produktových stránok** pre **silwer.sk**.
-Úloha: vziať hotovú kartu zo skillu `silwer-detail-produktu` a dostať ju na web ako
-**jeden HTML blok** v poli *Detailný popis* — bez Pobo Page Builderu.
+Úloha: z hotovej karty postaviť **celý obsah pod tlačidlom Do košíka** — texty, fotky,
+infografiky, hotový HTML blok — a dostať ho do Shoptetu bez Pobo Page Builderu.
 
-**Vstup:** `karta.md` (výstup predchádzajúceho skillu) + obrázky.
-**Výstup:** `produkt.json` → `blok-inline.html`, vložený do Shoptetu a vizuálne overený.
+**Vstup:** `karta.md` zo skillu `silwer-detail-produktu`.
+**Výstup:** `produkt.json` → `blok.html` + fotky, vložené a vizuálne overené.
 
-Nadväzuje na: `silwer-detail-produktu` (texty a compliance) · `silwer-higgsfield-visuals` (prompty na obrázky).
-**Bez hotovej karty tento skill nespúšťaj** — nevymýšľaj texty, na to je predchádzajúci skill.
-
----
-
-## 0. Prečo tento skill existuje
-
-Rozšírený obsah pod produktom robil **Pobo Page Builder**. Zistilo sa, že Pobo ukladá svoj
-výstup **priamo do poľa `DESCRIPTION`** medzi značky `<!-- Pobo Page Builder - content START / END -->`.
-Čiže to nie je samostatná vrstva — je to obyčajné HTML v obyčajnom poli, ktoré vieme nahradiť.
-
-Čísla z exportu 4.9.2026 (113 položiek):
-
-| | Pobo (GLP-1) | Náš blok (Ashwagandha) |
-|---|---|---|
-| Znakov v popise | 21 786 (66 % limitu) | 14 251 (43 %) |
-| Závislosť na doplnku | áno, platený | žiadna |
-| Zmena vzhľadu | klikanie v Pobo | prerender z JSON |
+**Bez hotovej karty nezačínaj.** Texty vyrába predchádzajúci skill, vrátane compliance vrstvy.
 
 ---
 
-## 1. Čo musí človek dodať, než začneš
+## Referencia vzhľadu
 
-| # | Vec | Kto | Poznámka |
+**GLP-1 Probio Aktiv** — `produkty/glp-1/` v repe `claude kody/silwer`.
+Je to prepis pôvodnej Pobo stránky do našich komponentov, s odmeranou typografiou.
+**Toto je etalón.** Nové karty majú vyzerať ako on: rovnaký rytmus sekcií, rovnaké nadpisy,
+rovnaké zaobchádzanie s obrázkami.
+
+Rozdiel oproti originálu v Pobo: čísla sú **text, nie obrázky**, FAQ funguje **bez JavaScriptu**,
+blok je o tretinu ľahší a nezávisí na cudzom CDN.
+
+---
+
+## Čo musí človek dodať
+
+| # | Vec | Kto | Pozn. |
 |---|---|---|---|
-| 1 | `karta.md` | `silwer-detail-produktu` | odsúhlasená, po compliance revízii |
-| 2 | Tabuľka zloženia | z webu alebo etikety | **preberá sa, nevymýšľa** |
-| 3 | Obrázky | `silwer-higgsfield-visuals` | 16:9, 1920 px, JPG do ~200 kB |
-| 4 | **URL nahratých obrázkov** | človek, čo to ovláda | **VŽDY ich vypýtaj. Nikdy ich nehádaj.** |
-| 5 | Kód produktu a slug | admin Shoptetu | slug sa nemení |
+| 1 | `karta.md` | `silwer-detail-produktu` | odsúhlasená po compliance revízii |
+| 2 | Tabuľka zloženia | z etikety alebo webu | **preberá sa, nevymýšľa** |
+| 3 | **URL nahratých obrázkov** | obsluha | **VŽDY si ich vypýtaj. Nikdy nehádaj.** |
+| 4 | Kód produktu a slug | admin | slug sa nemení |
 
-**Bod 4 je najčastejšia príčina zdržania.** Obrázky nahráva človek cez admin a priečinok si
-volí sám. Ty ich URL nemáš ako uhádnuť. Vypýtaj si ich, over cez `curl` a až potom renderuj.
+Bod 3 je najčastejšia príčina zdržania. Obrázky nahráva človek cez admin a priečinok si
+volí sám — ty ich URL nemáš ako uhádnuť. Vypýtaj si ich, over cez `curl` a až potom renderuj.
 
 ---
 
-## 2. Postup
+## Postup
 
 ```
-KROK 1  SEO kontrola pred prepisom   → references/seo-postup.md
-KROK 2  Zostav produkt.json          → z karta.md, mapovanie sekcií nižšie
-KROK 3  Vypýtaj URL obrázkov         → over HTTP 200 + content-type
-KROK 4  Vyrenderuj                   → scripts/render_inline.py
-KROK 5  Skontroluj v náhľade         → desktop + 375 px, VERNÁ simulácia
-KROK 6  Odovzdaj na vloženie         → postup v README.md
-KROK 7  Over na živej stránke        → zmeraj computed štýly, nespoliehaj sa na oko
+KROK 1  SEO kontrola pred prepisom      → references/seo-postup.md
+KROK 2  Zostav produkt.json             → mapovanie sekcií nižšie
+KROK 3  Napíš PROMPTY.md a vygeneruj    → scripts/obrazky.py
+KROK 4  Vypýtaj URL po nahratí          → over curl-om 200 + image/jpeg
+KROK 5  Vyrenderuj                      → scripts/render_pp.py
+KROK 6  Skontroluj v náhľade            → desktop + 375 px
+KROK 7  Odovzdaj na vloženie            → postup v README.md
+KROK 8  Over na živej stránke           → zmeraj computed štýly, nie okom
 ```
 
-Krok 5 a 7 nepreskakuj. Tri z troch chýb, ktoré sa v pilote našli, odhalilo až reálne
-zariadenie — nie kód, nie náhľad.
+---
+
+## 1. Obrázky — cez API, nie cez Codex
+
+```bash
+python3 scripts/obrazky.py produkty/<slug>/obrazky
+python3 scripts/obrazky.py produkty/<slug>/obrazky --len 03   # jednu sekciu
+```
+
+Číta `PROMPTY.md`, berie sekcie `## NN — Názov` a ich prvý odsek ako prompt.
+Volá **`gpt-image-2`**, ukladá PNG aj web JPG (1920 px, q82). **Tri obrázky ~60 sekúnd.**
+
+⚠️ **Nepoužívaj `codex exec`.** Zasekáva sa, keď je v `~/.codex/config.toml` nedostupný MCP
+server — známa chyba ([openai/codex#31359](https://github.com/openai/codex/issues/31359)).
+Reálne to viselo 7 hodín s nulovým výstupom. Na generovanie obrázkov agent aj tak netreba.
+
+⚠️ **gpt-image nemá pole pre negatívny prompt** (na rozdiel od Higgsfieldu). Skript preto
+sekciu `## Negatívny prompt` pripája do hlavného promptu ako explicitný zákaz.
+**Bez toho model zákazy nevidí** — prvý beh vygeneroval poháre v zábere, hoci `glass of drink`
+bol v zozname.
+
+**Štandardná sada na produkt:**
+
+| # | Súbor | Kategória | Kam |
+|---|---|---|---|
+| 02 | `02-makro-<surovina>.jpg` | 2A makro | S1 — čo je v tablete |
+| 03 | `03-lifestyle-<scéna>.jpg` | 3 lifestyle | S2 — prečo po 50-ke |
+| 04 | `04-edu-podklad.jpg` | 2C podklad | rezerva pre grafiku |
+
+Prompty píš podľa `silwer-higgsfield-visuals`: **persona 50–55 je záväzný blok**, krabica
+nikdy dóza, žiadne nápoje, žiadne klinické prostredie, negatívny master list vždy.
+
+---
+
+## 2. Infografiky — HTML, nie obrázky
+
+Toto je hlavná zmena oproti Pobo. **Čísla a zoznamy nerob ako AI obrázky.**
+
+| Dôvod | Detail |
+|---|---|
+| Diakritika | AI generátory komolia `ľ`, `ô`, `ä`, `ž`. Nedá sa to spoľahlivo opraviť |
+| Vyhľadateľnosť | GLP-1 má „80 %" a „2,5 kg" ako obrázky — Google ich nevidí |
+| Mobil | Obrázok sa nezalomí, HTML áno |
+| Prevádzka | Obrázok treba nahrať a verzovať, HTML nie |
+
+Komponenty: **`cisla`**, **`zlozky`**, **`kroky`**, **`porovnanie`**.
+Zápis a mantinely: `references/komponenty.md`.
+
+**Čo sa v nich smie a nesmie:**
+- `cisla` — čísla **o produkte** (počet zložiek, mg, veľkosť balenia). Čísla o výsledkoch
+  len z vlastného testu a s disclaimerom pod každým. **Nikdy kilogramy úbytku**
+- `zlozky` — do poznámky **botanický názov a časť rastliny**. Fakt, nie tvrdenie
+- `kroky` — postup užívania. **Nie mechanizmus účinku v tele**
+- `porovnanie` — porovnávaj **formu** (extrakt vs. čaj). Nikdy konkurenčné značky, nikdy lieky
 
 ---
 
 ## 3. Mapovanie sekcií karty na komponenty
 
-| Sekcia v `karta.md` | Komponent | Poznámka |
-|---|---|---|
-| V1 dôkazová hlavička | `hero` | len archetyp A |
-| V2 čísla testu | `stats` | disclaimer pod každým číslom je povinný |
-| V3 recenzie | `reviews` | ak sú ≥3 použiteľné |
-| V4 video | `video` | len YouTube kód, nie celá URL |
-| S1 edukácia | `split` | `strana: right` |
-| S2 prečo po 50-ke | `split` | `strana: left` — **strany striedaj** |
-| V6 druhá edukácia | `split` | |
-| S3 zloženie | `table` | legenda ku každej hviezdičke |
-| S4 benefity | `benefits` | |
-| V9 užívanie | `dose` | 3 bunky Koľko / Kedy / Ako dlho |
-| S5 FAQ | `faq` | prvá otázka otvorená |
-| V5 edu grafiky | `gallery` | |
-| V8 štúdie | `studies` | **predvolene vypnuté** |
-| disclaimer | `note` | povinný na konci každého doplnku |
+| Sekcia v `karta.md` | Komponent |
+|---|---|
+| V1 dôkazová hlavička | `hero` |
+| V2 čísla testu | `cisla` *(nie `stats` — tá je len pre prepisy z Pobo)* |
+| V3 recenzie | `reviews` |
+| V4 video | `video` |
+| S1 edukácia | `split` + voliteľne `zlozky` |
+| S2 prečo po 50-ke | `split` (strana `left`) |
+| S3 zloženie | `table` |
+| S4 benefity | `benefits` |
+| V9 užívanie | `dose` alebo `kroky` |
+| S5 FAQ | `faq` |
+| argument o forme | `porovnanie` |
+| disclaimer | `note` |
 
-Odporúčané skladby podľa archetypu sú v `silwer-detail-produktu`, kap. 2.3. Neprehadzuj ich.
-
-Zápis komponentov do `produkt.json`: `references/komponenty.md`.
+Skladby podľa archetypu sú v `silwer-detail-produktu` kap. 2.3. Neprehadzuj ich.
 
 ---
 
-## 4. Technické pravidlá — porušiť sa dajú len raz
+## 4. CSS je zamrazené
 
-Plné odôvodnenie aj s nameranými hodnotami: `references/technicke-pravidla.md`.
-**Prečítaj ich, kým začneš.** Každé z nich stálo jedno kolo opravy na živej stránke.
+**`scripts/silwer-bloky.css` je jediný zdroj pravdy. Needituj ho kvôli jednému produktu.**
 
-1. **Žiadne `rem`.** Samba má `html{font-size:62.5%}` → `1rem = 10px`, nie 16.
-   Prvá verzia mala hlavičku tabuľky na **7,2 px**.
-2. **Obal nenastavuje `font-size` ani `font-family` — dedí ich.** Odchýlky výhradne cez `em`.
-   Natvrdo dané 18 px spôsobili, že blok bol väčší než krátky popis nad tlačidlom.
-3. **Text je v HTML vždy pred obrázkom**, strana sa mení cez `flex-direction: row-reverse`.
-   Inak na mobile vyjdú dva obrázky pod sebou a čitateľ ich vníma ako galériu.
-4. **Žiadny `<style>` blok, žiadny `<script>`.** Z 113 produktov nemá `<style>` ani jeden —
-   o správaní editora nevieme nič. Inline `style=""` má 72 zo 113, čiže je overené.
-5. **Žiadne media queries** (do inline štýlu sa nedajú). Responzivita cez `flex-wrap` + `flex-basis`.
-6. **Limit poľa `DESCRIPTION` je 32 767 znakov.** Renderer to kontroluje a vypíše percento.
-7. **Krátkeho popisu sa nedotýkaj.** Parametrové boxy `sw-boxes` sú samostatná vec.
-8. **Slug sa nemení.** Zmena URL je jediná vec, ktorá by SEO reálne ublížila.
+Renderer po každom behu overí, že každá trieda v HTML má definíciu v CSS — ak nie, spadne
+s výpisom chýbajúcich. Vzniklo to z reálnej chyby: trieda nahradila zlúčený inline štýl,
+ale v CSS mala len časť vlastností a galéria sa rozsypala bez toho, aby to niekde zakričalo.
+
+Postup pri naozaj chýbajúcom komponente je na konci `references/komponenty.md`.
+
+⚠️ **Shoptet servíruje `/user/documents/` s cache-control `max-age=31536000` — rok.**
+Po každej zmene CSS **musí** v `<link>` pribudnúť nová verzia, inak sa zmena neprejaví.
+Renderer vypíše hotový riadok aj s verziou z hashu súboru.
 
 ---
 
-## 5. Obrázky
+## 5. Technické pravidlá Samby
 
-**Nahráva ich človek** cez admin: **Vzhľad a obsah → Správca súborov**.
+Plné odôvodnenie s nameranými hodnotami: `references/technicke-pravidla.md`.
+**Prečítaj ich.** Každé stálo jedno kolo opravy na živej stránke.
 
-- **Nepoužívaj priečinok `Obrázky`** ani žiadny iný názov s diakritikou. Diakritika v URL
-  vyžaduje percent-kódovanie a je zdrojom tichých chýb. Odporúčaný názov: `produkty/<slug>/`.
-- **URL si vždy vypýtaj a over**, nikdy negeneruj z predpokladu:
-  ```bash
-  curl -s -o /dev/null -w "%{http_code} %{content_type} %{size_download}\n" "<URL>"
-  ```
-  Musí vrátiť `200 image/jpeg`.
-- Do `produkt.json` ide `obrazky_base` (spoločný prefix) + názvy súborov.
-- Formát: **JPG, 1920 px na dlhšej strane, do ~200 kB.** PNG z generátora má 2 MB a zabíja
-  rýchlosť stránky — vždy konvertuj.
-- `loading="lazy"` rieši renderer. Pri kontrole v prehliadači ho odstráň, inak sa obrázky
-  mimo výrezu netvária ako načítané.
+1. **Žiadne `rem`.** Samba má `html{font-size:62.5%}` → `1rem = 10px`. Hlavička tabuľky vyšla na 7,2 px
+2. **Blok nenastavuje `font-family` ani veľkosť základného textu** — dedí ich
+3. **Text je v HTML vždy pred obrázkom**, strana sa mení cez `flex-direction`
+4. **Žiadny `<style>`, žiadny `<script>`** v popise — z 113 produktov ich nemá ani jeden
+5. **Limit `DESCRIPTION` je 32 767 znakov** — renderer kontroluje
+6. **Krátkeho popisu sa nedotýkaj** — je to iné pole
+7. **Slug sa nemení** — jediná vec, ktorá by SEO reálne uškodila
 
 ---
 
-## 6. SEO
-
-Detailný postup: `references/seo-postup.md`.
-
-Krátko:
-
-1. **Pred prepisom zisti, na čo stránka rankuje** — `analyzy/gsc/query.json` a `page.json`
-   v repe `claude kody/silwer`. Ak stránka na niečo zarába, tie výrazy z textu nevyhadzuj.
-2. **Ak výraz musí von kvôli compliance**, skús ho vrátiť legálne: podľa `silwer-detail-produktu`
-   kap. 3.4 smie sekcia použiť nešpecifický pojem, ak je v **tej istej sekcii** aj konkrétny
-   schválený claim. Nosičom je vitamín alebo minerál, nie extrakt.
-3. **Prepísanie obsahu nie je dôvod na penalizáciu.** Google penalizuje spam, cloaking, tenký
-   a skopírovaný obsah — nie prepis vlastného textu na nezmenenej URL. Očakávaj len kolísanie
-   pozícií počas pre-indexácie.
-4. **Rozhodni sa raz.** Zmena tam a späť neublíži pozíciám, ale znemožní vyhodnotiť, čo fungovalo.
-5. Title a meta description z karty prenes do záložky SEO. **Slug nechaj tak.**
-
----
-
-## 7. Kontrolný zoznam
+## 6. Kontrolný zoznam
 
 **Pred renderom**
-- [ ] `karta.md` je odsúhlasená po compliance revízii
-- [ ] SEO kontrola spravená, výrazy s návštevnosťou podchytené
-- [ ] URL obrázkov vypýtané a overené cez `curl` (200 + `image/jpeg`)
+- [ ] `karta.md` odsúhlasená po compliance revízii
+- [ ] SEO kontrola spravená
+- [ ] URL obrázkov vypýtané a overené `curl`-om (200 + `image/jpeg`)
 - [ ] Priečinok obrázkov bez diakritiky
 
 **Po renderi**
-- [ ] Počet znakov pod 32 767 (renderer vypíše percento)
+- [ ] Kontrola tried prešla, počet znakov pod limitom
 - [ ] Žiadne `rem`, žiadny `<style>`, žiadny `<script>`
-- [ ] Náhľad **verne simuluje**: root 62,5 %, kontext 16px/24px, šírka 1026 px
-- [ ] Desktop: obrázky striedajú strany, sú v jednom riadku s textom
-- [ ] 375 px: poradie **nadpis → text → obrázok**, žiadny horizontálny scroll
-- [ ] Tabuľka má legendu ku každej hviezdičke, dole je disclaimer
+- [ ] Náhľad simuluje root 62,5 %, kontext 16px/24px, šírku 1026 px
+- [ ] Desktop: obrázky striedajú strany
+- [ ] 375 px: poradie nadpis → text → obrázok, žiadny horizontálny scroll
+- [ ] Infografiky sa na mobile zalomili, nie orezali
 
 **Po nasadení**
-- [ ] Zmerané computed štýly na živej stránke, nie odhad okom
-- [ ] Veľkosť písma v bloku sa zhoduje s krátkym popisom nad tlačidlom
-- [ ] Prejdené na reálnom telefóne až po pätu stránky
-- [ ] Krátky popis nedotknutý, slug nezmenený
+- [ ] Zmerané computed štýly na živej stránke
+- [ ] Veľkosť písma sedí s krátkym popisom nad tlačidlom
+- [ ] Prejdené na reálnom telefóne až po pätu
+- [ ] Ak sa menilo CSS: nová verzia v `<link>`
 
 ---
 
-## 8. Známe otvorené body
+## 7. Známe otvorené body
 
-1. **Či Shoptet WYSIWYG prežije markup pri ručnej editácii** — pri vkladaní cez zdrojový kód
-   a uložení bez prepnutia do vizuálu zatiaľ áno. Otvorenie a uloženie vo vizuálnom režime
-   otestované nie je.
-2. **Prechod na `silwer-pdp.css`** — pripravený v `scripts/`, zatiaľ nenasadený. Zmenší popis
-   zo 14 kB na 7 kB a odomkne media queries, `:hover`, `::before` a `:last-child`.
-   Vyžaduje jeden `<link>` v HTML kódoch (limit sekcie **8 192 znakov**, Shoptet neupozorní).
-3. **Prebiehajúci redizajn** (Janko, deadline 15.9.2026). Blok je obsah, nie šablóna, a dedí
-   font aj veľkosť — po redizajne by sa mal prispôsobiť sám. **Overiť po nasadení.**
-4. **DataForSEO** má ~0,22 € kreditu. Na objemy vyhľadávania treba dobiť.
+1. **Lightbox a karusel** potrebujú JavaScript — do popisu ho nedávame. Pobo územie
+2. **Obrázky prepisov z Pobo** stále ukazujú na `image.pobo.space` — pred vypnutím doplnku
+   ich treba prehodiť do Shoptet Správcu súborov
+3. **WYSIWYG editor** markup neprepísal pri vkladaní cez zdrojový kód a uložení bez prepnutia
+   do vizuálu — overené 4.9.2026. Otvorenie a uloženie vo vizuálnom režime testované nie je

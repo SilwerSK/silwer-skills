@@ -1,0 +1,148 @@
+/* =============================================================================
+   SILWER — štýly obsahových blokov pod produktom
+   verzia 1.0 · 15. 9. 2026 · ZAMRAZENÉ
+
+   Jeden súbor, jeden <link>. Pokrýva obe vetvy:
+     • prepisy stránok z Pobo Page Builderu  (pobo_prepis.py)
+     • karty písané od nuly                  (render_pp.py)
+
+   ── PRAVIDLÁ, KTORÉ SA NESMÚ PORUŠIŤ ──────────────────────────────────────
+   1. ŽIADNE rem. Shoptet Samba má html{font-size:62.5%} → 1rem = 10px, nie 16.
+   2. Blok nenastavuje font-family — dedí ho zo šablóny.
+   3. Media queries sú povolené (sme v súbore, nie v inline štýle).
+   4. Hodnoty typografie sú odmerané na www.silwer.sk/glp-1/ — needituj ich
+      "od oka", rozídu sa s originálom.
+
+   ── ZMENA TOHTO SÚBORU ────────────────────────────────────────────────────
+   Shoptet servíruje /user/documents/ s cache-control max-age=31536000 (ROK).
+   Po každej zmene MUSÍ v <link> pribudnúť nová verzia, inak sa zmena neprejaví.
+   Verziu vypíše renderer sám.
+   ========================================================================= */
+
+/* ---- základ ------------------------------------------------------------- */
+.pp{max-width:1240px;margin:0 auto}
+.pp-sek{padding:30px 0}
+.pp-hero{text-align:center}
+.pp-h2{font-size:25px;font-weight:600;line-height:31.25px;letter-spacing:1.6px;color:rgb(12,12,12);margin:0 0 20px}
+.pp-h2-tesny,.pp-benefit-h2{margin:0 0 10px}
+.pp-p{font-size:18px;font-weight:400;line-height:25px;letter-spacing:.4px;color:rgb(12,12,12);margin:0 0 20px}
+.pp-flex{display:flex;flex-wrap:wrap}
+.pp-col{flex:1 1 340px;min-width:0}
+.pp-col-pad{padding:0 15px}
+.pp-img{width:100%;height:auto;display:block}
+.pp-img-contain{object-fit:contain}
+.pp-img-cover{object-fit:cover}
+
+/* ---- text + obrázok vedľa seba ------------------------------------------
+   Text je v HTML VŽDY prvý. Pri zalomení do stĺpca sa poradie riadi DOM-om,
+   takže na mobile vyjde nadpis → text → obrázok. Keby bol obrázok prvý, dva
+   susedné splity by na mobile dali dva obrázky pod sebou. */
+.pp-half{display:flex;flex-wrap:wrap;align-items:center}
+.pp-half-obrazok-vlavo{flex-direction:row-reverse}
+
+/* ---- galéria ------------------------------------------------------------ */
+.pp-galeria{display:flex;flex-wrap:wrap;gap:20px}
+.pp-gal-jeden{max-width:600px;width:100%;height:auto;display:inline-block}
+
+/* ---- číselné karty (Pobo ich má ako obrázky — my ako text) -------------- */
+.pp-adv{display:flex;flex-wrap:wrap;padding:20px 0}
+.pp-adv-item{flex:1 1 240px;padding:0 10px;text-align:center}
+.pp-adv-item img{max-width:280px;width:100%;height:auto;display:block;margin:0 auto 10px}
+.pp-adv-item h3{font-size:16px;font-weight:600;line-height:20px;letter-spacing:.8px;color:rgb(56,56,56);margin:0 0 10px}
+.pp-adv-item span{font-size:13px;font-weight:400;line-height:17px;letter-spacing:.4px;color:rgb(87,87,87);display:block}
+
+/* ---- recenzie ----------------------------------------------------------- */
+.pp-rev{display:flex;flex-wrap:wrap}
+.pp-rev-item{flex:1 1 300px;padding:0 10px;text-align:center}
+.pp-rev-item img{width:80px;height:80px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 12px}
+.pp-rev-hviezdy{color:#f2b03d;letter-spacing:2px;margin-bottom:10px}
+.pp-rev-text{font-size:16px;line-height:24px;letter-spacing:.4px;color:rgb(12,12,12);display:block}
+.pp-rev-meno{font-size:16px;font-weight:600;line-height:20px;letter-spacing:1.6px;margin:12px 0 4px}
+.pp-rev-datum{font-size:13px;color:rgb(87,87,87)}
+
+/* ---- video --------------------------------------------------------------
+   Shoptet obaľuje iframe v popise do .video-player → vznikne druhý 16:9
+   wrapper a pod videom prázdna medzera. */
+.pp-video{position:relative;padding-top:56.25%}
+.pp-video .video-player{position:static!important;padding:0!important;height:auto!important;border:0!important;overflow:visible!important}
+.pp-video iframe{position:absolute!important;top:0;left:0;width:100%!important;height:100%!important;border:0}
+
+/* ---- benefity ----------------------------------------------------------- */
+.pp-profit-item{display:flex;gap:20px;align-items:flex-start;padding:10px 0}
+.pp-profit-ico{flex:0 0 30px;width:30px;height:30px;background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23649B0D'/%3E%3Cpath d='M54.3 97.2 24.8 67.7l9.9-9.9L55 78.1l38.2-38.2 9.9 9.9z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center/contain}
+.pp-profit-text{font-size:18px;font-weight:500;line-height:20px;letter-spacing:1.6px;color:rgb(12,12,12);padding-top:5px}
+
+/* ---- FAQ (natívny <details> — funguje aj bez JS) ------------------------ */
+.pp-faq details{margin-bottom:10px}
+.pp-faq summary{position:relative;list-style:none;cursor:pointer;padding:12px 12px 12px 40px;border:1px solid #eaeaea;border-radius:4px;box-shadow:#64646f33 0 2px 7px 0;background:#fff;font-size:15px;font-weight:600;line-height:38px;letter-spacing:1.6px;color:rgb(12,12,12)}
+.pp-faq summary::-webkit-details-marker{display:none}
+.pp-faq summary::before{content:"";position:absolute;left:5px;top:50%;margin-top:-15px;width:30px;height:30px;background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23134563' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat center/16px;transition:transform .3s ease-in-out}
+.pp-faq details[open] summary{border-radius:4px 4px 0 0}
+.pp-faq details[open] summary::before{transform:rotate(180deg)}
+.pp-faq details > div{background:#fff;border:1px solid #eaeaea;border-top:0;border-radius:0 0 5px 5px;box-shadow:#64646f33 0 2px 7px 0;padding:5px 20px}
+.pp-faq p{font-size:16px;font-weight:500;line-height:24px;letter-spacing:.4px;margin:0 0 24px}
+
+/* ---- tabuľka zloženia --------------------------------------------------- */
+.pp-tab{overflow-x:auto}
+.pp-tab table{border-collapse:collapse;border-spacing:0;width:100%}
+.pp-tab tr{border-bottom:1px solid #dcdcdc}
+.pp-tab tr:nth-child(2n){background:#f6f6f6}
+.pp-tab td{font-size:14px;font-weight:600;line-height:17.5px;letter-spacing:1.6px;color:rgb(12,12,12);padding:6px 8px}
+
+/* ---- dávkovací box ------------------------------------------------------ */
+.pp-dose{display:flex;flex-wrap:wrap;border:1.5px solid #e5e3de;border-radius:12px;overflow:hidden}
+.pp-dose-cell{flex:1 1 200px;padding:22px 24px;border-right:1px solid #e5e3de}
+.pp-dose-cell:last-child{border-right:0}
+.pp-dose-label{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#55555a;display:block;margin-bottom:6px}
+.pp-dose-value{font-size:18px;font-weight:700;line-height:1.4;display:block}
+
+/* ---- disclaimer --------------------------------------------------------- */
+.pp-note{background:#f5f4f1;border-radius:12px;padding:20px 24px;font-size:16px;line-height:1.6;color:#55555a}
+.pp-note p{margin:0}
+
+/* =========================================================================
+   INFOGRAFIKY
+   Zámerne HTML, nie obrázky: AI generátory komolia slovenskú diakritiku,
+   obrázok sa nedá vyhľadať ani preložiť, na mobile sa nezalomí a musí sa
+   nahrávať zvlášť. Takto je text vždy správny a stojí pár stoviek znakov.
+   ========================================================================= */
+
+/* — čísla ako text (náhrada Pobo obrázkových čísel) ----------------------- */
+.pp-cisla{display:flex;flex-wrap:wrap;gap:24px}
+.pp-cislo{flex:1 1 200px;text-align:center;padding:24px 16px;border:1px solid #eaeaea;border-radius:12px;background:#fff}
+.pp-cislo-hodnota{display:block;font-size:44px;font-weight:800;line-height:1;letter-spacing:-.02em;color:#e60f0f;margin-bottom:10px}
+.pp-cislo-popis{display:block;font-size:16px;font-weight:600;line-height:20px;color:rgb(56,56,56);margin-bottom:8px}
+.pp-cislo-pozn{display:block;font-size:13px;line-height:17px;color:rgb(87,87,87)}
+
+/* — mriežka zložiek ------------------------------------------------------- */
+.pp-zlozky{display:flex;flex-wrap:wrap;gap:16px}
+.pp-zlozka{flex:1 1 260px;display:flex;gap:16px;align-items:baseline;padding:18px 20px;border:1px solid #eaeaea;border-radius:12px;background:#fff}
+.pp-zlozka-nazov{flex:1 1 auto;font-size:17px;font-weight:600;line-height:22px;color:rgb(12,12,12)}
+.pp-zlozka-mnozstvo{flex:0 0 auto;font-size:17px;font-weight:800;color:#e60f0f;white-space:nowrap}
+.pp-zlozka-pozn{display:block;font-size:13px;font-weight:400;line-height:17px;color:rgb(87,87,87);margin-top:4px}
+
+/* — číslované kroky ------------------------------------------------------- */
+.pp-kroky{display:flex;flex-wrap:wrap;gap:20px;counter-reset:krok}
+.pp-krok{flex:1 1 240px;padding:22px 24px;border:1px solid #eaeaea;border-radius:12px;background:#fff;position:relative}
+.pp-krok::before{counter-increment:krok;content:counter(krok);display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:rgb(12,12,12);color:#fff;font-size:17px;font-weight:800;margin-bottom:14px}
+.pp-krok-nadpis{display:block;font-size:17px;font-weight:700;line-height:22px;margin-bottom:6px}
+.pp-krok-text{display:block;font-size:15px;line-height:22px;color:rgb(87,87,87)}
+
+/* — porovnanie dvoch možností -------------------------------------------- */
+.pp-porovnanie{display:flex;flex-wrap:wrap;gap:20px}
+.pp-por{flex:1 1 300px;padding:24px;border:1px solid #eaeaea;border-radius:12px;background:#fff}
+.pp-por-zvyraznene{border-color:rgb(12,12,12);border-width:2px}
+.pp-por-nadpis{display:block;font-size:18px;font-weight:700;line-height:24px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #eaeaea}
+.pp-por ul{list-style:none;margin:0;padding:0}
+.pp-por li{font-size:15px;line-height:22px;color:rgb(12,12,12);padding:7px 0 7px 26px;position:relative}
+.pp-por li::before{content:"";position:absolute;left:0;top:11px;width:16px;height:16px;background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23649B0D' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") no-repeat center/contain}
+.pp-por-slabsie li::before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23aaa' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E")}
+.pp-por-slabsie li{color:rgb(87,87,87)}
+
+/* ---- mobil -------------------------------------------------------------- */
+@media(max-width:768px){
+  .pp-sek{padding:20px 0}
+  .pp-h2{font-size:22px;line-height:28px}
+  .pp-cislo-hodnota{font-size:36px}
+  .pp-kroky,.pp-porovnanie,.pp-cisla{gap:14px}
+}
