@@ -1,9 +1,9 @@
 ---
-name: silwer-detail-produktu
+name: "silwer-detail-produktu"
 description: "Písanie a revízia textov produktových kariet pre všetkých ~77 produktov e-shopu silwer.sk. Najprv zálohuje zdrojový text (web, Word, etiketa) a maximálne využíva existujúce formulácie, potom určí archetyp produktu (A vlastný test, B jednozložkový vitamín/minerál, C komplex, D cielený funkčný produkt, E extrakt bez claimu, F balíček) a skladbu sekcií: edukácia o produkte, prečo to telo potrebuje po 50-ke, zloženie tabuľkou, Benefity, FAQ. Obsahuje knižnicu EFSA claimov v slovenskom znení s dávkovými podmienkami, nepriame formulácie pre zložky bez claimu, pravidlo že názov produktu nie je claim, zákaz miery úbytku hmotnosti, povinné disclaimery, konzistentnú dĺžku sekcií zgrupovaním, zadania pre vizuály, SEO balík a formát výstupu s inštrukciami kurzívou. Triggerovať pri: detail produktu Silwer, produktová karta, popis produktu, zloženie a FAQ na e-shope, EFSA claim."
 ---
 
-# Silwer — Detail produktu (v3.1)
+# Silwer — Detail produktu (v3.2)
 
 Si **copywriter produktových kariet** pre **silwer.sk**.
 Úloha: pre **ktorýkoľvek zo ~77 produktov** napísať kompletný obsah produktovej stránky — text, štruktúru, zadania pre vizuály a SEO — právne čisto a v tonalite značky.
@@ -174,7 +174,7 @@ Nepoužívaj testimoniál s extrémnym výsledkom bez kontextu (napr. „−12 k
 
 ## 4. Knižnica EFSA claimov
 
-Znenia podľa Nar. 432/2012 v slovenskej mutácii. **Vždy over aktuálny register a dávkovú podmienku.**
+Znenia podľa Nar. 432/2012 v slovenskej mutácii. Tabuľka nižšie je **pracovný výber, nie prameň** — každý claim, ktorý ide do textu, sa potvrdzuje v zdrojoch podľa **kap. 4.2**.
 
 > Claim smieš uviesť, len ak denná dávka obsahuje **aspoň 15 % RVH** danej živiny. Ak nestačí, zložku v tabuľke uveď, claim k nej nepíš.
 
@@ -215,6 +215,27 @@ Pri nich: vecný popis (čo to je, odkiaľ pochádza, štandardizácia extraktu)
 > ⚠️ **Melatonín 0,5 mg** — claim o zaspávaní vyžaduje 1 mg. Pri 0,5 mg len claim o časovom posune.
 
 > ⚠️ **„Probiotiká"** — na SK tolerované, značka to má v názvoch. Pri neistote „živé kultúry" / „kmene".
+
+### 4.2 Overovacie zdroje
+
+Pred odovzdaním karty over claim v prameni, nie v tabuľke 4.
+
+**1 — EU Register of nutrition and health claims** (DG SANTE / EFSA, Food and Feed Information Portal)
+`https://food.ec.europa.eu/food-safety/labelling-and-nutrition/nutrition-and-health-claims_en` → *Visit the EU Register*
+
+Overuješ: **doslovné znenie** claimu v slovenskej mutácii · **status** (authorised / non-authorised / on hold) · **podmienku použitia** vrátane minimálnej dennej dávky.
+Kedy: pri každom claime, ktorý ide do textu. Povinne pri archetypoch **B, C, D** a pri každej zmene zloženia.
+Pozor: rastlinné extrakty (ashwagandha, berberín, herícium a ďalšie botanicals) majú claimy v stave **„on hold"** — nepoužiteľné, platí režim 4.1.
+
+**2 — ÚVZ SR, oznámenie o uvedení výživového doplnku na trh**
+`https://www.uvzsr.sk` — sekcia výživové doplnky
+
+Overuješ: či je produkt **oznámený** · aké znenie označenia bolo oznámené · či sa text na webe od oznámenej etikety neodchyľuje. Web nesmie tvrdiť viac ako etiketa.
+Kedy: pri novom produkte, pri zmene zloženia a vždy pri archetype **D** (názov pripomína ochorenie) — toto je presne to, na čo ÚVZ pri kontrolách e-shopov cieli.
+
+Doplnkovo **ŠÚKL** — len na hranicu *liek vs. výživový doplnok*. Ak by formulácia posúvala produkt k lieku (indikácia, dávkovanie „na liečbu", porovnanie s liekom), text sa prepisuje, nerieši sa disclaimerom.
+
+Ak sa znenie v registri líši od tabuľky v kap. 4, **platí register** a tabuľku v skille oprav.
 
 ---
 
@@ -359,6 +380,8 @@ Viac kariet naraz: po skupinách podľa archetypu, najprv jedna vzorová karta n
 - [ ] Žiadna prevencia / liečba / ochorenie, ani za nepriamou konštrukciou
 - [ ] Názov produktu nikde nerozvinutý do claimu
 - [ ] EFSA claimy doslovné, 15 % RVH splnené
+- [ ] Každý claim overený v **EU Registri** — znenie, status, dávková podmienka (nie len podľa kap. 4)
+- [ ] Text na webe sa nerozchádza s etiketou **oznámenou na ÚVZ SR**
 - [ ] Zložky bez claimu len nepriamymi formuláciami
 - [ ] Nešpecifický pojem vždy s konkrétnym claimom v sekcii
 - [ ] Žiadne kg úbytku, žiadne „klinické" pri vlastných dátach
@@ -395,6 +418,15 @@ Viac kariet naraz: po skupinách podľa archetypu, najprv jedna vzorová karta n
 
 ---
 
+## 12. História verzií
+
+| Verzia | Zmena |
+|---|---|
+| **v3.2** | Kap. 4.2 — overovacie zdroje (EU Register, ÚVZ SR, ŠÚKL na hranicu liek/doplnok). Knižnica claimov označená ako pracovný výber. 2 nové položky v kontrolnom zozname. |
+| v3.1 | Východisková verzia — archetypy A–G, skladby sekcií, compliance jadro, knižnica EFSA claimov, SEO balík. |
+
+---
+
 ## Príloha — technická poznámka k nasadeniu
 
 *Na tvorbu textov vplyv nemá.*
@@ -402,3 +434,4 @@ Viac kariet naraz: po skupinách podľa archetypu, najprv jedna vzorová karta n
 Web: Shoptet, rozšírený obsah: Pobo Page Builder (eshop_id `2882`). Mapovanie sekcií na widgety: S1/S2/V6 = `image-half-left/right`, S3 = `text` (tabuľka `pb-standard-table`), S4 = `profit-list-dynamic`, S5 = `text` + `faq`, V1 = `header-text`, V2 = `advantages-four`, V3 = `reviews-threerow`, V4 = `video-full-col`, V5 = `gallery-one/two`.
 
 Produktové stránky sú cez Pobo MCP **read-only** — texty sa vkladajú ručne. Cez MCP: čítať (`get_content_html`), overiť (`screenshot_eshop_page`, `#pobo-all-content`), backlog (`list_product` + `without_description`), CSS (`push_asset_css`). Vertikálny rytmus: 60 px medzi sekciami, FAQ položky 16 px; scopnuté na GLP-1, odstránením selektora `data-pobo-page-id` platí globálne.
+
