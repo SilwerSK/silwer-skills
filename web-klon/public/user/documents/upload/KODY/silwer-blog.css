@@ -1,0 +1,164 @@
+/* =============================================================================
+   SILWER — styly blogovych clankov
+   verzia 1.0 · 22. 9. 2026
+
+   Samostatny subor. NIE je to silwer-bloky.css (ten je pre bloky pod produktom
+   a ostava nedotknuty). Blogy maju iny kontext, inu sirku stlpca aj inu ulohu.
+
+   ── NAMERANE NA ZIVEJ STRANKE (22.9.2026, /blog/…berberin…/) ────────────────
+   root font-size                 10px   (Samba: html{font-size:62.5%})
+   article .text  (kontext bloku) 16px / 24px / Roboto / weight 500 / ls 0.4px
+   sirka stlpca clanku            788px  (POZOR: produktova karta ma 1026px)
+   na 375px sa kontext zmensi na  14px / 20px / weight 500
+   h2 zo sablony                  32px / 38px / 700
+   odkazy v clanku                bez podciarknutia, farba textu
+
+   ── PRAVIDLA ───────────────────────────────────────────────────────────────
+   1. ZIADNE rem. Root je 10px, nie 16. 1rem = 10px.
+   2. Media queries su povolene — sme v subore, nie v inline style.
+   3. Blok NEDEDI velkost pisma, nastavuje si ju sam. Je to vedoma odchylka
+      od pravidla produktoveho bloku a dovod je v technicke-pravidla.md
+      kap. 2: zdedenych 16px/500 na desktope a 14px/500 na mobile je pre
+      publikum 50+ pri dlhom texte primalo a pritazke.
+   4. Font-family sa NEnastavuje — dedi sa zo sablony (Roboto).
+   5. Hodnoty su odmerane, needituj ich od oka.
+
+   ── ZMENA TOHTO SUBORU ─────────────────────────────────────────────────────
+   Shoptet servíruje /user/documents/ s cache-control max-age=31536000 (ROK).
+   Po kazdej zmene MUSI v <link> pribudnut nova verzia. Renderer ju vypise.
+   ========================================================================= */
+
+/* ---- zaklad ------------------------------------------------------------- */
+.blg{color:rgb(12,12,12)}
+.blg-sek{margin:0 0 32px}
+.blg-h2{font-size:28px;font-weight:700;line-height:34px;letter-spacing:.6px;color:rgb(12,12,12);margin:40px 0 16px;scroll-margin-top:100px}
+.blg-h3{font-size:21px;font-weight:600;line-height:28px;letter-spacing:.4px;color:rgb(12,12,12);margin:32px 0 12px}
+.blg-p{font-size:18px;font-weight:400;line-height:29px;letter-spacing:.4px;color:rgb(12,12,12);margin:0 0 20px}
+.blg-p:last-child{margin-bottom:0}
+.blg-perex{font-size:20px;font-weight:400;line-height:31px;letter-spacing:.4px;color:rgb(12,12,12);margin:0 0 28px}
+.blg-maly{font-size:15px;line-height:24px;color:rgb(87,87,87)}
+
+/* odkazy — sablona im berie podciarknutie, vraciame ho spat */
+.blg a{color:rgb(12,12,12);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.blg a:hover{color:#e60f0f}
+
+/* ---- zoznamy ------------------------------------------------------------ */
+.blg-ul{list-style:none;margin:0 0 20px;padding:0}
+.blg-ul li{position:relative;padding:0 0 0 30px;margin:0 0 10px;font-size:18px;line-height:29px;letter-spacing:.4px}
+.blg-ul li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:#e60f0f}
+.blg-ul-hacik li::before{content:"";left:2px;top:7px;width:11px;height:6px;border-radius:0;background:none;border-left:2px solid #e60f0f;border-bottom:2px solid #e60f0f;transform:rotate(-45deg)}
+
+/* ---- obsah clanku (TOC) ------------------------------------------------- */
+.blg-obsah{background:#f5f4f1;border-radius:12px;padding:22px 26px;margin:0 0 32px}
+.blg-obsah-nadpis{display:block;font-size:14px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgb(87,87,87);margin:0 0 14px}
+.blg-obsah ol{margin:0;padding:0 0 0 22px}
+.blg-obsah li{font-size:17px;line-height:28px;margin:0 0 6px}
+.blg-obsah li:last-child{margin-bottom:0}
+
+/* ---- obrazky ------------------------------------------------------------ */
+.blg-fig{margin:0 0 28px}
+.blg-img{width:100%;height:auto;display:block;border-radius:12px}
+.blg-popis{display:block;font-size:15px;line-height:23px;color:rgb(87,87,87);margin:10px 0 0}
+
+/* ---- text + obrazok vedla seba -----------------------------------------
+   Text je v HTML VZDY prvy. Pri zalomeni do stlpca sa poradie riadi DOM-om,
+   takze na mobile vyjde nadpis → text → obrazok. Keby bol obrazok prvy, dva
+   susedne splity by na mobile dali dva obrazky pod sebou. */
+.blg-half{display:flex;flex-wrap:wrap;align-items:center;gap:28px;margin:0 0 32px}
+.blg-half-obrazok-vlavo{flex-direction:row-reverse}
+.blg-half-col{flex:1 1 300px;min-width:0}
+/* uzky stlpec pre packshot pri podnadpise — obrazok nesmie zabrat polovicu */
+.blg-half-col-uzky{flex:0 0 200px;min-width:0}
+.blg-half-hore{align-items:flex-start}
+
+/* ---- vytah / kluc k zapamataniu ----------------------------------------- */
+.blg-vytah{border-left:3px solid #e60f0f;background:#f5f4f1;border-radius:0 12px 12px 0;padding:20px 24px;margin:0 0 28px}
+.blg-vytah p{font-size:18px;line-height:29px;font-weight:500;margin:0 0 10px;color:rgb(12,12,12)}
+.blg-vytah p:last-child{margin-bottom:0}
+
+/* ---- produktova karta --------------------------------------------------- */
+.blg-produkty{display:flex;flex-wrap:wrap;gap:20px;margin:0 0 32px}
+.blg-produkt{flex:1 1 320px;display:flex;gap:18px;align-items:flex-start;padding:20px;border:1px solid #eaeaea;border-radius:12px;background:#fff}
+.blg-produkt-img{width:96px;height:96px;flex:0 0 96px;object-fit:contain;display:block}
+.blg-produkt-telo{flex:1 1 auto;min-width:0}
+.blg-produkt-nazov{display:block;font-size:18px;font-weight:700;line-height:25px;margin:0 0 8px}
+.blg-produkt-nazov a{text-decoration:none}
+.blg-produkt-nazov a:hover{text-decoration:underline}
+.blg-produkt-text{font-size:16px;line-height:25px;color:rgb(87,87,87);margin:0 0 12px}
+/* POZOR: selektor musi mat vacsiu specificitu nez .blg a vyssie (0,1,1),
+   inak tlacidlo zdedi cierny text na ciernom pozadi. Odmerane na pilote. */
+.blg a.blg-btn{display:inline-block;padding:10px 20px;border-radius:6px;background:rgb(12,12,12);color:#fff;font-size:15px;font-weight:600;line-height:20px;letter-spacing:.4px;text-decoration:none}
+.blg a.blg-btn:hover{background:#e60f0f;color:#fff;text-decoration:none}
+
+/* ---- CTA pas ------------------------------------------------------------ */
+.blg-cta{background:#f5f4f1;border-radius:12px;padding:28px;text-align:center;margin:0 0 32px}
+.blg-cta-nadpis{display:block;font-size:22px;font-weight:700;line-height:29px;margin:0 0 10px}
+.blg-cta p{font-size:17px;line-height:27px;color:rgb(87,87,87);margin:0 0 18px}
+
+/* ---- tabulka ------------------------------------------------------------ */
+.blg-tab{overflow-x:auto;margin:0 0 28px}
+.blg-tab table{border-collapse:collapse;border-spacing:0;width:100%;font-size:16px;line-height:24px}
+.blg-tab th{text-align:left;font-size:14px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:rgb(87,87,87);padding:12px 14px;border-bottom:2px solid #dcdcdc}
+.blg-tab td{padding:12px 14px;border-bottom:1px solid #dcdcdc;vertical-align:top}
+.blg-tab tbody tr:nth-child(2n){background:#f6f6f6}
+
+/* ---- cislovane kroky ---------------------------------------------------- */
+.blg-kroky{display:flex;flex-wrap:wrap;gap:16px;counter-reset:blgkrok;margin:0 0 32px}
+.blg-krok{flex:1 1 240px;padding:22px 24px;border:1px solid #eaeaea;border-radius:12px;background:#fff}
+.blg-krok::before{counter-increment:blgkrok;content:counter(blgkrok);display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:rgb(12,12,12);color:#fff;font-size:17px;font-weight:800;margin:0 0 14px}
+.blg-krok-nadpis{display:block;font-size:17px;font-weight:700;line-height:24px;margin:0 0 8px}
+.blg-krok-text{font-size:16px;line-height:25px;color:rgb(87,87,87);margin:0}
+
+/* ---- ciselne karty ------------------------------------------------------ */
+.blg-cisla{display:flex;flex-wrap:wrap;gap:16px;margin:0 0 32px}
+.blg-cislo{flex:1 1 200px;text-align:center;padding:24px 16px;border:1px solid #eaeaea;border-radius:12px;background:#fff}
+.blg-cislo-hodnota{display:block;font-size:34px;font-weight:800;line-height:40px;color:rgb(12,12,12)}
+.blg-cislo-popis{display:block;font-size:16px;line-height:24px;color:rgb(12,12,12);margin:8px 0 0}
+.blg-cislo-pozn{display:block;font-size:13px;line-height:19px;color:rgb(87,87,87);margin:6px 0 0}
+
+/* ---- FAQ (bez schema — FAQ rich results Google zrusil 7.5.2026) --------- */
+.blg-faq{margin:0 0 32px}
+.blg-faq details{margin:0 0 10px}
+.blg-faq summary{position:relative;list-style:none;cursor:pointer;padding:14px 14px 14px 44px;border:1px solid #eaeaea;border-radius:8px;background:#fff;font-size:17px;font-weight:600;line-height:26px;color:rgb(12,12,12)}
+.blg-faq summary::-webkit-details-marker{display:none}
+.blg-faq summary::before{content:"";position:absolute;left:18px;top:50%;width:9px;height:9px;margin-top:-6px;border-right:2px solid #e60f0f;border-bottom:2px solid #e60f0f;transform:rotate(45deg);transition:transform .15s}
+.blg-faq details[open] summary{border-radius:8px 8px 0 0}
+.blg-faq details[open] summary::before{transform:rotate(-135deg);margin-top:-2px}
+.blg-faq details > div{border:1px solid #eaeaea;border-top:0;border-radius:0 0 8px 8px;padding:4px 20px 14px}
+.blg-faq details > div p{font-size:17px;line-height:27px;margin:10px 0 0}
+
+/* ---- zdroje ------------------------------------------------------------- */
+.blg-zdroje{background:#f6f6f6;border-radius:12px;padding:22px 26px;margin:0 0 32px}
+.blg-zdroje-nadpis{display:block;font-size:14px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgb(87,87,87);margin:0 0 14px}
+.blg-zdroje ol{margin:0;padding:0 0 0 22px}
+.blg-zdroje li{font-size:15px;line-height:24px;color:rgb(87,87,87);margin:0 0 12px}
+.blg-zdroje li:last-child{margin-bottom:0}
+.blg-zdroje a{color:rgb(87,87,87);word-break:break-word}
+
+/* ---- disclaimer --------------------------------------------------------- */
+.blg-note{background:#f5f4f1;border-radius:12px;padding:20px 24px;margin:0 0 32px}
+.blg-note p{font-size:15px;line-height:24px;color:#55555a;margin:0 0 8px}
+.blg-note p:last-child{margin-bottom:0}
+
+/* ---- autor (vyplna chybajuci itemprop="author" v Shoptet NewsArticle) --- */
+.blg-autor{display:flex;flex-wrap:wrap;gap:16px;align-items:center;padding:20px 24px;border:1px solid #eaeaea;border-radius:12px;background:#fff;margin:0 0 32px}
+.blg-autor-foto{width:64px;height:64px;flex:0 0 64px;border-radius:50%;object-fit:cover;display:block}
+.blg-autor-telo{flex:1 1 240px;min-width:0}
+.blg-autor-meno{display:block;font-size:17px;font-weight:700;line-height:24px;color:rgb(12,12,12)}
+.blg-autor-rola{display:block;font-size:15px;line-height:23px;color:rgb(87,87,87);margin:2px 0 0}
+.blg-autor-datum{display:block;font-size:14px;line-height:21px;color:rgb(87,87,87);margin:8px 0 0}
+
+/* ---- mobil -------------------------------------------------------------- */
+@media (max-width:767px){
+  .blg-h2{font-size:24px;line-height:30px;margin:32px 0 14px}
+  .blg-h3{font-size:19px;line-height:26px;margin:26px 0 10px}
+  .blg-p,.blg-ul li{font-size:17px;line-height:27px}
+  .blg-perex{font-size:18px;line-height:28px}
+  .blg-half{gap:20px}
+  .blg-half-col-uzky{flex:1 1 100%;max-width:200px;margin:0 auto}
+  .blg-produkt{flex:1 1 100%}
+  .blg-produkt-img{width:72px;height:72px;flex:0 0 72px}
+  .blg-cislo-hodnota{font-size:30px;line-height:36px}
+  .blg-obsah,.blg-zdroje,.blg-note,.blg-cta{padding:18px 20px}
+  .blg-cta{padding:22px 20px}
+}
