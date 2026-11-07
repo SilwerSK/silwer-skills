@@ -1,0 +1,28 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/action/:path*", "destination": "https://www.silwer.sk/action/:path*", "permanent": false },
+    { "source": "/kosik/:path*", "destination": "https://www.silwer.sk/kosik/:path*", "permanent": false },
+    { "source": "/objednavka/:path*", "destination": "https://www.silwer.sk/objednavka/:path*", "permanent": false },
+    { "source": "/login/:path*", "destination": "https://www.silwer.sk/login/:path*", "permanent": false },
+    { "source": "/registracia/:path*", "destination": "https://www.silwer.sk/registracia/:path*", "permanent": false },
+    { "source": "/klient/:path*", "destination": "https://www.silwer.sk/klient/:path*", "permanent": false },
+    { "source": "/vyhladavanie/:path*", "destination": "https://www.silwer.sk/vyhladavanie/:path*", "permanent": false },
+    { "source": "/affiliate:rest(.*)", "destination": "https://www.silwer.sk/affiliate:rest", "permanent": false },
+    { "source": "/:page([^/]+:[^/]+)/:rest*", "destination": "https://www.silwer.sk/:page/:rest*", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/user/:path*", "destination": "https://www.silwer.sk/user/:path*" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ]
+}

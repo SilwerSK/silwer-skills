@@ -22,6 +22,11 @@ silwer-dlhy-popis        → blok.html (fotky + infografiky) → do Detailného 
 
 Návod pre človeka, ktorý to bude ovládať: `skills/silwer-dlhy-popis/README.md`.
 
+## Klon webu
+
+`web-klon/` – statická kópia www.silwer.sk pripravená na Vercel (testovanie redizajnu
+a nových blokov mimo Shoptetu). Návod: `web-klon/README.md`.
+
 ## Štruktúra
 
 Každý skill je priečinok `skills/<názov>/` so súborom `SKILL.md` (YAML hlavička `name` + `description`, potom inštrukcie). Voliteľný priečinok `references/` obsahuje podporné dokumenty.
