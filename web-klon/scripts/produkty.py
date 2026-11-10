@@ -187,6 +187,38 @@ def flags_html(stitky):
     return '<div class="flags flags-default">' + "".join(spans) + "</div>"
 
 
+def standard_price(html, p, card=False):
+    """Prečiarknutá pôvodná cena (pole cena_povodna) – doplní, prepíše alebo odstráni."""
+    c, orig = float(p["cena"]), p.get("cena_povodna")
+    has = 'class="price-standard"' in html
+    if orig:
+        pct = round((1 - c / float(orig)) * 100)
+        save = f"(&ndash;{pct} %)" if card else f"&ndash;{pct} %"
+        if has:
+            # všetky výskyty – aj štítok so zľavou na fotke (flags-extra)
+            html = re.sub(r'(<span class="price-standard">\s*<span>\s*(?:<strong>)?)[^<]*',
+                          lambda x: x.group(1) + price(float(orig)), html)
+            html = re.sub(r'(<span class="price-save">)\s*(\(?)[^<)]*\)?',
+                          lambda x: x.group(1) + (f"(&ndash;{pct} %)" if x.group(2) else f"&ndash;{pct} %"), html)
+        elif card:
+            html = re.sub(r'(<div class="price price-final" data-testid="productCardPrice">.*?</div>)',
+                          lambda x: x.group(1) + f'<span class="price-standard"><span><strong>{price(float(orig))}</strong></span></span>'
+                          f'<span class="price-save">{save}</span>', html, count=1, flags=re.S)
+        else:
+            html = html.replace('<strong class="price-final"',
+                                '<span class="standard-price-label">štandardná cena:</span>'
+                                f'<span class="price-standard"><span>{price(float(orig))}</span></span>'
+                                f'<span class="price-save">{save}</span><strong class="price-final price-action"', 1)
+    elif has:
+        html = re.sub(r'<div class="flags flags-extra">\s*<span class="flag flag-discount">.*?</span>\s*</span>\s*</div>',
+                      "", html, flags=re.S)
+        html = re.sub(r'<span class="standard-price-label">[^<]*</span>\s*', "", html, count=1)
+        html = re.sub(r'<span class="price-standard">.*?</span>\s*</span>\s*', "", html, count=1, flags=re.S)
+        html = re.sub(r'<span class="price-save">[^<]*</span>\s*', "", html, count=1)
+        html = html.replace("price-final price-action", "price-final", 1)
+    return html
+
+
 def unit_price(p):
     if p.get("jednotkova_cena"):
         return p["jednotkova_cena"]
@@ -260,6 +292,7 @@ def build_page(public, p, images):
     html = re.sub(r'("priceWithVat":\s*)[0-9.]+', lambda x: x.group(1) + f"{c:g}", html)
     html = re.sub(r'(data-price-ratio="([0-9.]+)".*?quantity-discounts__price"[^>]*>)[^<]*',
                   lambda x: x.group(1) + price(c * float(x.group(2)), always_decimals=False), html, flags=re.S)
+    html = standard_price(html, p)
     up = unit_price(p)
     html = re.sub(r'(<span class="price-measure">\s*<span class="sr-only">[^<]*</span>\s*<span>)[^<]*',
                   lambda x: x.group(1) + up, html, count=1)
@@ -271,7 +304,7 @@ def build_page(public, p, images):
         alt = esc(f"{name} – balenie produktu")
         main = (f'<a href="{images[0]}" class="p-main-image cloud-zoom" data-href="{images[0]}" data-alt="{alt}">'
                 f'<img src="{images[0]}" alt="{alt}" width="1024" height="1024" fetchpriority="high" /></a>')
-        html = re.sub(r'<a href="[^"]*" class="p-main-image cloud-zoom".*?</a>', lambda _: main, html, count=1, flags=re.S)
+        html = re.sub(r'<a href="[^"]*" class="p-main-image cloud-zoom[^"]*".*?</a>', lambda _: main, html, count=1, flags=re.S)
         thumbs = "".join(
             f'<a href="{u}" class="p-thumbnail{" highlighted" if i == 0 else ""}">'
             f'<img src="{u}" alt="{esc(name)}" width="100" height="100" /></a>'
@@ -339,6 +372,7 @@ def build_card(public, p, images):
     c = float(p["cena"])
     card = re.sub(r'(data-testid="productCardPrice">\s*<strong>)[^<]*', lambda x: x.group(1) + price(c), card)
     card = re.sub(r'data-micro-price="[0-9.]+"', f'data-micro-price="{c:.2f}"', card)
+    card = standard_price(card, p, card=True)
     card = re.sub(r'(<div class="price-measure">\s*<span class="sr-only">[^<]*</span>)[^<]*',
                   lambda x: x.group(1) + unit_price(p), card)
     card = re.sub(r'(data-micro="sku">)[^<]*', lambda x: x.group(1) + esc(p["kod"]), card)
@@ -392,13 +426,16 @@ def write_data_patch(public, products):
         return
     data = json.loads(s[i + len("var DATA = "):s.find("\n", i)].rstrip().rstrip(";"))
     for p in products:
-        if not (p.get("forma") and p.get("pocet")):
-            print(f"  ! {p['path']}: chýba „forma“ alebo „pocet“ – redizajn ukáže predvolené 60 kap.")
         cats = [] if p.get("skryty") else list(dict.fromkeys(p["kategorie"] + ["/vsetky/"]))
-        entry = {"n": p["nazov"], "i": p["_images"][0] if p["_images"] else "",
-                 "f": p.get("forma", "kap."), "q": p.get("pocet", 60),
-                 "t": p["mnozstevne_zlavy"], "c": cats}
-        data["products"][p["path"]] = {**data["products"].get(p["path"], {}), **entry}
+        # balíčky a pod. nemajú formu, počet ani množstevné zľavy – kľúče vtedy vynecháme
+        entry = {"n": p["nazov"], "i": p["_images"][0] if p["_images"] else "", "c": cats}
+        if p.get("forma") and p.get("pocet"):
+            entry.update(f=p["forma"], q=p["pocet"])
+        elif p["mnozstevne_zlavy"]:
+            print(f"  ! {p['path']}: chýba „forma“ alebo „pocet“ – dlaždice balení nebudú úplné")
+        if p["mnozstevne_zlavy"]:
+            entry["t"] = p["mnozstevne_zlavy"]
+        data["products"][p["path"]] = entry
         for c in cats:
             lst = [u for u in data["cats"].get(c, []) if u != p["path"]]
             data["cats"][c] = [p["path"]] + lst

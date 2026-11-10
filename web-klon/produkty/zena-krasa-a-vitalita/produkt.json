@@ -1,0 +1,183 @@
+{
+ "nazov": "Žena. Krása a vitalita",
+ "slug": "zena-krasa-a-vitalita",
+ "cena": 32.0,
+ "cena_povodna": 42.59,
+ "kod": "NOVÝ",
+ "sablona": "balicek-pre-nu",
+ "kategoria": "/pre-zeny/",
+ "kategorie": [
+  "/novinky/",
+  "/pre-zeny/",
+  "/super-zlavy/"
+ ],
+ "stitky": [
+  "Novinka"
+ ],
+ "mnozstevne_zlavy": [],
+ "obrazky": [
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/113_vlasy-nechty-pokozka---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/131_koenzym-q10---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/211_magnezium-glycinat-550-mg-super-forte-plus---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe"
+ ],
+ "kratky_popis": "kratky-popis.html",
+ "parametre": {
+  "Obsah balíčka": "Silwer JOJ play Žena 50+ Komplex, Vlasy Nechty Pokožka, Koenzým Q10, Magnézium Glycinát 550 mg Super Forte Plus, vianočná krabička"
+ },
+ "seo": {
+  "title": "Žena. Krása a vitalita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.",
+  "meta_description": "Žena. Krása a vitalita od Silwer. Vianočný balíček: Žena 50+ Komplex, Vlasy Nechty Pokožka, Koenzým Q10 a Magnézium Glycinát v originálnej krabičke. 32 € namiesto 42,59 €."
+ },
+ "obrazky_base": "",
+ "blok": [
+  {
+   "typ": "hero",
+   "nadpis": "Štyri produkty pre ženy po 50-ke v jednej krabičke",
+   "podnadpis": "Komplex vitamínov a minerálov, výživa pre vlasy, nechty a pleť, koenzým Q10 a horčík. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
+  },
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Silwer JOJ play Žena 50+ Komplex – balenie",
+   "nadpis": "Žena 50+ Komplex",
+   "text": [
+    "Komplex pre ženy po 50-ke obsahuje v jednej tablete <strong>26 zložiek</strong>, medzi nimi aj koenzým Q10 a luteín. Biotín a zinok prispievajú k udržaniu normálnych vlasov a pokožky, vitamín C k tvorbe kolagénu na zabezpečenie normálnej funkcie kože. Vitamíny skupiny B prispievajú k zníženiu vyčerpania a únavy.",
+    "Balenie vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-zena-50-komplex/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/113_vlasy-nechty-pokozka---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
+   "alt": "Silwer Vlasy Nechty Pokožka – balenie",
+   "nadpis": "Vlasy Nechty Pokožka",
+   "text": [
+    "Cielená výživa pre vlasy, nechty a pleť žien po 50-ke. Obsahuje <strong>biotín, zinok, meď, vitamín C a vitamíny skupiny B</strong>. Biotín a zinok prispievajú k udržaniu normálnych vlasov a pokožky, zinok aj nechtov, meď k normálnej pigmentácii vlasov.",
+    "Balenie je na <strong>3 mesiace</strong>. <a href=\"/vlasy-nechty-pokozka/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/131_koenzym-q10---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Silwer Koenzým Q10 – balenie",
+   "nadpis": "Koenzým Q10",
+   "text": [
+    "Koenzým Q10 si telo tvorí samo, ale s vekom ho vytvára menej. Preto patrí medzi najznámejšie doplnky u žien po 50-ke a často býva súčasťou ich dennej rutiny. Jedna kapsula obsahuje <strong>60 mg koenzýmu Q10</strong> doplneného o vitamín E.",
+    "Balenie je na <strong>2 mesiace</strong>. <a href=\"/koenzym-q10/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/211_magnezium-glycinat-550-mg-super-forte-plus---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Silwer Magnézium Glycinát 550 mg Super Forte Plus – balenie",
+   "nadpis": "Magnézium Glycinát",
+   "text": [
+    "Horčík vo forme bisglycinátu, teda chelátovej formy, ktorá sa dobre hodí do večerného režimu. Jedna kapsula obsahuje <strong>110 mg horčíka</strong>. Horčík prispieva k normálnej činnosti nervového systému, k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy.",
+    "Balenie je na <strong>1 až 2 mesiace</strong>. <a href=\"/magnezium-glycinat/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "text",
+   "nadpis": "Vianočná krabička",
+   "text": [
+    "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer. Je taká pekná, že poteší už pri rozbaľovaní a obdarovaní si ju radi nechajú aj po sviatkoch. Zmestia sa do nej štyri produkty Silwer, takže ju stačí položiť rovno pod stromček. Krabička v hodnote 6 € je súčasťou vianočného balíčka."
+   ]
+  },
+  {
+   "typ": "cisla",
+   "nadpis": "Čo je v balíčku",
+   "polozky": [
+    {
+     "hodnota": "4",
+     "popis": "produkty Silwer.",
+     "pozn": "a vianočná krabička"
+    },
+    {
+     "hodnota": "3",
+     "popis": "mesiace",
+     "pozn": "vydrží Žena 50+ aj Vlasy Nechty Pokožka"
+    },
+    {
+     "hodnota": "32 €",
+     "popis": "cena balíčka",
+     "pozn": "namiesto 42,59 €"
+    },
+    {
+     "hodnota": "10,59 €",
+     "popis": "ušetríte",
+     "pozn": "oproti nákupu jednotlivo vrátane krabičky"
+    }
+   ]
+  },
+  {
+   "typ": "benefits",
+   "nadpis": "Benefity",
+   "polozky": [
+    "Biotín a zinok prispievajú k udržaniu normálnych vlasov a pokožky, zinok aj nechtov",
+    "Vitamín C prispieva k tvorbe kolagénu na zabezpečenie normálnej funkcie kože",
+    "Horčík a vitamíny skupiny B prispievajú k zníženiu vyčerpania a únavy",
+    "Koenzým Q10 – látka, ktorú telo tvorí samo a s vekom jej vytvára menej",
+    "Horčík vo forme bisglycinátu – chelátová forma vhodná do večerného režimu",
+    "Väčšina produktov vydrží 3 mesiace – až do jari",
+    "Štyri produkty v originálnej vianočnej krabičke, pripravené pod stromček"
+   ]
+  },
+  {
+   "typ": "dose",
+   "nadpis": "Ako a kedy užívať",
+   "bunky": [
+    {
+     "label": "Žena 50+ Komplex",
+     "value": "1 tableta denne s jedlom"
+    },
+    {
+     "label": "Vlasy Nechty Pokožka",
+     "value": "1 kapsula denne s jedlom"
+    },
+    {
+     "label": "Koenzým Q10",
+     "value": "1 kapsula denne, zapiť vodou"
+    },
+    {
+     "label": "Magnézium Glycinát",
+     "value": "1 kapsula denne po večernom jedle"
+    }
+   ],
+   "text": [
+    "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  },
+  {
+   "typ": "faq",
+   "nadpis": "Časté otázky",
+   "polozky": [
+    {
+     "otazka": "Čo je v balíčku Žena. Krása a vitalita a pre koho je?",
+     "odpoved": "Štyri doplnky Silwer pre ženy po 50-ke: Žena 50+ Komplex, Vlasy Nechty Pokožka, Koenzým Q10 a Magnézium Glycinát v originálnej vianočnej krabičke. Je pre ženy, ktoré chcú dopĺňať vitamíny a minerály a myslieť pritom aj na vlasy, nechty a pleť – alebo ako darček pod stromček."
+    },
+    {
+     "otazka": "Ako produkty užívať spolu?",
+     "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania. Žena 50+ Komplex a Vlasy Nechty Pokožka s jedlom, koenzým Q10 kedykoľvek počas dňa s vodou a magnézium večer po jedle. Žena 50+ Komplex už horčík obsahuje, preto pri súbežnom užívaní stačí 1 kapsula magnézia denne."
+    },
+    {
+     "otazka": "Ako dlho balíček vydrží?",
+     "odpoved": "Žena 50+ Komplex a Vlasy Nechty Pokožka vydržia 3 mesiace, koenzým Q10 2 mesiace a magnézium pri 1 kapsule denne 2 mesiace. Pri darovaní na Vianoce tak väčšina produktov vydrží až do jari."
+    },
+    {
+     "otazka": "Pre koho balíček nie je vhodný?",
+     "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Žena 50+ Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Rovnako pri pravidelnom užívaní akýchkoľvek liekov."
+    }
+   ]
+  },
+  {
+   "typ": "note",
+   "text": [
+    "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  }
+ ]
+}
