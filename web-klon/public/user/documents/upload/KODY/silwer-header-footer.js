@@ -437,11 +437,11 @@ var EXTRA = [
 ];
 var PRODUKTY = [
   ['Vitamíny','/vitaminy/'], ['Minerály','/mineraly/'], ['Výživové doplnky','/vyzivove-doplnky/'],
-  ['Všetky produkty','/vsetky/'], ['Minitablety','/minitablety/'], ['NOVINKY 2026','/novinky/'],
+  ['Všetky produkty','/vsetky/'], ['Minitablety','/minitablety/'], ['NOVINKY 2026','/novinky/'], ['Vianoce 2026','/vianoce-2026/'],
   ['Silwer JOJ play','/joj_play/']
 ];
 var PREKOHO = [['Pre ženy','/pre-zeny/'], ['Pre mužov','/pre-muzov/'], ['Pre všetkých','/vsetky/']];
-var MENU = [['Superzľavy','/super-zlavy/'], ['Silwer Gold','/gold/'], ['Silwer JOJ Play','/joj_play/'],
+var MENU = [['Vianoce 2026','/vianoce-2026/'], ['Superzľavy','/super-zlavy/'], ['Silwer Gold','/gold/'], ['Silwer JOJ Play','/joj_play/'],
   ['Zaujímavosti','/blog/', [['Blog','/blog/']]], ['O nás','/onas/']];
 /* zoznamy berie zo silwer-redesign.js, aby menu na desktope aj mobile bolo jedno */
 if (window.SW) { if (SW.PREKOHO) PREKOHO = SW.PREKOHO; if (SW.PRODUKTY) PRODUKTY = SW.PRODUKTY; if (SW.MENU) MENU = SW.MENU; }

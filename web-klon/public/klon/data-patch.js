@@ -5,7 +5,7 @@
   try { D.ts = Date.now(); localStorage.setItem('swData', JSON.stringify(D)); } catch (e) {}
 
   /* nové kategórie v menu: redizajn kreslí menu sám, preto ich klonujeme z existujúcej položky */
-  var M = [{"n": "Vianoce 2026", "u": "/vianoce-2026/", "za": "/novinky/", "pred": "/super-zlavy/"}];
+  var M = [];
   function addMenu() {
     M.forEach(function (it) {
       [['za', 'afterend'], ['pred', 'beforebegin']].forEach(function (pos) {

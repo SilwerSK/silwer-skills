@@ -294,7 +294,7 @@
   var PRODUKTY = [
     ['Vitamíny','/vitaminy/'], ['Minerály','/mineraly/'], ['Výživové doplnky','/vyzivove-doplnky/'],
     ['Minitablety','/minitablety/'], ['Silwer Gold','/gold/'], ['Silwer JOJ play','/joj_play/'],
-    ['Novinky 2026','/novinky/'], ['Superzľavy','/super-zlavy/'], ['Všetky produkty','/vsetky/']
+    ['Novinky 2026','/novinky/'], ['Vianoce 2026','/vianoce-2026/'], ['Superzľavy','/super-zlavy/'], ['Všetky produkty','/vsetky/']
   ];
   /* „Pre všetkých" vedie na Všetky produkty (rozhodnutie Jána 22. 10., variant A).
      Samostatná kategória by mala takmer celý katalóg: 43 zo 48 produktov je v Ženy
@@ -305,7 +305,7 @@
      podmenu. „Pán doktor, čo Vy na to?" klient 22. 10. zatiaľ skryl, podstránku
      pripravuje; po jej založení sa vráti ako ['Pán doktor, čo Vy na to?', URL]. */
   var MENU = [
-    ['Superzľavy','/super-zlavy/'], ['Silwer Gold','/gold/'], ['Silwer JOJ Play','/joj_play/'],
+    ['Vianoce 2026','/vianoce-2026/'], ['Superzľavy','/super-zlavy/'], ['Silwer Gold','/gold/'], ['Silwer JOJ Play','/joj_play/'],
     ['Zaujímavosti','/blog/', [['Blog','/blog/']]],
     ['O nás','/onas/']
   ];
