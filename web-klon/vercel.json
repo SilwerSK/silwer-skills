@@ -4,24 +4,66 @@
   "outputDirectory": "public",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/action/:path*", "destination": "https://www.silwer.sk/action/:path*", "permanent": false },
-    { "source": "/kosik/:path*", "destination": "https://www.silwer.sk/kosik/:path*", "permanent": false },
-    { "source": "/objednavka/:path*", "destination": "https://www.silwer.sk/objednavka/:path*", "permanent": false },
-    { "source": "/login/:path*", "destination": "https://www.silwer.sk/login/:path*", "permanent": false },
-    { "source": "/registracia/:path*", "destination": "https://www.silwer.sk/registracia/:path*", "permanent": false },
-    { "source": "/klient/:path*", "destination": "https://www.silwer.sk/klient/:path*", "permanent": false },
-    { "source": "/vyhladavanie/:path*", "destination": "https://www.silwer.sk/vyhladavanie/:path*", "permanent": false },
-    { "source": "/affiliate:rest(.*)", "destination": "https://www.silwer.sk/affiliate:rest", "permanent": false },
-    { "source": "/:page([^/]+:[^/]+)/:rest*", "destination": "https://www.silwer.sk/:page/:rest*", "permanent": false }
+    {
+      "source": "/action:rest(.*)",
+      "destination": "https://www.silwer.sk/action:rest",
+      "permanent": false
+    },
+    {
+      "source": "/kosik:rest(.*)",
+      "destination": "https://www.silwer.sk/kosik:rest",
+      "permanent": false
+    },
+    {
+      "source": "/objednavka:rest(.*)",
+      "destination": "https://www.silwer.sk/objednavka:rest",
+      "permanent": false
+    },
+    {
+      "source": "/login:rest(.*)",
+      "destination": "https://www.silwer.sk/login:rest",
+      "permanent": false
+    },
+    {
+      "source": "/registracia:rest(.*)",
+      "destination": "https://www.silwer.sk/registracia:rest",
+      "permanent": false
+    },
+    {
+      "source": "/klient:rest(.*)",
+      "destination": "https://www.silwer.sk/klient:rest",
+      "permanent": false
+    },
+    {
+      "source": "/vyhladavanie:rest(.*)",
+      "destination": "https://www.silwer.sk/vyhladavanie:rest",
+      "permanent": false
+    },
+    {
+      "source": "/affiliate:rest(.*)",
+      "destination": "https://www.silwer.sk/affiliate:rest",
+      "permanent": false
+    },
+    {
+      "source": "/:target([^/]+:.*)",
+      "destination": "https://www.silwer.sk/:target",
+      "permanent": false
+    }
   ],
   "rewrites": [
-    { "source": "/user/:path*", "destination": "https://www.silwer.sk/user/:path*" }
+    {
+      "source": "/user/:path(.*)",
+      "destination": "https://www.silwer.sk/user/:path"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
       ]
     }
   ]

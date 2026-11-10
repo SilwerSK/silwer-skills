@@ -5,6 +5,8 @@ Statická kópia celého e-shopu **www.silwer.sk** – všetky stránky zo sitem
 Vyzerá a správa sa ako ostrý web, ale beží samostatne na Verceli.
 Hodí sa na skúšanie redizajnu, nových blokov popisu a úprav bez zásahu do Shoptetu.
 
+**Adresa:** https://silwer-klon.vercel.app (Vercel tím `silwer`, projekt `silwer-klon`)
+
 Stav obsahu: pozri `pages.json` (dátum stiahnutia, zoznam stránok).
 
 ## Čo funguje a čo nie
@@ -38,6 +40,8 @@ npx vercel deploy --prod
 ```
 
 Nastavenia (presmerovania, noindex, lomky na konci URL) sú vo `vercel.json`.
+Pozor: pri `trailingSlash: true` Vercel nezachytí vzor `/kosik/:path*` – presmerovania
+sú preto zapísané ako `/kosik:rest(.*)`.
 
 ## Obnovenie obsahu z ostrého webu
 
