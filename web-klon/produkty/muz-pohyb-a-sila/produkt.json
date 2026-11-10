@@ -1,0 +1,184 @@
+{
+ "nazov": "Muž. Pohyb a sila",
+ "slug": "muz-pohyb-a-sila",
+ "cena": 33.0,
+ "cena_povodna": 45.34,
+ "kod": "NOVÝ",
+ "sablona": "balicek-pre-nu",
+ "kategoria": "/vianoce-2026/",
+ "kategorie": [
+  "/vianoce-2026/",
+  "/pre-muzov/",
+  "/super-zlavy/",
+  "/novinky/"
+ ],
+ "stitky": [
+  "Novinka"
+ ],
+ "mnozstevne_zlavy": [],
+ "obrazky": [
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/379_silwer-joj-play-muz-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/140_klby-kosti-chrupavky---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/131_koenzym-q10---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/211_magnezium-glycinat-550-mg-super-forte-plus---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe"
+ ],
+ "kratky_popis": "kratky-popis.html",
+ "parametre": {
+  "Obsah balíčka": "Silwer JOJ play Muž 50+ Komplex, Kĺby Kosti Chrupavky, Koenzým Q10, Magnézium Glycinát 550 mg Super Forte Plus, vianočná krabička"
+ },
+ "seo": {
+  "title": "Muž. Pohyb a sila od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.",
+  "meta_description": "Muž. Pohyb a sila od Silwer. Vianočný balíček: Muž 50+ Komplex, Kĺby, kosti, chrupavky, Koenzým Q10 a Magnézium Glycinát v originálnom balení. 33 € namiesto 45,34 €."
+ },
+ "obrazky_base": "",
+ "blok": [
+  {
+   "typ": "hero",
+   "nadpis": "Štyri produkty pre mužov po 50-ke v jednej krabičke",
+   "podnadpis": "Komplex vitamínov a minerálov, glukozamín a chondroitín, koenzým Q10 a horčík. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
+  },
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/379_silwer-joj-play-muz-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Silwer JOJ play Muž 50+ Komplex – balenie",
+   "nadpis": "Muž 50+ Komplex",
+   "text": [
+    "Komplex 24 vitamínov a minerálov v jednej tablete denne, zostavený pre mužov po 50-ke. Vitamín D a horčík prispievajú k normálnej činnosti svalov. Vápnik, vitamín D a vitamín K prispievajú k udržaniu zdravých kostí.",
+    "Balenie vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-muz-50--komplex/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/140_klby-kosti-chrupavky---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Kĺby Kosti Chrupavky – balenie",
+   "nadpis": "Kĺby, kosti, chrupavky",
+   "text": [
+    "Kombinácia glukozamínu a chondroitínu, ktorú ľudia po 50-ke vyhľadávajú v súvislosti s kĺbmi a chrupavkami. Jedna tableta obsahuje 1 000 mg glukozamín sulfátu, 100 mg chondroitínu a vitamíny C, E a B6 so selénom. Vitamín C prispieva k tvorbe kolagénu na zabezpečenie normálnej funkcie chrupaviek a kostí.",
+    "Balenie je na <strong>2 mesiace</strong>. <a href=\"/klby-kosti-chrupavky/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/131_koenzym-q10---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Koenzým Q10 – balenie",
+   "nadpis": "Koenzým Q10",
+   "text": [
+    "Jedna kapsula obsahuje 60 mg koenzýmu Q10 doplneného o vitamín E. Telo si koenzým Q10 s vekom tvorí menej, preto patrí medzi doplnky, ktoré muži po 50-ke zaraďujú do svojej dennej rutiny.",
+    "Balenie je na <strong>2 mesiace</strong>. <a href=\"/koenzym-q10/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/211_magnezium-glycinat-550-mg-super-forte-plus---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Magnézium Glycinát 550 mg Super Forte Plus – balenie",
+   "nadpis": "Magnézium Glycinát",
+   "text": [
+    "Horčík pre fyzicky aktívnych mužov po 50-ke. Jedna kapsula obsahuje 550 mg bisglycinátu horčíka so 110 mg čistého horčíka. Horčík prispieva k normálnej činnosti svalov a k zníženiu vyčerpania a únavy. Glycinát je dobre využiteľná chelátová forma, ktorá sa hodí do večerného režimu.",
+    "Balenie je na <strong>1 až 2 mesiace</strong>. <a href=\"/magnezium-glycinat/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "text",
+   "nadpis": "Vianočná krabička",
+   "text": [
+    "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer. Je taká pekná, že poteší už pri rozbaľovaní a obdarovaní si ju radi nechajú aj po sviatkoch. Zmestia sa do nej štyri produkty Silwer, takže ju stačí položiť rovno pod stromček. Krabička v hodnote 6 € je súčasťou vianočného balíčka."
+   ]
+  },
+  {
+   "typ": "cisla",
+   "nadpis": "Čo je v balíčku",
+   "polozky": [
+    {
+     "hodnota": "4",
+     "popis": "produkty Silwer.",
+     "pozn": "a vianočná krabička"
+    },
+    {
+     "hodnota": "3",
+     "popis": "mesiace",
+     "pozn": "najdlhšie balenie v balíčku"
+    },
+    {
+     "hodnota": "33 €",
+     "popis": "cena balíčka",
+     "pozn": "namiesto 45,34 €"
+    },
+    {
+     "hodnota": "12,34 €",
+     "popis": "ušetríte",
+     "pozn": "oproti nákupu jednotlivo vrátane krabičky"
+    }
+   ]
+  },
+  {
+   "typ": "benefits",
+   "nadpis": "Benefity",
+   "polozky": [
+    "Vitamín D a horčík prispievajú k normálnej činnosti svalov",
+    "Vápnik, vitamín D a vitamín K prispievajú k udržaniu zdravých kostí",
+    "Vitamín C prispieva k tvorbe kolagénu na zabezpečenie normálnej funkcie chrupaviek a kostí",
+    "Horčík prispieva k zníženiu vyčerpania a únavy",
+    "Glukozamín a chondroitín – kombinácia, ktorú ľudia po 50-ke vyhľadávajú v súvislosti s kĺbmi",
+    "Väčšina produktov vydrží do jari",
+    "Štyri produkty v originálnej vianočnej krabičke"
+   ]
+  },
+  {
+   "typ": "dose",
+   "nadpis": "Ako a kedy užívať",
+   "bunky": [
+    {
+     "label": "Muž 50+ Komplex",
+     "value": "1 tableta denne s jedlom"
+    },
+    {
+     "label": "Kĺby, kosti, chrupavky",
+     "value": "1 tableta denne, zapiť vodou"
+    },
+    {
+     "label": "Koenzým Q10",
+     "value": "1 kapsula denne, zapiť vodou"
+    },
+    {
+     "label": "Magnézium Glycinát",
+     "value": "1 kapsula denne po večernom jedle"
+    }
+   ],
+   "text": [
+    "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  },
+  {
+   "typ": "faq",
+   "nadpis": "Časté otázky",
+   "polozky": [
+    {
+     "otazka": "Čo je v balíčku Muž. Pohyb a sila a pre koho je?",
+     "odpoved": "Štyri doplnky Silwer pre mužov po 50-ke: Muž 50+ Komplex, Kĺby, kosti, chrupavky, Koenzým Q10 a Magnézium Glycinát, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
+    },
+    {
+     "otazka": "Ako produkty užívať spolu?",
+     "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Muž 50+ Komplex – 1 tableta denne s jedlom; Kĺby, kosti, chrupavky – 1 tableta denne, zapiť vodou; Koenzým Q10 – 1 kapsula denne, zapiť vodou; Magnézium Glycinát – 1 kapsula denne po večernom jedle. Muž 50+ Komplex už horčík obsahuje, preto pri súbežnom užívaní stačí 1 kapsula magnézia denne."
+    },
+    {
+     "otazka": "Ako dlho balíček vydrží?",
+     "odpoved": "Muž 50+ Komplex 3 mesiace; Kĺby, kosti, chrupavky 2 mesiace; Koenzým Q10 2 mesiace; Magnézium Glycinát 2 mesiace."
+    },
+    {
+     "otazka": "Pre koho balíček nie je vhodný?",
+     "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
+    }
+   ]
+  },
+  {
+   "typ": "note",
+   "text": [
+    "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  }
+ ]
+}

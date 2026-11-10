@@ -129,7 +129,7 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 | Žena 50+ | „k tvorbe kolagénu pre normálnu funkciu kože“ → „…**na zabezpečenie** normálnej funkcie kože“ | doslovné znenie claimu |
 | Koenzým Q10 | vypustené „vitamín E, ktorý prispieva k ochrane buniek pred oxidačným stresom“ → „doplneného o vitamín E“ | na webe je vitamín E (DL-alfa-tokoferylacetát 4,56 mg) s RVH „**“ – podmienku 15 % RVH sa nedá overiť (kap. 4) |
 | Koenzým Q10 | „vyhľadáva sa najmä v súvislosti s energiou a vitalitou“ → „často býva súčasťou ich dennej rutiny“ | „energia, vitalita“ sú nešpecifické pojmy; bez konkrétneho claimu v sekcii nie sú povolené (kap. 3.4) |
-| Celá karta | doplnené: benefity, dávkovanie, FAQ, disclaimer, SEO | povinné časti skladby F (kap. 2.3, 3.5, 8) |
+| Celá karta | **doplnené (nie je v zadaní):** úvod „Štyri produkty pre ženy po 50-ke v jednej krabičke“, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO | skladba F (kap. 2.3, 3.5, 8) – navrhol Claude, treba schváliť |
 | Ostatné | text prevzatý zo zadania bez zmeny | kap. 0.2 |
 
 Overené: všetky claimy spĺňajú 15 % RVH podľa tabuliek na webe (biotín 300 % / 180 %, zinok 50 % / 48 %, vitamín C 150 %, vitamíny B > 100 %, meď 50 %, horčík 29 %).
