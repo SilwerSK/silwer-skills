@@ -22,6 +22,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent           # web-klon/
 PRODUKTY = ROOT / "produkty"
+KATEGORIE = ROOT / "kategorie"
+DEFAULT_CAT_TEMPLATE = "gold"
 DLHY_POPIS = ROOT.parent / "skills" / "silwer-dlhy-popis" / "scripts"
 DEFAULT_TEMPLATE = "rybi-kolagen"
 DEFAULT_TIERS = [[3, 0.8], [6, 0.7]]
@@ -410,8 +412,110 @@ def update_listings(public, products):
             f.write_text(new, encoding="utf-8")
 
 
+# ---------------------------------------------------------------- nové kategórie
+def load_categories():
+    out = []
+    if not KATEGORIE.exists():
+        return out
+    for d in sorted(KATEGORIE.iterdir()):
+        if not d.is_dir() or d.name.startswith(("_", ".")) or not (d / "kategoria.json").exists():
+            continue
+        k = json.loads((d / "kategoria.json").read_text(encoding="utf-8"))
+        if "nazov" not in k:
+            raise SystemExit(f"{d}/kategoria.json: chýba „nazov“")
+        k["_dir"] = d
+        k["slug"] = (k.get("slug") or d.name).strip("/")
+        k["path"] = f"/{k['slug']}/"
+        out.append(k)
+    return out
+
+
+def build_category(public, k):
+    """Prázdna stránka kategórie zo šablóny (predvolene /gold/); karty doplní update_listings."""
+    tpl = k.get("sablona", DEFAULT_CAT_TEMPLATE).strip("/")
+    src = original_file(public, tpl)
+    if not src.exists():
+        raise SystemExit(f"šablóna kategórie /{tpl}/ na klone neexistuje")
+    html = src.read_text(encoding="utf-8")
+    m = re.search(r'<h1 class="category-title"[^>]*>\s*([^<]+?)\s*</h1>', html)
+    tpl_name = H.unescape(m.group(1))
+    name, slug = k["nazov"], k["slug"]
+    html = html.replace(f"https://www.silwer.sk/{tpl}/", f"https://www.silwer.sk/{slug}/")
+    html = re.sub(r'(<h1 class="category-title"[^>]*>)[^<]*', lambda x: x.group(1) + esc(name), html, count=1)
+    html = re.sub(r'(<span itemprop="name" data-title=")[^"]*(">)[^<]*',
+                  lambda x: x.group(1) + esc(name) + x.group(2) + esc(name), html, count=1)
+    title = k.get("seo", {}).get("title") or f"{name} | Silwer"
+    desc = k.get("seo", {}).get("meta_description", "")
+    html = re.sub(r"<title>[^<]*</title>", f"<title>{esc(title)}</title>", html, count=1)
+    html = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda x: x.group(1) + esc(title), html)
+    for pat in (r'(<meta name="description" content=")[^"]*', r'(<meta property="og:description" content=")[^"]*'):
+        html = re.sub(pat, lambda x: x.group(1) + esc(desc), html)
+    html = html.replace(jstr(tpl_name), jstr(name)) if len(tpl_name) > 3 else html
+    popis = html_field(k, "popis", "popis.html")
+    html, _ = replace_block(html, 'class="category-perex"', "\n" + popis + "\n")
+    i = html.find('id="products"')
+    start = html.rfind("<div", 0, i)
+    open_tag = html[start:html.find(">", start) + 1]
+    html = html[:start] + open_tag + "</div>" + html[block_end(html, start):]
+    html = re.sub(r'(<div class="itemsTotal">\s*)<strong[^>]*>\d+</strong>', lambda x: x.group(1) + "<strong>0</strong>", html, count=1)
+    m = re.search(r'<div[^>]*class="[^"]*\bpagination(?:-wrapper)?\b[^"]*"', html)
+    if m:
+        html = html[:m.start()] + html[block_end(html, m.start()):]
+    return html.replace("</head>", '<meta name="klon-kategoria" content="1">\n</head>', 1)
+
+
+def menu_items(categories):
+    """Položky menu pre nové kategórie – vloží ich data-patch.js po vykreslení redizajnu."""
+    items = []
+    for k in categories:
+        m = k.get("menu", {})
+        if m.get("za") or m.get("pred"):
+            items.append({"n": m.get("text", k["nazov"]), "u": k["path"],
+                          "za": m.get("za"), "pred": m.get("pred")})
+    return items
+
+
+MENU_JS = r"""
+  /* nové kategórie v menu: redizajn kreslí menu sám, preto ich klonujeme z existujúcej položky */
+  var M = __MENU__;
+  function addMenu() {
+    M.forEach(function (it) {
+      [['za', 'afterend'], ['pred', 'beforebegin']].forEach(function (pos) {
+        if (!it[pos[0]]) return;
+        document.querySelectorAll('header a[href="' + it[pos[0]] + '"], nav a[href="' + it[pos[0]] + '"], [class*="sw-"] a[href="' + it[pos[0]] + '"]').forEach(function (a) {
+          if (a.closest('.p-detail, .products, .breadcrumbs, footer, #footer, .sw-tags')) return;
+          /* kópiu robíme z celej položky menu (li, div.sw-nav__item…), nie len z odkazu */
+          var host = a;
+          while (host.parentElement && host.parentElement.children.length === 1 &&
+                 !/^(NAV|HEADER|UL|BODY)$/.test(host.parentElement.tagName)) host = host.parentElement;
+          var next = pos[1] === 'afterend' ? host.nextElementSibling : host.previousElementSibling;
+          if (next && next.getAttribute('data-klon-menu') === it.u) return;
+          var copy = host.cloneNode(true);
+          copy.setAttribute('data-klon-menu', it.u);
+          var link = copy.tagName === 'A' ? copy : copy.querySelector('a');
+          link.setAttribute('href', it.u);
+          var label = [].slice.call(link.querySelectorAll('*')).filter(function (e) { return !e.children.length && e.textContent.trim(); })[0] || link;
+          label.textContent = it.n;
+          [].slice.call(copy.querySelectorAll('ul, [class*="sub"], [class*="drop"]')).forEach(function (e) { if (e !== link) e.remove(); });
+          copy.classList.remove('active', 'is-active', 'is-open');
+          host.insertAdjacentElement(pos[1], copy);
+        });
+      });
+    });
+  }
+  if (M.length) {
+    var mo = new MutationObserver(function () { addMenu(); });
+    document.addEventListener('DOMContentLoaded', function () {
+      addMenu();
+      mo.observe(document.body, { childList: true, subtree: true });
+      setTimeout(function () { mo.disconnect(); }, 8000);
+    });
+  }
+"""
+
+
 # ---------------------------------------------------------------- dáta pre silwer-redesign.js
-def write_data_patch(public, products):
+def write_data_patch(public, products, categories=()):
     """Dáta, z ktorých redizajn skladá balenie, zľavy a štítky oblastí.
 
     Redizajn ich berie z https://silwer-data.vercel.app/api/data (ostrý web), so zálohou
@@ -439,6 +543,8 @@ def write_data_patch(public, products):
         for c in cats:
             lst = [u for u in data["cats"].get(c, []) if u != p["path"]]
             data["cats"][c] = [p["path"]] + lst
+    for k in categories:
+        data["cats"].setdefault(k["path"], [])
     data["at"] = max(data.get("at", ""), date.today().isoformat())
     out = public / "klon" / "data-patch.js"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -448,6 +554,7 @@ def write_data_patch(public, products):
         "(function () {\n"
         "  var D = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
         "  try { D.ts = Date.now(); localStorage.setItem('swData', JSON.stringify(D)); } catch (e) {}\n"
+        + MENU_JS.replace("__MENU__", json.dumps(menu_items(categories), ensure_ascii=False)) +
         "  var f = window.fetch;\n"
         "  if (!f) return;\n"
         "  window.fetch = function (u) {\n"
@@ -467,7 +574,27 @@ def inject_data_patch(html):
 
 
 # ---------------------------------------------------------------- hlavný krok
+def build_categories(public):
+    categories = load_categories()
+    mf = public / "klon" / "kategorie.json"
+    previous = json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else []
+    for slug in previous:
+        if slug not in [k["slug"] for k in categories]:
+            shutil.rmtree(public / slug, ignore_errors=True)
+    for k in categories:
+        target = page_file(public, k["slug"])
+        if target.exists() and k["slug"] not in previous:
+            raise SystemExit(f"kategória /{k['slug']}/ už na webe existuje – zvoľte iný slug")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(build_category(public, k), encoding="utf-8")
+        print(f"  nová kategória: {k['path']}")
+    mf.parent.mkdir(parents=True, exist_ok=True)
+    mf.write_text(json.dumps([k["slug"] for k in categories]), encoding="utf-8")
+    return categories
+
+
 def build(public):
+    categories = build_categories(public)
     products = load_products()
     manifest_f = public / "klon" / "produkty.json"
     previous = json.loads(manifest_f.read_text(encoding="utf-8")) if manifest_f.exists() else []
@@ -505,7 +632,7 @@ def build(public):
               + (" – nová verzia existujúcej stránky" if p["_existujuci"] else ""))
 
     update_listings(public, products)
-    write_data_patch(public, products)
+    write_data_patch(public, products, categories)
     manifest_f.parent.mkdir(parents=True, exist_ok=True)
     manifest_f.write_text(json.dumps(current, ensure_ascii=False), encoding="utf-8")
     return products
@@ -521,4 +648,7 @@ def reset(public):
             shutil.copytree(saved, public / slug, dirs_exist_ok=True)
         else:
             shutil.rmtree(public / slug, ignore_errors=True)
+    mf = public / "klon" / "kategorie.json"
+    for slug in (json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else []):
+        shutil.rmtree(public / slug, ignore_errors=True)
     shutil.rmtree(public / "klon", ignore_errors=True)

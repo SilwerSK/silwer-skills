@@ -5,11 +5,12 @@
  "cena_povodna": 42.59,
  "kod": "NOVÝ",
  "sablona": "balicek-pre-nu",
- "kategoria": "/pre-zeny/",
+ "kategoria": "/vianoce-2026/",
  "kategorie": [
-  "/novinky/",
+  "/vianoce-2026/",
   "/pre-zeny/",
-  "/super-zlavy/"
+  "/super-zlavy/",
+  "/novinky/"
  ],
  "stitky": [
   "Novinka"

@@ -67,3 +67,24 @@ Priečinky začínajúce `_` (napr. `_vzor`) sa preskakujú.
 - Pridať do košíka a objednať – košík presmeruje na ostrý web, kde produkt ešte nie je.
 - Hodnotenia a diskusiu – nový produkt je „Neohodnotený“.
 - „Súvisiaci tovar“ pod produktom je prevzatý zo šablóny.
+
+## Nové kategórie
+
+Kategória, ktorá na webe ešte nie je (napr. **Vianoce 2026**), má priečinok
+`web-klon/kategorie/<slug>/` s `kategoria.json`:
+
+```json
+{
+  "nazov": "VIANOCE 2026",
+  "slug": "vianoce-2026",
+  "menu": { "text": "Vianoce 2026", "za": "/novinky/", "pred": "/super-zlavy/" },
+  "seo": { "title": "…", "meta_description": "…" }
+}
+```
+
+- Stránka sa poskladá z kategórie Silwer Gold (`"sablona"` ju zmení) – bez produktov.
+- Produkty sa do nej dostanú cez `"kategorie": ["/vianoce-2026/", …]` v ich `produkt.json`
+  (`"kategoria"` = hlavná kategória v drobčekoch).
+- `menu.za` / `menu.pred` = vedľa ktorej existujúcej položky menu sa odkaz ukáže
+  (desktop aj mobil, aj v rozbaľovacom menu Produkty). Bez `menu` sa v menu neukáže.
+- Popis pod nadpisom: súbor `popis.html` v priečinku kategórie (voliteľné).
