@@ -1,0 +1,19 @@
+{
+  "nazov": "Kurkuma Forte",
+  "slug": "kurkuma-forte",
+  "cena": 19.90,
+  "forma": "kap.",
+  "pocet": 60,
+  "kod": "601",
+  "kategoria": "/gold/",
+  "kategorie": ["/gold/", "/novinky/"],
+  "stitky": ["Novinka"],
+  "obrazky": ["fotky/01-balenie.png", "fotky/02-zlozenie.png"],
+  "kratky_popis": "kratky-popis.html",
+  "dlhy_popis": "blok.html",
+  "parametre": { "EAN": "8588000000000" },
+  "seo": {
+    "title": "Kurkuma Forte od Silwer – 60 kapsúl pre ľudí nad 50 rokov",
+    "meta_description": "Kurkuma Forte od Silwer…"
+  }
+}

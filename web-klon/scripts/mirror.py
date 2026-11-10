@@ -245,10 +245,14 @@ def html_unescape(s):
 
 def build_search(public):
     products, cats, card_img = {}, {}, {}
-    for f in sorted(public.rglob("index.html")):
-        rel = "/" + str(f.parent.relative_to(public)).replace("\\", "/").strip(".") + "/"
+    for f in sorted(site_pages(public)):
+        if f.name != "index.html":
+            continue
+        rel = "/" + "/".join(f.parent.relative_to(public).parts) + "/"
         rel = rel.replace("//", "/")
         html = f.read_text(encoding="utf-8")
+        if '<meta name="klon-novy" content="skryty">' in html:
+            continue
         pt = page_type(html)
         if pt == "productDetail":
             name = re.search(r'"product":\s*\{.*?"name":\s*("(?:[^"\\]|\\.)*")', html, re.S)
@@ -311,17 +315,29 @@ def build_search_page(public):
     return len(cards)
 
 
+def site_pages(public):
+    """Všetky HTML stránky klonu okrem pomocných súborov v klon/ a cache/."""
+    for f in list(public.rglob("index.html")) + [public / "404.html"]:
+        rel = f.relative_to(public).parts
+        if f.exists() and rel[0] not in ("klon", "cache"):
+            yield f
+
+
 def postprocess(public):
-    """Kroky, ktoré netreba sťahovať znova: skripty klonu, index hľadania, stránka výsledkov."""
+    """Kroky, ktoré netreba sťahovať znova: nové produkty, skripty klonu, vyhľadávanie."""
     import shutil
+    import produkty
     if KLON_SRC.exists():
         shutil.copytree(KLON_SRC, public / "klon", dirs_exist_ok=True)
-    for f in list(public.rglob("index.html")) + [public / "404.html"]:
-        if not f.exists() or f.parts[-3:-1] == ("cache", "hodnotenie-obchodu"):
-            continue
+    produkty.build(public)
+    for f in site_pages(public):
         html = f.read_text(encoding="utf-8")
-        if SEARCH_TAG not in html and "</body>" in html:
-            f.write_text(html.replace("</body>", SEARCH_TAG + "\n</body>", 1), encoding="utf-8")
+        new = html
+        if SEARCH_TAG not in new and "</body>" in new:
+            new = new.replace("</body>", SEARCH_TAG + "\n</body>", 1)
+        new = produkty.inject_data_patch(new)
+        if new != html:
+            f.write_text(new, encoding="utf-8")
     n_cards = build_search_page(public)
     n_idx = build_search(public)
     print(f"vyhľadávanie: {n_idx} produktov v indexe, {n_cards} kariet na /vyhladavanie/")
@@ -343,6 +359,8 @@ def main():
         postprocess(public)
         return
     s = session()
+    import produkty
+    produkty.reset(public)   # nový snapshot: náhľady nových produktov sa poskladajú nanovo
 
     queue = []
     for u in sitemap_urls(s):

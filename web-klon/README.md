@@ -9,6 +9,13 @@ Hodí sa na skúšanie redizajnu, nových blokov popisu a úprav bez zásahu do 
 
 Stav obsahu: pozri `pages.json` (dátum stiahnutia, zoznam stránok).
 
+## Nové produkty – náhľad pred Shoptetom
+
+Shoptet nevie ukázať produkt pred zverejnením. Na klone sa dá nový produkt poskladať
+a pozrieť aj s redizajnom, cenami za balenia, krátkym a dlhým popisom, vo výpise
+kategórií a vo vyhľadávaní. Návod: **[`produkty/README.md`](produkty/README.md)**,
+vzor priečinka: `produkty/_vzor/`.
+
 ## Čo funguje a čo nie
 
 | Časť | Na klone |
@@ -19,6 +26,7 @@ Stav obsahu: pozri `pages.json` (dátum stiahnutia, zoznam stránok).
 | Vyhľadávanie (našepkávač + stránka `/vyhladavanie/`) | ✅ vlastné riešenie klonu – `klon/search.js` + index `public/klon/search.json` |
 | Košík, objednávka, prihlásenie, registrácia, „Otázka k produktu“ | ↪ presmeruje na ostrý **www.silwer.sk** |
 | Ceny a dostupnosť | stav k dátumu stiahnutia, neaktualizujú sa |
+| Dáta redizajnu (balenia, zľavy, štítky oblastí) | zo snapshotu + nové produkty (`klon/data-patch.js` namiesto `silwer-data.vercel.app`) |
 
 ## Čo je oproti ostrému webu iné
 
