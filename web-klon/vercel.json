@@ -35,11 +35,6 @@
       "permanent": false
     },
     {
-      "source": "/vyhladavanie:rest(.*)",
-      "destination": "https://www.silwer.sk/vyhladavanie:rest",
-      "permanent": false
-    },
-    {
       "source": "/affiliate:rest(.*)",
       "destination": "https://www.silwer.sk/affiliate:rest",
       "permanent": false

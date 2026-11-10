@@ -195,16 +195,153 @@ def download_own_docs(s, public, docs):
     return done
 
 
+# ---------------------------------------------------------------------------
+# Vyhľadávanie na klone (náhrada za Luigi's Box): index produktov + stránka výsledkov
+# ---------------------------------------------------------------------------
+KLON_SRC = Path(__file__).resolve().parent.parent / "klon"
+SEARCH_TAG = '<script src="/klon/search.js" defer></script>'
+# nadradené kategórie, ktoré obsahujú takmer všetko – do hľadania nepatria
+GENERIC_CATS = {"Všetky produkty", "Hľadám niečo na", "Pre koho", "Výživové doplnky"}
+
+
+def div_end(html, start):
+    """Index za uzatváracím </div> elementu <div ...> začínajúceho na pozícii start."""
+    depth, pos = 0, start
+    tag = re.compile(r"<(/?)div\b[^>]*>", re.I)
+    for m in tag.finditer(html, start):
+        depth += -1 if m.group(1) else 1
+        if depth == 0:
+            return m.end()
+        pos = m.end()
+    return len(html)
+
+
+def page_type(html):
+    m = re.search(r'"pageType":\s*"([^"]+)"', html)
+    return m.group(1) if m else ""
+
+
+def listing_cards(html):
+    """Karty produktov z výpisu kategórie: [(cesta, obrázok, html karty)]."""
+    i = html.find('id="products"')
+    if i < 0:
+        return []
+    start = html.rfind("<div", 0, i)
+    block = html[start:div_end(html, start)]
+    out = []
+    for m in re.finditer(r'<div class="product">', block):
+        card = block[m.start():div_end(block, m.start())]
+        href = re.search(r'<a href="(/[^"]+)" class="image"', card)
+        img = re.search(r'<img[^>]*?(?:data-src|src)="(https://[^"]+)"', card)
+        if href:
+            out.append((href.group(1), html_unescape(img.group(1)).strip() if img else "", card))
+    return out
+
+
+def html_unescape(s):
+    import html as _h
+    return _h.unescape(s)
+
+
+def build_search(public):
+    products, cats, card_img = {}, {}, {}
+    for f in sorted(public.rglob("index.html")):
+        rel = "/" + str(f.parent.relative_to(public)).replace("\\", "/").strip(".") + "/"
+        rel = rel.replace("//", "/")
+        html = f.read_text(encoding="utf-8")
+        pt = page_type(html)
+        if pt == "productDetail":
+            name = re.search(r'"product":\s*\{.*?"name":\s*("(?:[^"\\]|\\.)*")', html, re.S)
+            title = re.search(r'<meta property="og:title" content="([^"]*)"', html)
+            img = re.search(r'<meta property="og:image" content="([^"]*)"', html)
+            price = re.search(r'<meta itemprop="price" content="([0-9.]+)"', html)
+            if not name:
+                continue
+            p = {"u": rel, "n": json.loads(name.group(1)),
+                 "t": html_unescape(title.group(1)) if title else "",
+                 "i": html_unescape(img.group(1)) if img else "", "c": []}
+            if price:
+                p["p"] = f"{float(price.group(1)):.2f}".replace(".", ",") + " €"
+            products[rel] = p
+        elif pt == "category":
+            h1 = re.search(r'<h1[^>]*class="category-title"[^>]*>\s*([^<]+)', html)
+            cname = html_unescape(h1.group(1)).strip() if h1 else ""
+            for href, img, _ in listing_cards(html):
+                if img:
+                    card_img.setdefault(href, img)
+                if cname and cname not in GENERIC_CATS:
+                    cats.setdefault(href, set()).add(cname)
+    for u, p in products.items():
+        p["c"] = sorted(cats.get(u, ()))
+        if u in card_img:          # menší obrázok z výpisu namiesto 1024 px og:image
+            p["i"] = card_img[u]
+    out = public / "klon"
+    out.mkdir(parents=True, exist_ok=True)
+    data = sorted(products.values(), key=lambda p: p["n"])
+    (out / "search.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")),
+                                     encoding="utf-8")
+    return len(data)
+
+
+def build_search_page(public):
+    """/vyhladavanie/ = stránka Všetky produkty so všetkými kartami; filtruje ich klon/search.js."""
+    first = public / "vsetky" / "index.html"
+    if not first.exists():
+        return 0
+    html = first.read_text(encoding="utf-8")
+    cards = []
+    for f in [first] + sorted((public / "vsetky").glob("strana-*/index.html"),
+                              key=lambda p: int(re.sub(r"\D", "", p.parent.name) or 0)):
+        cards += [c for _, _, c in listing_cards(f.read_text(encoding="utf-8"))]
+    i = html.find('id="products"')
+    start = html.rfind("<div", 0, i)
+    end = div_end(html, start)
+    open_tag = html[start:html.find(">", start) + 1]
+    html = html[:start] + open_tag + "\n".join(cards) + "</div>" + html[end:]
+    # stránkovanie preč
+    for cls in ("pagination-wrapper", "pagination"):
+        m = re.search(r'<div[^>]*class="[^"]*\b%s\b[^"]*"' % cls, html)
+        if m:
+            html = html[:m.start()] + html[div_end(html, m.start()):]
+            break
+    html = re.sub(r"<title>[^<]*</title>", "<title>Vyhľadávanie - Silwer.sk</title>", html, count=1)
+    dest = public / "vyhladavanie" / "index.html"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(html, encoding="utf-8")
+    return len(cards)
+
+
+def postprocess(public):
+    """Kroky, ktoré netreba sťahovať znova: skripty klonu, index hľadania, stránka výsledkov."""
+    import shutil
+    if KLON_SRC.exists():
+        shutil.copytree(KLON_SRC, public / "klon", dirs_exist_ok=True)
+    for f in list(public.rglob("index.html")) + [public / "404.html"]:
+        if not f.exists() or f.parts[-3:-1] == ("cache", "hodnotenie-obchodu"):
+            continue
+        html = f.read_text(encoding="utf-8")
+        if SEARCH_TAG not in html and "</body>" in html:
+            f.write_text(html.replace("</body>", SEARCH_TAG + "\n</body>", 1), encoding="utf-8")
+    n_cards = build_search_page(public)
+    n_idx = build_search(public)
+    print(f"vyhľadávanie: {n_idx} produktov v indexe, {n_cards} kariet na /vyhladavanie/")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(Path(__file__).resolve().parent.parent / "public"))
     ap.add_argument("--limit", type=int, default=0, help="max. počet stránok (test)")
     ap.add_argument("--max-pages", type=int, default=800)
     ap.add_argument("--delay", type=float, default=0.5)
+    ap.add_argument("--postprocess", action="store_true",
+                    help="nesťahovať, iba pregenerovať vyhľadávanie a skripty klonu v public/")
     args = ap.parse_args()
 
     public = Path(args.out)
     public.mkdir(parents=True, exist_ok=True)
+    if args.postprocess:
+        postprocess(public)
+        return
     s = session()
 
     queue = []
@@ -268,6 +405,7 @@ def main():
     }
     (public.parent / "pages.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1),
                                               encoding="utf-8")
+    postprocess(public)
     print(f"hotovo: {len(pages)} stránok, {len(failed)} chýb")
 
 

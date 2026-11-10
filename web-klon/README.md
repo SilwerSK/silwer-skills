@@ -16,13 +16,18 @@ Stav obsahu: pozri `pages.json` (dátum stiahnutia, zoznam stránok).
 | Všetky stránky, menu, bannery, videá, recenzie, hodnotenie obchodu | ✅ ako na ostrom webe (stav k dátumu stiahnutia) |
 | Vlastné CSS/JS redizajnu (`/user/documents/upload/KODY/`) | ✅ lokálne kópie – dajú sa tu upravovať |
 | Obrázky produktov, šablóna Shoptetu, doplnky | načítavajú sa z CDN Shoptetu (cdn.myshoptet.com) |
-| Košík, objednávka, prihlásenie, registrácia, vyhľadávanie, „Otázka k produktu“ | ↪ presmeruje na ostrý **www.silwer.sk** |
+| Vyhľadávanie (našepkávač + stránka `/vyhladavanie/`) | ✅ vlastné riešenie klonu – `klon/search.js` + index `public/klon/search.json` |
+| Košík, objednávka, prihlásenie, registrácia, „Otázka k produktu“ | ↪ presmeruje na ostrý **www.silwer.sk** |
 | Ceny a dostupnosť | stav k dátumu stiahnutia, neaktualizujú sa |
 
 ## Čo je oproti ostrému webu iné
 
 - **Bez meracích kódov** – odstránené GTM, GA4, Meta pixel, Luigi's Box a Ellity/Leadhub,
   aby návštevy klonu nekazili štatistiky a publiká ostrého webu.
+- **Vlastné vyhľadávanie** – ostrý web hľadá cez Luigi's Box. Na klone ho nahrádza
+  `klon/search.js`: hľadá v názvoch, titulkoch a kategóriách produktov (napr. „gold“
+  nájde celú líniu Silwer Gold) a odkazuje na stránky klonu. Výsledky ukazuje na
+  `/vyhladavanie/`, čo je stránka Všetky produkty s odfiltrovanými kartami.
 - **Klon sa neindexuje** – `noindex` v HTML, hlavička `X-Robots-Tag` a `robots.txt`
   so zákazom. `canonical` ostáva na www.silwer.sk, takže klon nevytvára duplicitný obsah.
 
@@ -52,7 +57,17 @@ python3 web-klon/scripts/mirror.py --limit 5  # rýchly test
 ```
 
 Skript prepíše priečinok `public/`, preto si **vlastné úpravy v `public/` najprv odložte**
-(alebo ich robte v kópiách súborov).
+(alebo ich robte v kópiách súborov). Súbory klonu (`klon/`) sa do `public/klon/` kopírujú
+pri každom behu.
+
+Shoptet pri rýchlom sťahovaní dočasne blokuje prístup („Access temporarily blocked“);
+skript preto čaká medzi stránkami a pri chybe 403 to skúsi znova.
+
+Ak meníte len `klon/search.js` alebo chcete pregenerovať index hľadania bez sťahovania:
+
+```bash
+python3 web-klon/scripts/mirror.py --postprocess
+```
 
 ## Lokálny náhľad
 
