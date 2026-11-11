@@ -44,7 +44,7 @@
       var box = document.createElement('div'); box.className = 'sw-bal';
       box.innerHTML = '<ul>' + d.items.map(function (i) {
         var name = i[2] ? '<a href="' + i[2] + '">' + i[0] + '</a>' : '<span>' + i[0] + '</span>';
-        return '<li>' + name + '<span>' + eur(i[1]) + '</span></li>';
+        return '<li>' + name + '</li>';
       }).join('') + '</ul>' +
         (save > 0 ? '<div class="sw-bal-sum"><span>Spolu jednotlivo</span><span>' + eur(d.povodna) + '</span></div>' +
           '<div class="sw-save">Kúpou balíčka ušetríte <b>' + eur(save) + '</b></div>' : '') +

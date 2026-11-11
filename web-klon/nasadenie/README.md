@@ -23,7 +23,7 @@ v menu Produkty za Novinkami 2026.
 # Obsah balíčka vo výpise kategórie + doprava zadarmo
 
 `KODY/silwer-balicky.js`:
-- **výpis kategórie** – do karty balíčka dopíše zoznam produktov s cenami, „Spolu jednotlivo“
+- **výpis kategórie** – do karty balíčka dopíše zoznam produktov (bez cien), „Spolu jednotlivo“
   a zelený štítok **Ušetríte xx,xx €**; pri balíčku od 40 € riadok „✓ Doprava zadarmo“,
 - **detail balíčka** – pod cenu zelený panel: jednotlivo → cena balíčka → **Ušetríte xx,xx €**,
 - **štítok Vianoce** – zelený s ikonou jedličky (príznak s kódom `vianoce` alebo textom „Vianoce“). Dáta (zloženie a ceny) sú priamo
@@ -35,7 +35,7 @@ založí s inou adresou, treba ju v súbore zmeniť.
 
 1. Nahrať `silwer-balicky.js` do **Správca súborov → upload/KODY/**.
 2. Do **Editor → HTML kód → pätička** pridať:
-   `<script src="https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/KODY/silwer-balicky.js?v=20261111c" defer></script>`
+   `<script src="https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/KODY/silwer-balicky.js?v=20261111d" defer></script>`
 
 # Príznaky nad názvom (Imunita, Stres, …)
 
