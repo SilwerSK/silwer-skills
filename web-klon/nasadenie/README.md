@@ -35,7 +35,7 @@ založí s inou adresou, treba ju v súbore zmeniť.
 
 1. Nahrať `silwer-balicky.js` do **Správca súborov → upload/KODY/**.
 2. Do **Editor → HTML kód → pätička** pridať:
-   `<script src="https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/KODY/silwer-balicky.js?v=20261111i" defer></script>`
+   `<script src="https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/KODY/silwer-balicky.js?v=20261111k" defer></script>`
 
 # Príznaky nad názvom (Imunita, Stres, …)
 

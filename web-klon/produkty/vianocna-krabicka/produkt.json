@@ -22,14 +22,6 @@
   "meta_description": "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer."
  },
  "sablona": "balicek-pre-nu",
- "blok": [
-  {
-   "typ": "text",
-   "nadpis": "Vianočná krabička",
-   "text": [
-    "ZÁSTUPNÝ TEXT – popis pripravujeme."
-   ]
-  }
- ],
- "poradie": 100
+ "poradie": 100,
+ "bez_detailu": true
 }

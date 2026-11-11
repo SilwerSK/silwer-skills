@@ -10,7 +10,7 @@
 | **Zdroj** | `zdroje/word-2026-11-10.md` – Word „Vianočné balenia_Tubusy a Krabička.docx“ |
 | **Náhľad** | https://silwer-klon.vercel.app/vianocny-zlaty-tubus/ |
 
-▶ *Súbory na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis, `blok.html` → Detailný popis (zatiaľ zástupný text).*
+▶ *Súbor na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis. Detailný popis ostáva prázdny – sekcia detailu (záložky Popis, Hodnotenie, Diskusia, odkaz Viac… a hviezdičky) sa pri obaloch nezobrazuje (`"bez_detailu": true`, rieši `silwer-balicky.js`).*
 
 ## Krátky popis
 
@@ -28,4 +28,3 @@ Naši dizajnéri navrhli originálne vianočné balenie vo forme zlatého tubusu
 1. **Fotka** – zatiaľ zástupný obrázok, fotka samotného obalu chýba.
 2. **Sklad 100 ks** – nastaviť v Shoptete (klon sklad nezobrazuje počtom).
 3. **Kód produktu a EAN** – doplní admin.
-4. **Detailný popis** – zatiaľ zástupný text „ZÁSTUPNÝ TEXT – popis pripravujeme.“

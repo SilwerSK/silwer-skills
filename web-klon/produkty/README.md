@@ -49,6 +49,7 @@ Namiesto `blok.html` môže byť v `produkt.json` rovno `"blok": [...]` vo form�
 | `sablona` | | `"rybi-kolagen"` | stránka, z ktorej sa preberá rozloženie (predvolene Rybí kolagén – nový produkt bez hodnotení) |
 | `skryty` | | `true` | len na priamom odkaze – nie vo výpisoch ani vo vyhľadávaní |
 | `poradie` | | `100` | poradie vo výpise kategórie – vyššie číslo je ďalej (predvolene 0) |
+| `bez_detailu` | | `true` | bez sekcie detailu: záložky Popis / Hodnotenie / Diskusia, odkaz „Viac…“ a hviezdičky sa skryjú (napr. obaly) |
 
 **Existujúci produkt:** ak `slug` patrí produktu, ktorý na webe už je, klon ukáže jeho
 novú verziu (napr. prepísaný popis). Pôvodná stránka sa odloží a po zmazaní priečinka sa vráti.

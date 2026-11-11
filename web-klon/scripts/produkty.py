@@ -577,7 +577,13 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
    („balicek“, „cena“, „cena_povodna“). Samostatný skript – dáta sú priamo v ňom,
    dá sa vložiť aj do Shoptetu (Editor → HTML kód). */
 (function () {
-  var B = __DATA__, FREE = __FREE__;
+  var B = __DATA__, FREE = __FREE__, BEZ = __BEZ__;
+  /* produkty bez sekcie detailu (obaly): bez záložiek Popis / Hodnotenie / Diskusia, odkazu Viac… a hviezdičiek */
+  if (BEZ.indexOf(location.pathname) > -1) {
+    var sb = document.createElement('style');
+    sb.textContent = '.p-detail-full-width,.sw-desc-more,.p-detail .stars-wrapper{display:none!important}';
+    document.head.appendChild(sb);
+  }
   var OBAL = /^vianočn/i;  /* krabička, tubus, zlatý tubus – obal, nie produkt */
   function eur(x) { return x.toFixed(2).replace('.', ',') + ' €'; }
   var FIR = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="currentColor">' +
@@ -688,7 +694,13 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
       if (f.parentNode && f.parentNode.firstElementChild !== f) f.parentNode.insertBefore(f, f.parentNode.firstElementChild);
     });
   }
-  function run() { cards(); detail(); reviews(); flags(); }
+  function bezDetailu() {
+    if (BEZ.indexOf(location.pathname) < 0) return;
+    [].forEach.call(document.querySelectorAll('.p-detail .stars-wrapper'), function (w) {
+      w.style.setProperty('display', 'none', 'important');
+    });
+  }
+  function run() { cards(); detail(); reviews(); flags(); bezDetailu(); }
   document.addEventListener('DOMContentLoaded', function () {
     run();
     var mo = new MutationObserver(run);
@@ -721,9 +733,11 @@ def write_balicky_js(public, products):
             data[p["path"]] = {"cena": float(p["cena"]), "povodna": float(p.get("cena_povodna") or 0),
                                "items": [[i["n"], float(i["p"]), i.get("u")] + item_rating(public, i.get("u"))
                                          for i in p["balicek"]]}
+    bez = [p["path"] for p in products if p.get("bez_detailu")]
     out = public / "klon" / "balicky.js"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(BALICKY_JS.replace("__DATA__", json.dumps(data, ensure_ascii=False))
+                   .replace("__BEZ__", json.dumps(bez))
                    .replace("__FREE__", str(FREE_SHIPPING)), encoding="utf-8")
 
 
