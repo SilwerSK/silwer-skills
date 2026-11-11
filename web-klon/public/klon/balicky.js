@@ -14,21 +14,25 @@
     '.sw-bal li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid #E5E3DE}' +
     '.sw-bal li a,.sw-bal li span:first-child{color:#1A1A1C;text-decoration:none}' +
     '.sw-bal li span:last-child{color:#55555A;white-space:nowrap;font-variant-numeric:tabular-nums}' +
-    '.sw-bal-sum{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:9px}' +
-    '.sw-bal-sum s{color:#55555A;font-size:13px}' +
-    '.sw-save{display:inline-flex;align-items:center;gap:6px;background:#1E6B3B;color:#fff;font-weight:800;' +
-    'font-size:13.5px;border-radius:8px;padding:5px 10px;white-space:nowrap}' +
+    '.sw-bal-sum{display:flex;justify-content:space-between;gap:10px;padding:6px 0 0;font-weight:700;color:#1A1A1C}' +
+    '.sw-bal-sum span:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}' +
+    '.sw-save{margin-top:8px;background:#1E6B3B;color:#fff;font-weight:700;font-size:13.5px;border-radius:8px;' +
+    'padding:7px 10px;line-height:1.3}' +
+    '.sw-save b{font-weight:900;white-space:nowrap}' +
     '.sw-bal-ship{margin-top:8px;font-weight:700;color:#1E6B3B}' +
     /* panel v detaile */
     '.sw-pd-save{margin:14px 0 4px;border:1.5px solid #CFE5D7;background:#F1F8F3;border-radius:12px;padding:14px 16px}' +
     '.sw-pd-save__row{display:flex;justify-content:space-between;gap:12px;font-size:15px;color:#3A3A3F;padding:2px 0}' +
     '.sw-pd-save__row s{color:#55555A}' +
+    '.sw-pd-save__row--save{color:#1E6B3B;font-weight:800;font-size:17px}' +
     '.sw-pd-save__big{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px;padding-top:10px;' +
-    'border-top:1px dashed #B9D8C4;font-weight:900;font-size:22px;color:#1E6B3B}' +
+    'border-top:1px dashed #B9D8C4;font-weight:900;font-size:24px;color:#1A1A1C}' +
     '.sw-pd-save__ship{margin-top:6px;font-size:14px;font-weight:700;color:#1E6B3B}' +
     /* štítok Vianoce – redizajn ho inak sfarbí na sivo (sw-flag--info) */
     '.flag.sw-xmas,.flag.sw-xmas.sw-flag{background:#1E6B3B!important;color:#fff!important;border-color:#1E6B3B!important;gap:5px}' +
-    '.flag.sw-xmas svg{flex:0 0 auto}';
+    '.flag.sw-xmas svg{flex:0 0 auto}' +
+    /* vždy prvý: redizajn radí štítky cez CSS order */
+    '.flag.sw-xmas,.flags .flag.sw-xmas{order:-9999!important}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   function cards() {
@@ -42,8 +46,8 @@
         var name = i[2] ? '<a href="' + i[2] + '">' + i[0] + '</a>' : '<span>' + i[0] + '</span>';
         return '<li>' + name + '<span>' + eur(i[1]) + '</span></li>';
       }).join('') + '</ul>' +
-        (save > 0 ? '<div class="sw-bal-sum"><span>Spolu jednotlivo <s>' + eur(d.povodna) + '</s></span>' +
-          '<span class="sw-save">Ušetríte ' + eur(save) + '</span></div>' : '') +
+        (save > 0 ? '<div class="sw-bal-sum"><span>Spolu jednotlivo</span><span>' + eur(d.povodna) + '</span></div>' +
+          '<div class="sw-save">Kúpou balíčka ušetríte <b>' + eur(save) + '</b></div>' : '') +
         (d.cena >= FREE ? '<div class="sw-bal-ship">✓ Doprava zadarmo</div>' : '');
       var anchor = card.querySelector('.p-in-in') || a;
       anchor.parentNode.insertBefore(box, anchor.nextSibling);
@@ -62,9 +66,9 @@
     if (!pw || document.querySelector('.sw-pd-save')) return;
     var box = document.createElement('div'); box.className = 'sw-pd-save';
     box.innerHTML =
-      '<div class="sw-pd-save__row"><span>Jednotlivo (' + what(d) + ')</span><s>' + eur(d.povodna) + '</s></div>' +
-      '<div class="sw-pd-save__row"><span>Cena balíčka</span><b>' + eur(d.cena) + '</b></div>' +
-      '<div class="sw-pd-save__big"><span>Ušetríte</span><span>' + eur(d.povodna - d.cena) + '</span></div>' +
+      '<div class="sw-pd-save__row"><span>Spolu jednotlivo (' + what(d) + ')</span><span>' + eur(d.povodna) + '</span></div>' +
+      '<div class="sw-pd-save__row sw-pd-save__row--save"><span>Kúpou balíčka ušetríte</span><span>' + eur(d.povodna - d.cena) + '</span></div>' +
+      '<div class="sw-pd-save__big"><span>Cena balíčka</span><span>' + eur(d.cena) + '</span></div>' +
       (d.cena >= FREE ? '<div class="sw-pd-save__ship">✓ Doprava zadarmo</div>' : '');
     pw.parentNode.insertBefore(box, pw.nextSibling);
   }
@@ -74,6 +78,7 @@
       if (!/flag-vianoce/.test(f.className) && !/^\s*vianoce\s*$/i.test(f.textContent)) return;
       f.classList.add('sw-xmas');
       f.insertAdjacentHTML('afterbegin', FIR);
+      if (f.parentNode && f.parentNode.firstElementChild !== f) f.parentNode.insertBefore(f, f.parentNode.firstElementChild);
     });
   }
   function run() { cards(); detail(); flags(); }
