@@ -1,8 +1,8 @@
-# Karta produktu — SILWER JOJ play. Žena. Imunita
+# Karta produktu — SILWER JOJ play. Žena.
 
 | | |
 |---|---|
-| **Názov** | SILWER JOJ play. Žena. Imunita |
+| **Názov** | SILWER JOJ play. Žena. |
 | **Archetyp** | **F — Balíček** |
 | **Skladba** | V7 × 4 (3 produkty + vianočný tubus) · S4 · V9 · S5 |
 | **Záloha zdrojov** | `zdroje/word-2026-11-10.md`, `zdroje/web-2026-11-10.md` |
@@ -11,9 +11,9 @@
 | **Sklad** | podľa najnižšieho množstva z produktov v balíčku |
 | **Náhľad** | https://silwer-klon.vercel.app/joj-play-zena-imunita/ |
 
-**Title:** SILWER JOJ play. Žena. Imunita od Silwer. Vianočný balíček troch doplnkov. Pre ženy po 50-ke.
+**Title:** SILWER JOJ play. Žena. Vianočný balíček troch doplnkov. Pre ženy po 50-ke.
 
-**Meta description:** SILWER JOJ play. Žena. Imunita od Silwer. Vianočný balíček: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok v originálnom balení. 29 € namiesto 42,40 €.
+**Meta description:** SILWER JOJ play. Žena. Vianočný balíček: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok v originálnom balení. 29 € namiesto 42,40 €.
 
 ▶ *Súbory na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis, `blok.html` → Detailný popis (zdrojový kód).*
 
@@ -90,7 +90,7 @@ Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporú
 
 ## S5 — Časté otázky [doplnené]
 
-**Čo je v balíčku SILWER JOJ play. Žena. Imunita a pre koho je?**
+**Čo je v balíčku a pre koho je?**
 Tri doplnky Silwer pre ženy po 50-ke: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba.
 
 **Ako produkty užívať spolu?**
@@ -126,3 +126,7 @@ Overené 15 % RVH: vitamín D 100 % / 1 000 %, vitamín C 150 % / 282 %, zinok 5
 3. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
 4. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
 5. **Kód produktu a EAN** – doplní admin.
+
+## Zmena názvu 11. 11. 2026
+
+Podľa dokumentu „Vianoce - podstránka - zmeny.docx“ (Google Disk, priečinok Vianoce 2026): názov skrátený z „SILWER JOJ play. Žena. Imunita“ na „SILWER JOJ play. Žena.“. Adresa stránky (/joj-play-zena-imunita/) ostala pôvodná. SEO title a otázka v FAQ upravené, aby nevznikla dvojitá bodka.

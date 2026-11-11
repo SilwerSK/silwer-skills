@@ -1,8 +1,8 @@
-# Karta produktu — Silwer Gold. Muž. Pečeň a pokoj
+# Karta produktu — Silwer Gold. Muž.
 
 | | |
 |---|---|
-| **Názov** | Silwer Gold. Muž. Pečeň a pokoj |
+| **Názov** | Silwer Gold. Muž. |
 | **Archetyp** | **F — Balíček** |
 | **Skladba** | V7 × 4 (3 produkty + vianočný zlatý tubus) · S4 · V9 · S5 |
 | **Záloha zdrojov** | `zdroje/word-2026-11-10.md`, `zdroje/web-2026-11-10.md` |
@@ -11,9 +11,9 @@
 | **Sklad** | podľa najnižšieho množstva z produktov v balíčku |
 | **Náhľad** | https://silwer-klon.vercel.app/gold-muz-pecen-a-pokoj/ |
 
-**Title:** Silwer Gold. Muž. Pečeň a pokoj od Silwer. Vianočný balíček troch doplnkov. Pre mužov po 50-ke.
+**Title:** Silwer Gold. Muž. Vianočný balíček troch doplnkov. Pre mužov po 50-ke.
 
-**Meta description:** Silwer Gold. Muž. Pečeň a pokoj od Silwer. Vianočný balíček: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát v originálnom balení. 69 € namiesto 91,83 €.
+**Meta description:** Silwer Gold. Muž. Vianočný balíček: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát v originálnom balení. 69 € namiesto 91,83 €.
 
 ▶ *Súbory na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis, `blok.html` → Detailný popis (zdrojový kód).*
 
@@ -89,7 +89,7 @@ Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporú
 
 ## S5 — Časté otázky [doplnené]
 
-**Čo je v balíčku Silwer Gold. Muž. Pečeň a pokoj a pre koho je?**
+**Čo je v balíčku a pre koho je?**
 Tri doplnky Silwer pre mužov po 50-ke: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba.
 
 **Ako produkty užívať spolu?**
@@ -130,3 +130,7 @@ Overené 15 % RVH: vitamín C 625 %, horčík (treonát) 20 %.
 5. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
 6. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
 7. **Kód produktu a EAN** – doplní admin.
+
+## Zmena názvu 11. 11. 2026
+
+Podľa dokumentu „Vianoce - podstránka - zmeny.docx“ (Google Disk, priečinok Vianoce 2026): názov skrátený z „Silwer Gold. Muž. Pečeň a pokoj“ na „Silwer Gold. Muž.“. Adresa stránky (/gold-muz-pecen-a-pokoj/) ostala pôvodná. SEO title a otázka v FAQ upravené, aby nevznikla dvojitá bodka.

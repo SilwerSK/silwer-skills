@@ -1,5 +1,5 @@
 {
-  "nazov": "SILWER JOJ play. Muž. Imunita",
+  "nazov": "SILWER JOJ play. Muž.",
   "slug": "joj-play-muz-imunita",
   "cena": 29.0,
   "cena_povodna": 42.4,
@@ -28,8 +28,8 @@
     "Obsah balíčka": "Silwer JOJ play Muž 50+ Komplex, Silwer JOJ play Vitamín D3, Silwer JOJ play Vitamín C + Zinok, vianočný tubus"
   },
   "seo": {
-    "title": "SILWER JOJ play. Muž. Imunita od Silwer. Vianočný balíček troch doplnkov. Pre mužov po 50-ke.",
-    "meta_description": "SILWER JOJ play. Muž. Imunita od Silwer. Vianočný balíček: Silwer JOJ play Muž 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok v originálnom balení. 29 € namiesto 42,40 €."
+    "title": "SILWER JOJ play. Muž. Vianočný balíček troch doplnkov. Pre mužov po 50-ke.",
+    "meta_description": "SILWER JOJ play. Muž. Vianočný balíček: Silwer JOJ play Muž 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok v originálnom balení. 29 € namiesto 42,40 €."
   },
   "obrazky_base": "",
   "blok": [
@@ -142,7 +142,7 @@
       "nadpis": "Časté otázky",
       "polozky": [
         {
-          "otazka": "Čo je v balíčku SILWER JOJ play. Muž. Imunita a pre koho je?",
+          "otazka": "Čo je v balíčku a pre koho je?",
           "odpoved": "Tri doplnky Silwer pre mužov po 50-ke: Silwer JOJ play Muž 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
         },
         {
