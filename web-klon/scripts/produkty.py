@@ -399,7 +399,8 @@ def update_listings(public, products):
             continue
         rel = "/" + "/".join(f.parent.relative_to(public).parts) + "/"
         new = MARK_RE.sub("", h)
-        cards = [p["_card"] for p in want.get(rel, []) if p.get("_card")]
+        # „poradie“ v produkt.json: vyššie číslo = ďalej vo výpise (predvolene 0, inak podľa priečinka)
+        cards = [p["_card"] for p in sorted(want.get(rel, []), key=lambda p: p.get("poradie", 0)) if p.get("_card")]
         if cards:
             i = new.find('id="products"')
             open_end = new.find(">", i) + 1
