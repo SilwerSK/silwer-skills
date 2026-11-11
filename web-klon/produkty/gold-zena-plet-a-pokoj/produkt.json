@@ -9,11 +9,14 @@
  "kategorie": [
   "/vianoce-2026/",
   "/pre-zeny/",
+  "/pokozku--vlasy-a-nechty/",
+  "/proti-stresu/",
   "/gold/",
   "/super-zlavy/",
   "/novinky/"
  ],
  "stitky": [
+  "Vianoce",
   "Novinka"
  ],
  "mnozstevne_zlavy": [],
@@ -163,6 +166,28 @@
    "text": [
     "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
    ]
+  }
+ ],
+ "balicek": [
+  {
+   "u": "/ziariva-plet/",
+   "n": "Žiarivá pleť",
+   "p": 31.13
+  },
+  {
+   "u": "/lipozomalny-vitamin-c/",
+   "n": "Lipozomálny Vitamín C",
+   "p": 27.35
+  },
+  {
+   "u": "/magnezium-treonat/",
+   "n": "Magnézium Treonát",
+   "p": 27.35
+  },
+  {
+   "u": null,
+   "n": "Vianočný zlatý tubus",
+   "p": 6.0
   }
  ]
 }

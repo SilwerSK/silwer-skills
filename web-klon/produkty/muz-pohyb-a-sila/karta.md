@@ -25,7 +25,7 @@
 
 Balíček pre mužov po 50-ke, ktorí chcú zostať v pohybe. Spája **glukozamín a chondroitín s vitamínom C**, ktorý prispieva k tvorbe kolagénu na zabezpečenie normálnej funkcie chrupaviek, **horčík pre svaly**, **koenzým Q10** a **komplex vitamínov a minerálov pre mužov po 50-ke**. Väčšina produktov vydrží do jari, teda do začiatku sezóny na záhrade. Štyri produkty sú v originálnej krabičke s vianočnými motívmi.
 
-▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 3 mesiace · Ušetríte – 12,34 € oproti nákupu jednotlivo · Pre koho – Muži po 50-ke, Kosti, kĺby a svaly.*
+▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 3 mesiace · Pre koho – Muži po 50-ke, Kosti, kĺby a svaly.*
 
 ---
 

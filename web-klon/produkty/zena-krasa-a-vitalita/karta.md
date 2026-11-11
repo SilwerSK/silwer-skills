@@ -25,7 +25,7 @@
 
 Balíček pre ženy po 50-ke, ktoré chcú podporiť krásu aj vitalitu. Spája **komplex vitamínov a minerálov pre ženy po 50-ke**, výživu pre vlasy, nechty a pleť s **biotínom a zinkom**, **koenzým Q10** a **horčík vo forme glycinátu**, ktorý prispieva k zníženiu vyčerpania a únavy. Väčšina produktov vydrží až do jari. Štyri produkty sú v krásnej originálnej krabičke s vianočnými motívmi, pripravené rovno pod stromček.
 
-▶ *Pod textom boxy: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 3 mesiace · Ušetríte – 10,59 € · Pre koho – Ženy po 50-ke, Pleť, vlasy a nechty.*
+▶ *Pod textom boxy: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 3 mesiace · Pre koho – Ženy po 50-ke, Pleť, vlasy a nechty.*
 
 ---
 

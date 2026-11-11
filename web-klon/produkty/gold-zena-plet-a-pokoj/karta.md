@@ -25,7 +25,7 @@
 
 Zlaté Vianoce pre ženy po 50-ke. Balíček sme zostavili z línie Silwer Gold, ktorú sme vyvinuli na základe dopytu našich najnáročnejších zákazníkov. Gold znamená inovatívne zloženie, technologicky pokročilé formy účinných látok a dobrú vstrebateľnosť. Balíček spája **antioxidačný komplex pre pleť**, **lipozomálny vitamín C** a **horčík vo forme treonátu**, uložené v tubuse s vianočnými motívmi.
 
-▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný zlatý tubus · Vydrží – 1 až 3 mesiace · Ušetríte – 22,83 € oproti nákupu jednotlivo · Pre koho – Ženy po 50-ke, Pleť, vlasy a nechty.*
+▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný zlatý tubus · Vydrží – 1 až 3 mesiace · Pre koho – Ženy po 50-ke, Pleť, vlasy a nechty.*
 
 ---
 

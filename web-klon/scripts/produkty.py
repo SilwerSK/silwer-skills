@@ -185,7 +185,8 @@ def flags_html(stitky):
         if t.lower() == "novinka":
             spans.append('<span class="flag flag-new" style="background-color:#00fa1d;">Novinka</span>')
         else:
-            spans.append(f'<span class="flag flag-custom" style="background-color:#1a1a1c;">{esc(t)}</span>')
+            code = re.sub(r"[^a-z0-9]+", "-", H.unescape(t).lower().translate(str.maketrans("áäčďéíĺľňóôŕšťúýž", "aacdeillnoorstuyz"))).strip("-")
+            spans.append(f'<span class="flag flag-{code}" style="background-color:#1E6B3B;">{esc(t)}</span>')
     return '<div class="flags flags-default">' + "".join(spans) + "</div>"
 
 
@@ -567,7 +568,112 @@ def write_data_patch(public, products, categories=()):
         "})();\n", encoding="utf-8")
 
 
+FREE_SHIPPING = 40.0   # doprava zadarmo od 40 € (cartInfo.freeShippingFrom na webe)
+BALICKY_TAG = '<script src="/klon/balicky.js" defer></script>'
+BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, panel úspory v detaile,
+   zelený štítok Vianoce. Generuje web-klon/scripts/produkty.py z produkt.json
+   („balicek“, „cena“, „cena_povodna“). Samostatný skript – dáta sú priamo v ňom,
+   dá sa vložiť aj do Shoptetu (Editor → HTML kód). */
+(function () {
+  var B = __DATA__, FREE = __FREE__;
+  function eur(x) { return x.toFixed(2).replace('.', ',') + ' €'; }
+  var FIR = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="currentColor">' +
+    '<path d="M12 2 7.5 8.5h2.6L6 14h3.3L5 20h6v2h2v-2h6l-4.3-6H18l-4.1-5.5h2.6z"/></svg>';
+  var css =
+    /* karta vo výpise */
+    '.sw-bal{margin:10px 0 4px;font-size:13.5px;line-height:1.35}' +
+    '.sw-bal ul{list-style:none;margin:0;padding:0;border-top:1px solid #E5E3DE}' +
+    '.sw-bal li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid #E5E3DE}' +
+    '.sw-bal li a,.sw-bal li span:first-child{color:#1A1A1C;text-decoration:none}' +
+    '.sw-bal li span:last-child{color:#55555A;white-space:nowrap;font-variant-numeric:tabular-nums}' +
+    '.sw-bal-sum{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:9px}' +
+    '.sw-bal-sum s{color:#55555A;font-size:13px}' +
+    '.sw-save{display:inline-flex;align-items:center;gap:6px;background:#1E6B3B;color:#fff;font-weight:800;' +
+    'font-size:13.5px;border-radius:8px;padding:5px 10px;white-space:nowrap}' +
+    '.sw-bal-ship{margin-top:8px;font-weight:700;color:#1E6B3B}' +
+    /* panel v detaile */
+    '.sw-pd-save{margin:14px 0 4px;border:1.5px solid #CFE5D7;background:#F1F8F3;border-radius:12px;padding:14px 16px}' +
+    '.sw-pd-save__row{display:flex;justify-content:space-between;gap:12px;font-size:15px;color:#3A3A3F;padding:2px 0}' +
+    '.sw-pd-save__row s{color:#55555A}' +
+    '.sw-pd-save__big{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px;padding-top:10px;' +
+    'border-top:1px dashed #B9D8C4;font-weight:900;font-size:22px;color:#1E6B3B}' +
+    '.sw-pd-save__ship{margin-top:6px;font-size:14px;font-weight:700;color:#1E6B3B}' +
+    /* štítok Vianoce – redizajn ho inak sfarbí na sivo (sw-flag--info) */
+    '.flag.sw-xmas,.flag.sw-xmas.sw-flag{background:#1E6B3B!important;color:#fff!important;border-color:#1E6B3B!important;gap:5px}' +
+    '.flag.sw-xmas svg{flex:0 0 auto}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+
+  function cards() {
+    [].forEach.call(document.querySelectorAll('.product'), function (card) {
+      if (card.querySelector('.sw-bal')) return;
+      var a = card.querySelector('a[href]'); if (!a) return;
+      var d = B[a.getAttribute('href')]; if (!d) return;
+      var save = d.povodna ? d.povodna - d.cena : 0;
+      var box = document.createElement('div'); box.className = 'sw-bal';
+      box.innerHTML = '<ul>' + d.items.map(function (i) {
+        var name = i[2] ? '<a href="' + i[2] + '">' + i[0] + '</a>' : '<span>' + i[0] + '</span>';
+        return '<li>' + name + '<span>' + eur(i[1]) + '</span></li>';
+      }).join('') + '</ul>' +
+        (save > 0 ? '<div class="sw-bal-sum"><span>Spolu jednotlivo <s>' + eur(d.povodna) + '</s></span>' +
+          '<span class="sw-save">Ušetríte ' + eur(save) + '</span></div>' : '') +
+        (d.cena >= FREE ? '<div class="sw-bal-ship">✓ Doprava zadarmo</div>' : '');
+      var anchor = card.querySelector('.p-in-in') || a;
+      anchor.parentNode.insertBefore(box, anchor.nextSibling);
+    });
+  }
+  /* „4 produkty + krabička“ – obal nie je produkt */
+  function what(d) {
+    var n = d.items.filter(function (i) { return i[2]; }).length;
+    var obal = d.items.filter(function (i) { return !i[2]; }).map(function (i) {
+      return i[0].replace(/^vianočn\S*\s+/i, '').toLowerCase(); })[0];
+    return n + (n > 4 ? ' produktov' : ' produkty') + (obal ? ' + ' + obal : '');
+  }
+  function detail() {
+    var d = B[location.pathname]; if (!d || !d.povodna) return;
+    var pw = document.querySelector('.p-detail .p-price-wrapper');
+    if (!pw || document.querySelector('.sw-pd-save')) return;
+    var box = document.createElement('div'); box.className = 'sw-pd-save';
+    box.innerHTML =
+      '<div class="sw-pd-save__row"><span>Jednotlivo (' + what(d) + ')</span><s>' + eur(d.povodna) + '</s></div>' +
+      '<div class="sw-pd-save__row"><span>Cena balíčka</span><b>' + eur(d.cena) + '</b></div>' +
+      '<div class="sw-pd-save__big"><span>Ušetríte</span><span>' + eur(d.povodna - d.cena) + '</span></div>' +
+      (d.cena >= FREE ? '<div class="sw-pd-save__ship">✓ Doprava zadarmo</div>' : '');
+    pw.parentNode.insertBefore(box, pw.nextSibling);
+  }
+  function flags() {
+    [].forEach.call(document.querySelectorAll('.flag'), function (f) {
+      if (f.classList.contains('sw-xmas')) return;
+      if (!/flag-vianoce/.test(f.className) && !/^\s*vianoce\s*$/i.test(f.textContent)) return;
+      f.classList.add('sw-xmas');
+      f.insertAdjacentHTML('afterbegin', FIR);
+    });
+  }
+  function run() { cards(); detail(); flags(); }
+  document.addEventListener('DOMContentLoaded', function () {
+    run();
+    var mo = new MutationObserver(run);
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { mo.disconnect(); }, 8000);
+  });
+})();
+"""
+
+
+def write_balicky_js(public, products):
+    data = {}
+    for p in products:
+        if p.get("balicek") and not p.get("skryty"):
+            data[p["path"]] = {"cena": float(p["cena"]), "povodna": float(p.get("cena_povodna") or 0),
+                               "items": [[i["n"], float(i["p"]), i.get("u")] for i in p["balicek"]]}
+    out = public / "klon" / "balicky.js"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(BALICKY_JS.replace("__DATA__", json.dumps(data, ensure_ascii=False))
+                   .replace("__FREE__", str(FREE_SHIPPING)), encoding="utf-8")
+
+
 def inject_data_patch(html):
+    if BALICKY_TAG not in html and "</body>" in html:
+        html = html.replace("</body>", BALICKY_TAG + "\n</body>", 1)
     if DATA_PATCH_TAG in html:
         return html
     return re.sub(r"(<head\b[^>]*>)", lambda m: m.group(1) + DATA_PATCH_TAG, html, count=1)
@@ -633,6 +739,7 @@ def build(public):
 
     update_listings(public, products)
     write_data_patch(public, products, categories)
+    write_balicky_js(public, products)
     manifest_f.parent.mkdir(parents=True, exist_ok=True)
     manifest_f.write_text(json.dumps(current, ensure_ascii=False), encoding="utf-8")
     return products

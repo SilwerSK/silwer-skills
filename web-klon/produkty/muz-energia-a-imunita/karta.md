@@ -25,7 +25,7 @@
 
 Balíček pre mužov po 50-ke, ktorí chcú podporiť energiu aj imunitu počas zimy. Spája **tribulus so ženšenom**, **omega-3 mastné kyseliny**, **vitamín C so zinkom** a **komplex vitamínov a minerálov pre mužov po 50-ke**. Vitamíny skupiny B prispievajú k zníženiu vyčerpania a únavy, vitamín C a zinok k normálnej funkcii imunitného systému. Balíček je v originálnej krabičke s vianočnými motívmi.
 
-▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 4 mesiace · Ušetríte – 11,89 € oproti nákupu jednotlivo · Pre koho – Muži po 50-ke, Imunita.*
+▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 4 mesiace · Pre koho – Muži po 50-ke, Imunita.*
 
 ---
 

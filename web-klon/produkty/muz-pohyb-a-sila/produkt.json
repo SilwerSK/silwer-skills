@@ -9,10 +9,13 @@
  "kategorie": [
   "/vianoce-2026/",
   "/pre-muzov/",
+  "/kosti-a-klby/",
+  "/nalada-a-energia/",
   "/super-zlavy/",
   "/novinky/"
  ],
  "stitky": [
+  "Vianoce",
   "Novinka"
  ],
  "mnozstevne_zlavy": [],
@@ -179,6 +182,33 @@
    "text": [
     "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
    ]
+  }
+ ],
+ "balicek": [
+  {
+   "u": "/silwer-joj-play-muz-50--komplex/",
+   "n": "Silwer JOJ play Muž 50+ Komplex",
+   "p": 13.95
+  },
+  {
+   "u": "/klby-kosti-chrupavky/",
+   "n": "Kĺby Kosti Chrupavky",
+   "p": 8.95
+  },
+  {
+   "u": "/koenzym-q10/",
+   "n": "Koenzým Q10",
+   "p": 9.49
+  },
+  {
+   "u": "/magnezium-glycinat/",
+   "n": "Magnézium Glycinát 550 mg Super Forte Plus",
+   "p": 6.95
+  },
+  {
+   "u": null,
+   "n": "Vianočná krabička",
+   "p": 6.0
   }
  ]
 }

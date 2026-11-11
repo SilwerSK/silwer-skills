@@ -25,7 +25,7 @@
 
 Balíček pre ženy po 50-ke, ktoré chcú podporiť psychickú pohodu aj imunitu počas zimy. Spája **ashwagandhu s horčíkom**, **vitamín C so zinkom**, **omega-3 mastné kyseliny** a **komplex vitamínov a minerálov pre ženy po 50-ke**. Horčík prispieva k normálnej psychickej funkcii, vitamín C a zinok k normálnej funkcii imunitného systému. Všetko je zabalené v originálnej krabičke s vianočnými motívmi.
 
-▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 1 až 4 mesiace · Ušetríte – 9,89 € oproti nákupu jednotlivo · Pre koho – Ženy po 50-ke, Imunita.*
+▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 1 až 4 mesiace · Pre koho – Ženy po 50-ke, Imunita.*
 
 ---
 

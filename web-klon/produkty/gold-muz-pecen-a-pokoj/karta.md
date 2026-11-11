@@ -25,7 +25,7 @@
 
 Zlaté Vianoce pre mužov po 50-ke. Balíček je z línie Silwer Gold, ktorú sme vyvinuli na základe dopytu našich najnáročnejších zákazníkov. Spája **bylinný komplex Zdravá Pečeň Forte**, **lipozomálny vitamín C** a **horčík vo forme treonátu**. Všetky tri produkty stavajú na modernej forme a dobrej vstrebateľnosti a sú uložené v tubuse s vianočnými motívmi.
 
-▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný zlatý tubus · Vydrží – 1 až 3 mesiace · Ušetríte – 22,83 € oproti nákupu jednotlivo · Pre koho – Muži po 50-ke, Pečeň.*
+▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný zlatý tubus · Vydrží – 1 až 3 mesiace · Pre koho – Muži po 50-ke, Pečeň.*
 
 ---
 

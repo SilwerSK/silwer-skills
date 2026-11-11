@@ -9,11 +9,13 @@
  "kategorie": [
   "/vianoce-2026/",
   "/pre-muzov/",
+  "/na-imunitu/",
   "/joj_play/",
   "/super-zlavy/",
   "/novinky/"
  ],
  "stitky": [
+  "Vianoce",
   "Novinka"
  ],
  "mnozstevne_zlavy": [],
@@ -163,6 +165,28 @@
    "text": [
     "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
    ]
+  }
+ ],
+ "balicek": [
+  {
+   "u": "/silwer-joj-play-muz-50--komplex/",
+   "n": "Silwer JOJ play Muž 50+ Komplex",
+   "p": 13.95
+  },
+  {
+   "u": "/silwer-joj-play-vitamin-d3/",
+   "n": "Silwer JOJ play Vitamín D3",
+   "p": 14.95
+  },
+  {
+   "u": "/silwer-joj-play-vitamin-c-zinok/",
+   "n": "Silwer JOJ play Vitamín C + Zinok",
+   "p": 7.5
+  },
+  {
+   "u": null,
+   "n": "Vianočný tubus",
+   "p": 6.0
   }
  ]
 }

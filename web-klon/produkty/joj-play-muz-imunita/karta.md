@@ -25,7 +25,7 @@
 
 Balíček pre mužov po 50-ke zameraný na imunitu v zimných mesiacoch. Spája **komplex vitamínov a minerálov pre mužov po 50-ke** s **vitamínom D3** a **vitamínom C so zinkom**. Vitamíny D a C a zinok prispievajú k normálnej funkcii imunitného systému, zinok aj k udržaniu normálnej hladiny testosterónu v krvi. Darček vystačí na celú zimu, vitamín D až na celý rok, a je uložený v tubuse s vianočnými motívmi.
 
-▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný tubus · Vydrží – 3 mesiace až celý rok · Ušetríte – 13,40 € oproti nákupu jednotlivo · Pre koho – Muži po 50-ke, Imunita.*
+▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný tubus · Vydrží – 3 mesiace až celý rok · Pre koho – Muži po 50-ke, Imunita.*
 
 ---
 
