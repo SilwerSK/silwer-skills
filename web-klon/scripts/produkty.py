@@ -602,6 +602,18 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
     '.sw-pd-save__big{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px;padding-top:10px;' +
     'border-top:1px dashed #B9D8C4;font-weight:900;font-size:24px;color:#1A1A1C}' +
     '.sw-pd-save__ship{margin-top:6px;font-size:14px;font-weight:700;color:#1E6B3B}' +
+    /* hodnotenia produktov v balíčku namiesto „Neohodnotené“ */
+    '.sw-bal-rev{margin:6px 0 2px;font-size:14px;line-height:1.5;color:#3A3A3F}' +
+    '.p-detail-inner-header-mobile .sw-bal-rev{font-size:13px;margin:4px 0 12px;text-align:left}' +
+    '.p-detail-inner-header-mobile .sw-bal-rev a{display:block}' +
+    '.p-detail-inner-header-mobile .sw-bal-rev .sw-sep{display:none}' +
+    '.sw-bal-rev__h{display:block}' +
+    '.sw-bal-rev__h{font-weight:600;color:#1A1A1C;margin-right:4px}' +
+    '.sw-bal-rev a{color:#3A3A3F;text-decoration:none;white-space:nowrap}' +
+    '.sw-bal-rev a:hover{text-decoration:underline}' +
+    '.sw-bal-rev b{color:#1A1A1C}' +
+    '.sw-bal-rev .sw-star{color:#F5A623}' +
+    '.sw-bal-rev .sw-sep{color:#B5B3AE;margin:0 6px}' +
     /* štítok Vianoce – redizajn ho inak sfarbí na sivo (sw-flag--info) */
     '.flag.sw-xmas,.flag.sw-xmas.sw-flag{background:#1E6B3B!important;color:#fff!important;border-color:#1E6B3B!important;gap:5px}' +
     '.flag.sw-xmas svg{flex:0 0 auto}' +
@@ -646,6 +658,25 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
       (d.cena >= FREE ? '<div class="sw-pd-save__ship">✓ Doprava zadarmo</div>' : '');
     pw.parentNode.insertBefore(box, pw.nextSibling);
   }
+  /* balíček ešte nemá vlastné hodnotenia: namiesto prázdnych hviezdičiek ukáže skutočné
+     hodnotenia produktov, z ktorých je zložený (každý so svojím počtom hodnotení) */
+  function reviews() {
+    var d = B[location.pathname]; if (!d) return;
+    var rated = d.items.filter(function (i) { return i[2] && i[3]; });
+    [].forEach.call(document.querySelectorAll('.p-detail .stars-wrapper'), function (w) {
+      if (w.getAttribute('data-sw-bal') || !/Neohodnoten/i.test(w.textContent)) return;
+      w.setAttribute('data-sw-bal', '1');
+      w.style.setProperty('display', 'none', 'important');
+      if (!rated.length) return;
+      var el = document.createElement('div'); el.className = 'sw-bal-rev';
+      el.innerHTML = '<span class="sw-bal-rev__h">Hodnotenia produktov v balíčku:</span> ' +
+        rated.map(function (i) {
+          return '<a href="' + i[2] + '"><span class="sw-star">★</span> <b>' + i[3].toFixed(1).replace('.', ',') +
+            '</b> ' + i[0] + ' (' + i[4] + ')</a>';
+        }).join('<span class="sw-sep">·</span>');
+      w.parentNode.insertBefore(el, w.nextSibling);
+    });
+  }
   function flags() {
     [].forEach.call(document.querySelectorAll('.flag'), function (f) {
       if (f.classList.contains('sw-xmas')) return;
@@ -655,7 +686,7 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
       if (f.parentNode && f.parentNode.firstElementChild !== f) f.parentNode.insertBefore(f, f.parentNode.firstElementChild);
     });
   }
-  function run() { cards(); detail(); flags(); }
+  function run() { cards(); detail(); reviews(); flags(); }
   document.addEventListener('DOMContentLoaded', function () {
     run();
     var mo = new MutationObserver(run);
@@ -666,12 +697,28 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
 """
 
 
+def item_rating(public, url):
+    """[hodnotenie, počet] produktu z balíčka – zo schema.org na jeho stránke (stav pri stiahnutí webu)."""
+    if not url:
+        return []
+    slug = url.strip("/")
+    f = original_file(public, slug)
+    f = f if f.exists() else page_file(public, slug)
+    if not f.exists():
+        return []
+    html = f.read_text(encoding="utf-8", errors="ignore")
+    v = re.search(r'itemprop="ratingValue" content="([\d.]+)"', html)
+    c = re.search(r'itemprop="ratingCount" content="(\d+)"', html)
+    return [float(v.group(1)), int(c.group(1))] if v and c and int(c.group(1)) > 0 else []
+
+
 def write_balicky_js(public, products):
     data = {}
     for p in products:
         if p.get("balicek") and not p.get("skryty"):
             data[p["path"]] = {"cena": float(p["cena"]), "povodna": float(p.get("cena_povodna") or 0),
-                               "items": [[i["n"], float(i["p"]), i.get("u")] for i in p["balicek"]]}
+                               "items": [[i["n"], float(i["p"]), i.get("u")] + item_rating(public, i.get("u"))
+                                         for i in p["balicek"]]}
     out = public / "klon" / "balicky.js"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(BALICKY_JS.replace("__DATA__", json.dumps(data, ensure_ascii=False))

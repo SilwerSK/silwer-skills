@@ -1,192 +1,191 @@
 {
- "nazov": "SILWER JOJ play. Žena. Imunita",
- "slug": "joj-play-zena-imunita",
- "cena": 29.0,
- "cena_povodna": 42.4,
- "kod": "NOVÝ",
- "sablona": "balicek-pre-nu",
- "kategoria": "/vianoce-2026/",
- "kategorie": [
-  "/vianoce-2026/",
-  "/pre-zeny/",
-  "/na-imunitu/",
-  "/joj_play/",
-  "/super-zlavy/",
-  "/novinky/"
- ],
- "stitky": [
-  "Vianoce",
-  "Novinka"
- ],
- "mnozstevne_zlavy": [],
- "obrazky": [
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/388_silwer-joj-play-vitamin-d3---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/385_silwer-joj-play-vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe"
- ],
- "kratky_popis": "kratky-popis.html",
- "parametre": {
-  "Obsah balíčka": "Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3, Silwer JOJ play Vitamín C + Zinok, vianočný tubus"
- },
- "seo": {
-  "title": "SILWER JOJ play. Žena. Imunita od Silwer. Vianočný balíček troch doplnkov. Pre ženy po 50-ke.",
-  "meta_description": "SILWER JOJ play. Žena. Imunita od Silwer. Vianočný balíček: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok v originálnom balení. 29 € namiesto 42,40 €."
- },
- "obrazky_base": "",
- "blok": [
-  {
-   "typ": "hero",
-   "nadpis": "Tri produkty pre ženy po 50-ke v jednom tubuse",
-   "podnadpis": "Komplex vitamínov a minerálov, vitamín D3 a vitamín C so zinkom z línie Silwer JOJ play. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
+  "nazov": "SILWER JOJ play. Žena. Imunita",
+  "slug": "joj-play-zena-imunita",
+  "cena": 29.0,
+  "cena_povodna": 42.4,
+  "kod": "NOVÝ",
+  "sablona": "balicek-pre-nu",
+  "kategoria": "/vianoce-2026/",
+  "kategorie": [
+    "/vianoce-2026/",
+    "/pre-zeny/",
+    "/na-imunitu/",
+    "/joj_play/",
+    "/super-zlavy/",
+    "/novinky/"
+  ],
+  "stitky": [
+    "Vianoce"
+  ],
+  "mnozstevne_zlavy": [],
+  "obrazky": [
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/388_silwer-joj-play-vitamin-d3---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/385_silwer-joj-play-vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe"
+  ],
+  "kratky_popis": "kratky-popis.html",
+  "parametre": {
+    "Obsah balíčka": "Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3, Silwer JOJ play Vitamín C + Zinok, vianočný tubus"
   },
-  {
-   "typ": "split",
-   "strana": "right",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-   "alt": "Silwer JOJ play Žena 50+ Komplex – balenie",
-   "nadpis": "Silwer JOJ play Žena 50+ Komplex",
-   "text": [
-    "Komplex 26 zložiek pre ženy po 50-ke v jednej tablete denne. Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému, vápnik a vitamín D k udržaniu zdravých kostí.",
-    "Balenie má 90 tabliet a vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-zena-50-komplex/\">Pozrieť produkt a zloženie</a>"
-   ]
+  "seo": {
+    "title": "SILWER JOJ play. Žena. Imunita od Silwer. Vianočný balíček troch doplnkov. Pre ženy po 50-ke.",
+    "meta_description": "SILWER JOJ play. Žena. Imunita od Silwer. Vianočný balíček: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok v originálnom balení. 29 € namiesto 42,40 €."
   },
-  {
-   "typ": "split",
-   "strana": "left",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/388_silwer-joj-play-vitamin-d3---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-   "alt": "Silwer JOJ play Vitamín D3 – balenie",
-   "nadpis": "Silwer JOJ play Vitamín D3",
-   "text": [
-    "V zime si telo vitamín D zo slnka takmer nevyrobí, a po 50-ke ešte ťažšie. Jedna tableta obsahuje 2 000 IU vitamínu D3 a užíva sa každý druhý deň. Vitamín D prispieva k normálnej funkcii imunitného systému, k udržaniu zdravých kostí a k udržaniu normálnej funkcie svalov.",
-    "Balenie vydrží <strong>celý rok</strong>. <a href=\"/silwer-joj-play-vitamin-d3/\">Pozrieť produkt a zloženie</a>"
-   ]
-  },
-  {
-   "typ": "split",
-   "strana": "right",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/385_silwer-joj-play-vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-   "alt": "Silwer JOJ play Vitamín C + Zinok – balenie",
-   "nadpis": "Silwer JOJ play Vitamín C + Zinok",
-   "text": [
-    "Vitamín C a zinok sú klasická dvojica na zimné mesiace. Prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu vyčerpania a únavy.",
-    "Balenie má 120 tabliet a vystačí na <strong>4 mesiace</strong>. <a href=\"/silwer-joj-play-vitamin-c-zinok/\">Pozrieť produkt a zloženie</a>"
-   ]
-  },
-  {
-   "typ": "text",
-   "nadpis": "Vianočný tubus",
-   "text": [
-    "Naši dizajnéri navrhli originálne vianočné balenie vo forme čarovného tubusu. Už sám osebe poteší každého obdarovaného a pod stromčekom pôsobí slávnostne ešte predtým, ako ho niekto otvorí. Zmestia sa doň tri produkty Silwer. Tubus v hodnote 6 € je súčasťou vianočného balíčka."
-   ]
-  },
-  {
-   "typ": "cisla",
-   "nadpis": "Čo je v balíčku",
-   "polozky": [
+  "obrazky_base": "",
+  "blok": [
     {
-     "hodnota": "3",
-     "popis": "produkty Silwer.",
-     "pozn": "a vianočný tubus"
+      "typ": "hero",
+      "nadpis": "Tri produkty pre ženy po 50-ke v jednom tubuse",
+      "podnadpis": "Komplex vitamínov a minerálov, vitamín D3 a vitamín C so zinkom z línie Silwer JOJ play. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
     },
     {
-     "hodnota": "rok",
-     "popis": "vydrží vitamín D3",
-     "pozn": "pri tablete každý druhý deň"
+      "typ": "split",
+      "strana": "right",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+      "alt": "Silwer JOJ play Žena 50+ Komplex – balenie",
+      "nadpis": "Silwer JOJ play Žena 50+ Komplex",
+      "text": [
+        "Komplex 26 zložiek pre ženy po 50-ke v jednej tablete denne. Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému, vápnik a vitamín D k udržaniu zdravých kostí.",
+        "Balenie má 90 tabliet a vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-zena-50-komplex/\">Pozrieť produkt a zloženie</a>"
+      ]
     },
     {
-     "hodnota": "29 €",
-     "popis": "cena balíčka",
-     "pozn": "namiesto 42,40 €"
+      "typ": "split",
+      "strana": "left",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/388_silwer-joj-play-vitamin-d3---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+      "alt": "Silwer JOJ play Vitamín D3 – balenie",
+      "nadpis": "Silwer JOJ play Vitamín D3",
+      "text": [
+        "V zime si telo vitamín D zo slnka takmer nevyrobí, a po 50-ke ešte ťažšie. Jedna tableta obsahuje 2 000 IU vitamínu D3 a užíva sa každý druhý deň. Vitamín D prispieva k normálnej funkcii imunitného systému, k udržaniu zdravých kostí a k udržaniu normálnej funkcie svalov.",
+        "Balenie vydrží <strong>celý rok</strong>. <a href=\"/silwer-joj-play-vitamin-d3/\">Pozrieť produkt a zloženie</a>"
+      ]
     },
     {
-     "hodnota": "13,40 €",
-     "popis": "ušetríte",
-     "pozn": "oproti nákupu jednotlivo vrátane tubusu"
+      "typ": "split",
+      "strana": "right",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/385_silwer-joj-play-vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+      "alt": "Silwer JOJ play Vitamín C + Zinok – balenie",
+      "nadpis": "Silwer JOJ play Vitamín C + Zinok",
+      "text": [
+        "Vitamín C a zinok sú klasická dvojica na zimné mesiace. Prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu vyčerpania a únavy.",
+        "Balenie má 120 tabliet a vystačí na <strong>4 mesiace</strong>. <a href=\"/silwer-joj-play-vitamin-c-zinok/\">Pozrieť produkt a zloženie</a>"
+      ]
+    },
+    {
+      "typ": "text",
+      "nadpis": "Vianočný tubus",
+      "text": [
+        "Naši dizajnéri navrhli originálne vianočné balenie vo forme čarovného tubusu. Už sám osebe poteší každého obdarovaného a pod stromčekom pôsobí slávnostne ešte predtým, ako ho niekto otvorí. Zmestia sa doň tri produkty Silwer. Tubus v hodnote 6 € je súčasťou vianočného balíčka."
+      ]
+    },
+    {
+      "typ": "cisla",
+      "nadpis": "Čo je v balíčku",
+      "polozky": [
+        {
+          "hodnota": "3",
+          "popis": "produkty Silwer.",
+          "pozn": "a vianočný tubus"
+        },
+        {
+          "hodnota": "rok",
+          "popis": "vydrží vitamín D3",
+          "pozn": "pri tablete každý druhý deň"
+        },
+        {
+          "hodnota": "29 €",
+          "popis": "cena balíčka",
+          "pozn": "namiesto 42,40 €"
+        },
+        {
+          "hodnota": "13,40 €",
+          "popis": "ušetríte",
+          "pozn": "oproti nákupu jednotlivo vrátane tubusu"
+        }
+      ]
+    },
+    {
+      "typ": "benefits",
+      "nadpis": "Benefity",
+      "polozky": [
+        "Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému",
+        "Vápnik a vitamín D prispievajú k udržaniu zdravých kostí",
+        "Vitamín D prispieva k udržaniu normálnej funkcie svalov",
+        "Vitamín C prispieva k zníženiu vyčerpania a únavy",
+        "Vitamín D3 sa užíva každý druhý deň – balenie vydrží celý rok",
+        "Tri produkty Silwer JOJ play vo vianočnom tubuse"
+      ]
+    },
+    {
+      "typ": "dose",
+      "nadpis": "Ako a kedy užívať",
+      "bunky": [
+        {
+          "label": "Silwer JOJ play Žena 50+ Komplex",
+          "value": "1 tableta denne s jedlom"
+        },
+        {
+          "label": "Silwer JOJ play Vitamín D3",
+          "value": "1 tableta každý druhý deň"
+        },
+        {
+          "label": "Silwer JOJ play Vitamín C + Zinok",
+          "value": "1 tableta denne s jedlom"
+        }
+      ],
+      "text": [
+        "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
+      ]
+    },
+    {
+      "typ": "faq",
+      "nadpis": "Časté otázky",
+      "polozky": [
+        {
+          "otazka": "Čo je v balíčku SILWER JOJ play. Žena. Imunita a pre koho je?",
+          "odpoved": "Tri doplnky Silwer pre ženy po 50-ke: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
+        },
+        {
+          "otazka": "Ako produkty užívať spolu?",
+          "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Silwer JOJ play Žena 50+ Komplex – 1 tableta denne s jedlom; Silwer JOJ play Vitamín D3 – 1 tableta každý druhý deň; Silwer JOJ play Vitamín C + Zinok – 1 tableta denne s jedlom."
+        },
+        {
+          "otazka": "Ako dlho balíček vydrží?",
+          "odpoved": "Silwer JOJ play Žena 50+ Komplex 3 mesiace; Silwer JOJ play Vitamín D3 celý rok; Silwer JOJ play Vitamín C + Zinok 4 mesiace."
+        },
+        {
+          "otazka": "Pre koho balíček nie je vhodný?",
+          "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
+        }
+      ]
+    },
+    {
+      "typ": "note",
+      "text": [
+        "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+      ]
     }
-   ]
-  },
-  {
-   "typ": "benefits",
-   "nadpis": "Benefity",
-   "polozky": [
-    "Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému",
-    "Vápnik a vitamín D prispievajú k udržaniu zdravých kostí",
-    "Vitamín D prispieva k udržaniu normálnej funkcie svalov",
-    "Vitamín C prispieva k zníženiu vyčerpania a únavy",
-    "Vitamín D3 sa užíva každý druhý deň – balenie vydrží celý rok",
-    "Tri produkty Silwer JOJ play vo vianočnom tubuse"
-   ]
-  },
-  {
-   "typ": "dose",
-   "nadpis": "Ako a kedy užívať",
-   "bunky": [
+  ],
+  "balicek": [
     {
-     "label": "Silwer JOJ play Žena 50+ Komplex",
-     "value": "1 tableta denne s jedlom"
+      "u": "/silwer-joj-play-zena-50-komplex/",
+      "n": "Silwer JOJ play Žena 50+ Komplex",
+      "p": 13.95
     },
     {
-     "label": "Silwer JOJ play Vitamín D3",
-     "value": "1 tableta každý druhý deň"
+      "u": "/silwer-joj-play-vitamin-d3/",
+      "n": "Silwer JOJ play Vitamín D3",
+      "p": 14.95
     },
     {
-     "label": "Silwer JOJ play Vitamín C + Zinok",
-     "value": "1 tableta denne s jedlom"
+      "u": "/silwer-joj-play-vitamin-c-zinok/",
+      "n": "Silwer JOJ play Vitamín C + Zinok",
+      "p": 7.5
+    },
+    {
+      "u": null,
+      "n": "Vianočný tubus",
+      "p": 6.0
     }
-   ],
-   "text": [
-    "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
-   ]
-  },
-  {
-   "typ": "faq",
-   "nadpis": "Časté otázky",
-   "polozky": [
-    {
-     "otazka": "Čo je v balíčku SILWER JOJ play. Žena. Imunita a pre koho je?",
-     "odpoved": "Tri doplnky Silwer pre ženy po 50-ke: Silwer JOJ play Žena 50+ Komplex, Silwer JOJ play Vitamín D3 a Silwer JOJ play Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
-    },
-    {
-     "otazka": "Ako produkty užívať spolu?",
-     "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Silwer JOJ play Žena 50+ Komplex – 1 tableta denne s jedlom; Silwer JOJ play Vitamín D3 – 1 tableta každý druhý deň; Silwer JOJ play Vitamín C + Zinok – 1 tableta denne s jedlom."
-    },
-    {
-     "otazka": "Ako dlho balíček vydrží?",
-     "odpoved": "Silwer JOJ play Žena 50+ Komplex 3 mesiace; Silwer JOJ play Vitamín D3 celý rok; Silwer JOJ play Vitamín C + Zinok 4 mesiace."
-    },
-    {
-     "otazka": "Pre koho balíček nie je vhodný?",
-     "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
-    }
-   ]
-  },
-  {
-   "typ": "note",
-   "text": [
-    "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
-   ]
-  }
- ],
- "balicek": [
-  {
-   "u": "/silwer-joj-play-zena-50-komplex/",
-   "n": "Silwer JOJ play Žena 50+ Komplex",
-   "p": 13.95
-  },
-  {
-   "u": "/silwer-joj-play-vitamin-d3/",
-   "n": "Silwer JOJ play Vitamín D3",
-   "p": 14.95
-  },
-  {
-   "u": "/silwer-joj-play-vitamin-c-zinok/",
-   "n": "Silwer JOJ play Vitamín C + Zinok",
-   "p": 7.5
-  },
-  {
-   "u": null,
-   "n": "Vianočný tubus",
-   "p": 6.0
-  }
- ]
+  ]
 }

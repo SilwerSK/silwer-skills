@@ -1,214 +1,213 @@
 {
- "nazov": "Žena. Pokoj a imunita",
- "slug": "zena-pokoj-a-imunita",
- "cena": 39.0,
- "cena_povodna": 48.89,
- "kod": "NOVÝ",
- "sablona": "balicek-pre-nu",
- "kategoria": "/vianoce-2026/",
- "kategorie": [
-  "/vianoce-2026/",
-  "/pre-zeny/",
-  "/na-imunitu/",
-  "/proti-stresu/",
-  "/super-zlavy/",
-  "/novinky/"
- ],
- "stitky": [
-  "Vianoce",
-  "Novinka"
- ],
- "mnozstevne_zlavy": [],
- "obrazky": [
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/229_ashwagandha---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe"
- ],
- "kratky_popis": "kratky-popis.html",
- "parametre": {
-  "Obsah balíčka": "Silwer JOJ play Žena 50+ Komplex, Ashwagandha, Omega-3, Vitamín C + Zinok, vianočná krabička"
- },
- "seo": {
-  "title": "Žena. Pokoj a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.",
-  "meta_description": "Žena. Pokoj a imunita od Silwer. Vianočný balíček: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok v originálnom balení. 39 € namiesto 48,89 €."
- },
- "obrazky_base": "",
- "blok": [
-  {
-   "typ": "hero",
-   "nadpis": "Štyri produkty pre ženy po 50-ke v jednej krabičke",
-   "podnadpis": "Komplex vitamínov a minerálov, ashwagandha s horčíkom, omega-3 a vitamín C so zinkom. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
+  "nazov": "Žena. Pokoj a imunita",
+  "slug": "zena-pokoj-a-imunita",
+  "cena": 39.0,
+  "cena_povodna": 48.89,
+  "kod": "NOVÝ",
+  "sablona": "balicek-pre-nu",
+  "kategoria": "/vianoce-2026/",
+  "kategorie": [
+    "/vianoce-2026/",
+    "/pre-zeny/",
+    "/na-imunitu/",
+    "/proti-stresu/",
+    "/super-zlavy/",
+    "/novinky/"
+  ],
+  "stitky": [
+    "Vianoce"
+  ],
+  "mnozstevne_zlavy": [],
+  "obrazky": [
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/229_ashwagandha---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe"
+  ],
+  "kratky_popis": "kratky-popis.html",
+  "parametre": {
+    "Obsah balíčka": "Silwer JOJ play Žena 50+ Komplex, Ashwagandha, Omega-3, Vitamín C + Zinok, vianočná krabička"
   },
-  {
-   "typ": "split",
-   "strana": "right",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-   "alt": "Silwer JOJ play Žena 50+ Komplex – balenie",
-   "nadpis": "Žena 50+ Komplex",
-   "text": [
-    "Jedna tableta denne obsahuje 24 vitamínov a minerálov zostavených pre ženy po 50-ke. Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému. Vitamíny C a E, selén a zinok prispievajú aj k ochrane buniek pred oxidačným stresom.",
-    "Balenie vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-zena-50-komplex/\">Pozrieť produkt a zloženie</a>"
-   ]
+  "seo": {
+    "title": "Žena. Pokoj a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.",
+    "meta_description": "Žena. Pokoj a imunita od Silwer. Vianočný balíček: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok v originálnom balení. 39 € namiesto 48,89 €."
   },
-  {
-   "typ": "split",
-   "strana": "left",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/229_ashwagandha---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-   "alt": "Ashwagandha – balenie",
-   "nadpis": "Ashwagandha",
-   "text": [
-    "Ashwagandha je bylina z ajurvédskej tradície, ktorú ľudia vyhľadávajú v obdobiach stresu a psychickej záťaže. V dennej dávke je 300 mg extraktu s 5 % withanolidov, doplneného o horčík vo forme glycinátu, vitamín B6 a zinok. Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy.",
-    "Balenie je na <strong>mesiac</strong>. <a href=\"/ashwagandha/\">Pozrieť produkt a zloženie</a>"
-   ]
-  },
-  {
-   "typ": "split",
-   "strana": "right",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-   "alt": "Omega-3 – balenie",
-   "nadpis": "Omega-3",
-   "text": [
-    "Rybí olej s omega-3 mastnými kyselinami pre ženy po 50-ke, ktoré nemajú ryby v jedálničku pravidelne. Jedna kapsula obsahuje 1 000 mg rybieho oleja so 180 mg EPA a 120 mg DHA. EPA a DHA prispievajú k normálnej funkcii srdca.",
-    "Balenie je na <strong>3 mesiace</strong>. <a href=\"/omega-3/\">Pozrieť produkt a zloženie</a>"
-   ]
-  },
-  {
-   "typ": "split",
-   "strana": "left",
-   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
-   "alt": "Vitamín C + Zinok – balenie",
-   "nadpis": "Vitamín C + Zinok",
-   "text": [
-    "Klasická zimná kombinácia vitamínu C a zinku. Jedna tableta obsahuje 225 mg vitamínu C a zinok. Vitamín C a zinok prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu vyčerpania a únavy.",
-    "Balenie má 120 tabliet a vystačí na <strong>4 mesiace</strong>, teda na celú zimu. <a href=\"/vitamin-c-zinok/\">Pozrieť produkt a zloženie</a>"
-   ]
-  },
-  {
-   "typ": "text",
-   "nadpis": "Vianočná krabička",
-   "text": [
-    "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer. Je taká pekná, že poteší už pri rozbaľovaní a obdarovaní si ju radi nechajú aj po sviatkoch. Zmestia sa do nej štyri produkty Silwer, takže ju stačí položiť rovno pod stromček. Krabička v hodnote 6 € je súčasťou vianočného balíčka."
-   ]
-  },
-  {
-   "typ": "cisla",
-   "nadpis": "Čo je v balíčku",
-   "polozky": [
+  "obrazky_base": "",
+  "blok": [
     {
-     "hodnota": "4",
-     "popis": "produkty Silwer.",
-     "pozn": "a vianočná krabička"
+      "typ": "hero",
+      "nadpis": "Štyri produkty pre ženy po 50-ke v jednej krabičke",
+      "podnadpis": "Komplex vitamínov a minerálov, ashwagandha s horčíkom, omega-3 a vitamín C so zinkom. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
     },
     {
-     "hodnota": "4",
-     "popis": "mesiace",
-     "pozn": "najdlhšie balenie v balíčku"
+      "typ": "split",
+      "strana": "right",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/376_silwer-joj-play-zena-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+      "alt": "Silwer JOJ play Žena 50+ Komplex – balenie",
+      "nadpis": "Žena 50+ Komplex",
+      "text": [
+        "Jedna tableta denne obsahuje 24 vitamínov a minerálov zostavených pre ženy po 50-ke. Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému. Vitamíny C a E, selén a zinok prispievajú aj k ochrane buniek pred oxidačným stresom.",
+        "Balenie vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-zena-50-komplex/\">Pozrieť produkt a zloženie</a>"
+      ]
     },
     {
-     "hodnota": "39 €",
-     "popis": "cena balíčka",
-     "pozn": "namiesto 48,89 €"
+      "typ": "split",
+      "strana": "left",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/229_ashwagandha---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+      "alt": "Ashwagandha – balenie",
+      "nadpis": "Ashwagandha",
+      "text": [
+        "Ashwagandha je bylina z ajurvédskej tradície, ktorú ľudia vyhľadávajú v obdobiach stresu a psychickej záťaže. V dennej dávke je 300 mg extraktu s 5 % withanolidov, doplneného o horčík vo forme glycinátu, vitamín B6 a zinok. Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy.",
+        "Balenie je na <strong>mesiac</strong>. <a href=\"/ashwagandha/\">Pozrieť produkt a zloženie</a>"
+      ]
     },
     {
-     "hodnota": "9,89 €",
-     "popis": "ušetríte",
-     "pozn": "oproti nákupu jednotlivo vrátane krabičky"
+      "typ": "split",
+      "strana": "right",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+      "alt": "Omega-3 – balenie",
+      "nadpis": "Omega-3",
+      "text": [
+        "Rybí olej s omega-3 mastnými kyselinami pre ženy po 50-ke, ktoré nemajú ryby v jedálničku pravidelne. Jedna kapsula obsahuje 1 000 mg rybieho oleja so 180 mg EPA a 120 mg DHA. EPA a DHA prispievajú k normálnej funkcii srdca.",
+        "Balenie je na <strong>3 mesiace</strong>. <a href=\"/omega-3/\">Pozrieť produkt a zloženie</a>"
+      ]
+    },
+    {
+      "typ": "split",
+      "strana": "left",
+      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
+      "alt": "Vitamín C + Zinok – balenie",
+      "nadpis": "Vitamín C + Zinok",
+      "text": [
+        "Klasická zimná kombinácia vitamínu C a zinku. Jedna tableta obsahuje 225 mg vitamínu C a zinok. Vitamín C a zinok prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu vyčerpania a únavy.",
+        "Balenie má 120 tabliet a vystačí na <strong>4 mesiace</strong>, teda na celú zimu. <a href=\"/vitamin-c-zinok/\">Pozrieť produkt a zloženie</a>"
+      ]
+    },
+    {
+      "typ": "text",
+      "nadpis": "Vianočná krabička",
+      "text": [
+        "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer. Je taká pekná, že poteší už pri rozbaľovaní a obdarovaní si ju radi nechajú aj po sviatkoch. Zmestia sa do nej štyri produkty Silwer, takže ju stačí položiť rovno pod stromček. Krabička v hodnote 6 € je súčasťou vianočného balíčka."
+      ]
+    },
+    {
+      "typ": "cisla",
+      "nadpis": "Čo je v balíčku",
+      "polozky": [
+        {
+          "hodnota": "4",
+          "popis": "produkty Silwer.",
+          "pozn": "a vianočná krabička"
+        },
+        {
+          "hodnota": "4",
+          "popis": "mesiace",
+          "pozn": "najdlhšie balenie v balíčku"
+        },
+        {
+          "hodnota": "39 €",
+          "popis": "cena balíčka",
+          "pozn": "namiesto 48,89 €"
+        },
+        {
+          "hodnota": "9,89 €",
+          "popis": "ušetríte",
+          "pozn": "oproti nákupu jednotlivo vrátane krabičky"
+        }
+      ]
+    },
+    {
+      "typ": "benefits",
+      "nadpis": "Benefity",
+      "polozky": [
+        "Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému",
+        "Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy",
+        "EPA a DHA prispievajú k normálnej funkcii srdca",
+        "Vitamíny C a E, selén a zinok prispievajú k ochrane buniek pred oxidačným stresom",
+        "Ashwagandha – bylina z ajurvédskej tradície, extrakt s 5 % withanolidov",
+        "Vitamín C + Zinok vystačí na 4 mesiace, teda na celú zimu",
+        "Štyri produkty v originálnej vianočnej krabičke"
+      ]
+    },
+    {
+      "typ": "dose",
+      "nadpis": "Ako a kedy užívať",
+      "bunky": [
+        {
+          "label": "Žena 50+ Komplex",
+          "value": "1 tableta denne s jedlom"
+        },
+        {
+          "label": "Ashwagandha",
+          "value": "2 kapsuly denne, po obede a po večernom jedle"
+        },
+        {
+          "label": "Omega-3",
+          "value": "1 kapsula denne, zapiť vodou"
+        },
+        {
+          "label": "Vitamín C + Zinok",
+          "value": "1 tableta denne s jedlom"
+        }
+      ],
+      "text": [
+        "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
+      ]
+    },
+    {
+      "typ": "faq",
+      "nadpis": "Časté otázky",
+      "polozky": [
+        {
+          "otazka": "Čo je v balíčku Žena. Pokoj a imunita a pre koho je?",
+          "odpoved": "Štyri doplnky Silwer pre ženy po 50-ke: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
+        },
+        {
+          "otazka": "Ako produkty užívať spolu?",
+          "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Žena 50+ Komplex – 1 tableta denne s jedlom; Ashwagandha – 2 kapsuly denne, po obede a po večernom jedle; Omega-3 – 1 kapsula denne, zapiť vodou; Vitamín C + Zinok – 1 tableta denne s jedlom."
+        },
+        {
+          "otazka": "Ako dlho balíček vydrží?",
+          "odpoved": "Žena 50+ Komplex 3 mesiace; Ashwagandha mesiac; Omega-3 3 mesiace; Vitamín C + Zinok 4 mesiace."
+        },
+        {
+          "otazka": "Pre koho balíček nie je vhodný?",
+          "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
+        }
+      ]
+    },
+    {
+      "typ": "note",
+      "text": [
+        "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+      ]
     }
-   ]
-  },
-  {
-   "typ": "benefits",
-   "nadpis": "Benefity",
-   "polozky": [
-    "Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému",
-    "Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy",
-    "EPA a DHA prispievajú k normálnej funkcii srdca",
-    "Vitamíny C a E, selén a zinok prispievajú k ochrane buniek pred oxidačným stresom",
-    "Ashwagandha – bylina z ajurvédskej tradície, extrakt s 5 % withanolidov",
-    "Vitamín C + Zinok vystačí na 4 mesiace, teda na celú zimu",
-    "Štyri produkty v originálnej vianočnej krabičke"
-   ]
-  },
-  {
-   "typ": "dose",
-   "nadpis": "Ako a kedy užívať",
-   "bunky": [
+  ],
+  "balicek": [
     {
-     "label": "Žena 50+ Komplex",
-     "value": "1 tableta denne s jedlom"
+      "u": "/silwer-joj-play-zena-50-komplex/",
+      "n": "Silwer JOJ play Žena 50+ Komplex",
+      "p": 13.95
     },
     {
-     "label": "Ashwagandha",
-     "value": "2 kapsuly denne, po obede a po večernom jedle"
+      "u": "/ashwagandha/",
+      "n": "Ashwagandha",
+      "p": 11.5
     },
     {
-     "label": "Omega-3",
-     "value": "1 kapsula denne, zapiť vodou"
+      "u": "/omega-3/",
+      "n": "Omega-3",
+      "p": 9.95
     },
     {
-     "label": "Vitamín C + Zinok",
-     "value": "1 tableta denne s jedlom"
+      "u": "/vitamin-c-zinok/",
+      "n": "Vitamín C + Zinok",
+      "p": 7.49
+    },
+    {
+      "u": null,
+      "n": "Vianočná krabička",
+      "p": 6.0
     }
-   ],
-   "text": [
-    "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
-   ]
-  },
-  {
-   "typ": "faq",
-   "nadpis": "Časté otázky",
-   "polozky": [
-    {
-     "otazka": "Čo je v balíčku Žena. Pokoj a imunita a pre koho je?",
-     "odpoved": "Štyri doplnky Silwer pre ženy po 50-ke: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
-    },
-    {
-     "otazka": "Ako produkty užívať spolu?",
-     "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Žena 50+ Komplex – 1 tableta denne s jedlom; Ashwagandha – 2 kapsuly denne, po obede a po večernom jedle; Omega-3 – 1 kapsula denne, zapiť vodou; Vitamín C + Zinok – 1 tableta denne s jedlom."
-    },
-    {
-     "otazka": "Ako dlho balíček vydrží?",
-     "odpoved": "Žena 50+ Komplex 3 mesiace; Ashwagandha mesiac; Omega-3 3 mesiace; Vitamín C + Zinok 4 mesiace."
-    },
-    {
-     "otazka": "Pre koho balíček nie je vhodný?",
-     "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
-    }
-   ]
-  },
-  {
-   "typ": "note",
-   "text": [
-    "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
-   ]
-  }
- ],
- "balicek": [
-  {
-   "u": "/silwer-joj-play-zena-50-komplex/",
-   "n": "Silwer JOJ play Žena 50+ Komplex",
-   "p": 13.95
-  },
-  {
-   "u": "/ashwagandha/",
-   "n": "Ashwagandha",
-   "p": 11.5
-  },
-  {
-   "u": "/omega-3/",
-   "n": "Omega-3",
-   "p": 9.95
-  },
-  {
-   "u": "/vitamin-c-zinok/",
-   "n": "Vitamín C + Zinok",
-   "p": 7.49
-  },
-  {
-   "u": null,
-   "n": "Vianočná krabička",
-   "p": 6.0
-  }
- ]
+  ]
 }

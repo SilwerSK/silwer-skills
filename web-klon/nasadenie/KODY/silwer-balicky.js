@@ -3,7 +3,7 @@
    („balicek“, „cena“, „cena_povodna“). Samostatný skript – dáta sú priamo v ňom,
    dá sa vložiť aj do Shoptetu (Editor → HTML kód). */
 (function () {
-  var B = {"/gold-muz-pecen-a-pokoj/": {"cena": 69.0, "povodna": 91.83, "items": [["Zdravá Pečeň Forte", 31.13, "/zdrava-pecen-komplex-forte/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, null]]}, "/gold-zena-plet-a-pokoj/": {"cena": 69.0, "povodna": 91.83, "items": [["Žiarivá pleť", 31.13, "/ziariva-plet/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, null]]}, "/joj-play-muz-imunita/": {"cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/"], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, null]]}, "/joj-play-zena-imunita/": {"cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/"], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, null]]}, "/muz-energia-a-imunita/": {"cena": 33.0, "povodna": 44.89, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/"], ["Omega-3", 9.95, "/omega-3/"], ["Tribulus 50+", 7.5, "/tribulus-50-/"], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/"], ["Vianočná krabička", 6.0, null]]}, "/muz-pohyb-a-sila/": {"cena": 33.0, "povodna": 45.34, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/"], ["Kĺby Kosti Chrupavky", 8.95, "/klby-kosti-chrupavky/"], ["Koenzým Q10", 9.49, "/koenzym-q10/"], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/"], ["Vianočná krabička", 6.0, null]]}, "/zena-krasa-a-vitalita/": {"cena": 32.0, "povodna": 42.59, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/"], ["Vlasy Nechty Pokožka", 6.2, "/vlasy-nechty-pokozka/"], ["Koenzým Q10", 9.49, "/koenzym-q10/"], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/"], ["Vianočná krabička", 6.0, null]]}, "/zena-pokoj-a-imunita/": {"cena": 39.0, "povodna": 48.89, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/"], ["Ashwagandha", 11.5, "/ashwagandha/"], ["Omega-3", 9.95, "/omega-3/"], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/"], ["Vianočná krabička", 6.0, null]]}}, FREE = 40.0;
+  var B = {"/gold-muz-pecen-a-pokoj/": {"cena": 69.0, "povodna": 91.83, "items": [["Zdravá Pečeň Forte", 31.13, "/zdrava-pecen-komplex-forte/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, null]]}, "/gold-zena-plet-a-pokoj/": {"cena": 69.0, "povodna": 91.83, "items": [["Žiarivá pleť", 31.13, "/ziariva-plet/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, null]]}, "/joj-play-muz-imunita/": {"cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, null]]}, "/joj-play-zena-imunita/": {"cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, null]]}, "/muz-energia-a-imunita/": {"cena": 33.0, "povodna": 44.89, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Omega-3", 9.95, "/omega-3/", 4.2, 31], ["Tribulus 50+", 7.5, "/tribulus-50-/", 4.5, 32], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/", 5.0, 5], ["Vianočná krabička", 6.0, null]]}, "/muz-pohyb-a-sila/": {"cena": 33.0, "povodna": 45.34, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Kĺby Kosti Chrupavky", 8.95, "/klby-kosti-chrupavky/", 4.7, 21], ["Koenzým Q10", 9.49, "/koenzym-q10/", 5.0, 3], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/", 5.0, 10], ["Vianočná krabička", 6.0, null]]}, "/zena-krasa-a-vitalita/": {"cena": 32.0, "povodna": 42.59, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Vlasy Nechty Pokožka", 6.2, "/vlasy-nechty-pokozka/", 4.8, 8], ["Koenzým Q10", 9.49, "/koenzym-q10/", 5.0, 3], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/", 5.0, 10], ["Vianočná krabička", 6.0, null]]}, "/zena-pokoj-a-imunita/": {"cena": 39.0, "povodna": 48.89, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Ashwagandha", 11.5, "/ashwagandha/", 5.0, 10], ["Omega-3", 9.95, "/omega-3/", 4.2, 31], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/", 5.0, 5], ["Vianočná krabička", 6.0, null]]}}, FREE = 40.0;
   function eur(x) { return x.toFixed(2).replace('.', ',') + ' €'; }
   var FIR = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="currentColor">' +
     '<path d="M12 2 7.5 8.5h2.6L6 14h3.3L5 20h6v2h2v-2h6l-4.3-6H18l-4.1-5.5h2.6z"/></svg>';
@@ -29,6 +29,18 @@
     '.sw-pd-save__big{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px;padding-top:10px;' +
     'border-top:1px dashed #B9D8C4;font-weight:900;font-size:24px;color:#1A1A1C}' +
     '.sw-pd-save__ship{margin-top:6px;font-size:14px;font-weight:700;color:#1E6B3B}' +
+    /* hodnotenia produktov v balíčku namiesto „Neohodnotené“ */
+    '.sw-bal-rev{margin:6px 0 2px;font-size:14px;line-height:1.5;color:#3A3A3F}' +
+    '.p-detail-inner-header-mobile .sw-bal-rev{font-size:13px;margin:4px 0 12px;text-align:left}' +
+    '.p-detail-inner-header-mobile .sw-bal-rev a{display:block}' +
+    '.p-detail-inner-header-mobile .sw-bal-rev .sw-sep{display:none}' +
+    '.sw-bal-rev__h{display:block}' +
+    '.sw-bal-rev__h{font-weight:600;color:#1A1A1C;margin-right:4px}' +
+    '.sw-bal-rev a{color:#3A3A3F;text-decoration:none;white-space:nowrap}' +
+    '.sw-bal-rev a:hover{text-decoration:underline}' +
+    '.sw-bal-rev b{color:#1A1A1C}' +
+    '.sw-bal-rev .sw-star{color:#F5A623}' +
+    '.sw-bal-rev .sw-sep{color:#B5B3AE;margin:0 6px}' +
     /* štítok Vianoce – redizajn ho inak sfarbí na sivo (sw-flag--info) */
     '.flag.sw-xmas,.flag.sw-xmas.sw-flag{background:#1E6B3B!important;color:#fff!important;border-color:#1E6B3B!important;gap:5px}' +
     '.flag.sw-xmas svg{flex:0 0 auto}' +
@@ -73,6 +85,25 @@
       (d.cena >= FREE ? '<div class="sw-pd-save__ship">✓ Doprava zadarmo</div>' : '');
     pw.parentNode.insertBefore(box, pw.nextSibling);
   }
+  /* balíček ešte nemá vlastné hodnotenia: namiesto prázdnych hviezdičiek ukáže skutočné
+     hodnotenia produktov, z ktorých je zložený (každý so svojím počtom hodnotení) */
+  function reviews() {
+    var d = B[location.pathname]; if (!d) return;
+    var rated = d.items.filter(function (i) { return i[2] && i[3]; });
+    [].forEach.call(document.querySelectorAll('.p-detail .stars-wrapper'), function (w) {
+      if (w.getAttribute('data-sw-bal') || !/Neohodnoten/i.test(w.textContent)) return;
+      w.setAttribute('data-sw-bal', '1');
+      w.style.setProperty('display', 'none', 'important');
+      if (!rated.length) return;
+      var el = document.createElement('div'); el.className = 'sw-bal-rev';
+      el.innerHTML = '<span class="sw-bal-rev__h">Hodnotenia produktov v balíčku:</span> ' +
+        rated.map(function (i) {
+          return '<a href="' + i[2] + '"><span class="sw-star">★</span> <b>' + i[3].toFixed(1).replace('.', ',') +
+            '</b> ' + i[0] + ' (' + i[4] + ')</a>';
+        }).join('<span class="sw-sep">·</span>');
+      w.parentNode.insertBefore(el, w.nextSibling);
+    });
+  }
   function flags() {
     [].forEach.call(document.querySelectorAll('.flag'), function (f) {
       if (f.classList.contains('sw-xmas')) return;
@@ -82,7 +113,7 @@
       if (f.parentNode && f.parentNode.firstElementChild !== f) f.parentNode.insertBefore(f, f.parentNode.firstElementChild);
     });
   }
-  function run() { cards(); detail(); flags(); }
+  function run() { cards(); detail(); reviews(); flags(); }
   document.addEventListener('DOMContentLoaded', function () {
     run();
     var mo = new MutationObserver(run);
