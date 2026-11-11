@@ -129,7 +129,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 ## Otvorené body
 
 1. **Kód produktu a EAN** – doplní admin.
-2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.
+2. **Fotka balíčka v obale** – je (hero obrázok z Google Disku).
 
 ## Zmena názvu 11. 11. 2026
 
