@@ -1,8 +1,8 @@
-# Karta produktu — Žena. Pokoj a imunita
+# Karta produktu — Žena 2. Pokoj a imunita
 
 | | |
 |---|---|
-| **Názov** | Žena. Pokoj a imunita |
+| **Názov** | Žena 2. Pokoj a imunita |
 | **Archetyp** | **F — Balíček** |
 | **Skladba** | V7 × 5 (4 produkty + vianočná krabička) · S4 · V9 · S5 |
 | **Záloha zdrojov** | `zdroje/word-2026-11-10.md`, `zdroje/web-2026-11-10.md` |
@@ -11,9 +11,9 @@
 | **Sklad** | podľa najnižšieho množstva z produktov v balíčku |
 | **Náhľad** | https://silwer-klon.vercel.app/zena-pokoj-a-imunita/ |
 
-**Title:** Žena. Pokoj a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.
+**Title:** Žena 2. Pokoj a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.
 
-**Meta description:** Žena. Pokoj a imunita od Silwer. Vianočný balíček: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok v originálnom balení. 39 € namiesto 48,89 €.
+**Meta description:** Žena 2. Pokoj a imunita od Silwer. Vianočný balíček: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok v originálnom balení. 39 € namiesto 48,89 €.
 
 ▶ *Súbory na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis, `blok.html` → Detailný popis (zdrojový kód).*
 
@@ -100,7 +100,7 @@ Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporú
 
 ## S5 — Časté otázky [doplnené]
 
-**Čo je v balíčku Žena. Pokoj a imunita a pre koho je?**
+**Čo je v balíčku Žena 2. Pokoj a imunita a pre koho je?**
 Štyri doplnky Silwer pre ženy po 50-ke: Žena 50+ Komplex, Ashwagandha, Omega-3 a Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba.
 
 **Ako produkty užívať spolu?**
@@ -130,3 +130,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 
 1. **Kód produktu a EAN** – doplní admin.
 2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.
+
+## Zmena názvu 11. 11. 2026
+
+Na pokyn klienta v chate: „Žena. Pokoj a imunita“ → „Žena 2. Pokoj a imunita“. Adresa stránky (/zena-pokoj-a-imunita/) ostala pôvodná.

@@ -1,8 +1,8 @@
-# Karta produktu — Žena. Krása a vitalita
+# Karta produktu — Žena 1. Krása a vitalita
 
 | | |
 |---|---|
-| **Názov** | Žena. Krása a vitalita |
+| **Názov** | Žena 1. Krása a vitalita |
 | **Archetyp** | **F — Balíček** (obsahuje C – komplex a E – extrakt bez claimu → pri Q10 platí režim 4.1) |
 | **Skladba** | V7 × 5 (4 produkty + krabička) · S4 · V9 · S5 |
 | **Záloha zdrojov** | `zdroje/word-2026-11-10.md` (zadanie), `zdroje/web-2026-11-10.md` (krátke popisy a zloženie 4 produktov z webu) |
@@ -11,9 +11,9 @@
 | **Sklad** | podľa najnižšieho množstva z produktov v balíčku |
 | **Náhľad** | https://silwer-klon.vercel.app/zena-krasa-a-vitalita/ |
 
-**Title:** Žena. Krása a vitalita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.
+**Title:** Žena 1. Krása a vitalita od Silwer. Vianočný balíček štyroch doplnkov. Pre ženy po 50-ke.
 
-**Meta description:** Žena. Krása a vitalita od Silwer. Vianočný balíček: Žena 50+ Komplex, Vlasy Nechty Pokožka, Koenzým Q10 a Magnézium Glycinát v originálnej krabičke. 32 € namiesto 42,59 €.
+**Meta description:** Žena 1. Krása a vitalita od Silwer. Vianočný balíček: Žena 50+ Komplex, Vlasy Nechty Pokožka, Koenzým Q10 a Magnézium Glycinát v originálnej krabičke. 32 € namiesto 42,59 €.
 
 **Benefity do parametrov:** Vlasy, pokožka a nechty | Menej únavy | 4 produkty v jednom balíčku | Vianočná krabička | Dodanie do 2–3 pracovných dní
 
@@ -100,7 +100,7 @@ Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporú
 
 ## S5 — Časté otázky
 
-**Čo je v balíčku Žena. Krása a vitalita a pre koho je?**
+**Čo je v balíčku Žena 1. Krása a vitalita a pre koho je?**
 Štyri doplnky Silwer pre ženy po 50-ke: Žena 50+ Komplex, Vlasy Nechty Pokožka, Koenzým Q10 a Magnézium Glycinát v originálnej vianočnej krabičke. Je pre ženy, ktoré chcú dopĺňať vitamíny a minerály a myslieť pritom aj na vlasy, nechty a pleť – alebo ako darček pod stromček.
 
 **Ako produkty užívať spolu?**
@@ -130,3 +130,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 
 1. **Kód produktu a EAN** – doplní admin.
 2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.
+
+## Zmena názvu 11. 11. 2026
+
+Na pokyn klienta v chate: „Žena. Krása a vitalita“ → „Žena 1. Krása a vitalita“. Adresa stránky (/zena-krasa-a-vitalita/) ostala pôvodná.

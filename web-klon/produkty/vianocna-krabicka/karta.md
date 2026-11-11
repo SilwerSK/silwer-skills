@@ -25,6 +25,6 @@ Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balí�
 
 ## Otvorené body
 
-1. **Fotka** – zatiaľ zástupný obrázok, fotka samotného obalu chýba.
+1. **Fotka** – hero z Google Disku (priečinok Vianoce 2026 / hero images), 11. 11. 2026.
 2. **Sklad 200 ks** – nastaviť v Shoptete (klon sklad nezobrazuje počtom).
 3. **Kód produktu a EAN** – doplní admin.

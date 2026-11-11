@@ -1,8 +1,8 @@
-# Karta produktu — Muž. Pohyb a sila
+# Karta produktu — Muž 2. Pohyb a sila
 
 | | |
 |---|---|
-| **Názov** | Muž. Pohyb a sila |
+| **Názov** | Muž 2. Pohyb a sila |
 | **Archetyp** | **F — Balíček** |
 | **Skladba** | V7 × 5 (4 produkty + vianočná krabička) · S4 · V9 · S5 |
 | **Záloha zdrojov** | `zdroje/word-2026-11-10.md`, `zdroje/web-2026-11-10.md` |
@@ -11,9 +11,9 @@
 | **Sklad** | podľa najnižšieho množstva z produktov v balíčku |
 | **Náhľad** | https://silwer-klon.vercel.app/muz-pohyb-a-sila/ |
 
-**Title:** Muž. Pohyb a sila od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.
+**Title:** Muž 2. Pohyb a sila od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.
 
-**Meta description:** Muž. Pohyb a sila od Silwer. Vianočný balíček: Muž 50+ Komplex, Kĺby, kosti, chrupavky, Koenzým Q10 a Magnézium Glycinát v originálnom balení. 33 € namiesto 45,34 €.
+**Meta description:** Muž 2. Pohyb a sila od Silwer. Vianočný balíček: Muž 50+ Komplex, Kĺby, kosti, chrupavky, Koenzým Q10 a Magnézium Glycinát v originálnom balení. 33 € namiesto 45,34 €.
 
 ▶ *Súbory na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis, `blok.html` → Detailný popis (zdrojový kód).*
 
@@ -100,7 +100,7 @@ Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporú
 
 ## S5 — Časté otázky [doplnené]
 
-**Čo je v balíčku Muž. Pohyb a sila a pre koho je?**
+**Čo je v balíčku Muž 2. Pohyb a sila a pre koho je?**
 Štyri doplnky Silwer pre mužov po 50-ke: Muž 50+ Komplex, Kĺby, kosti, chrupavky, Koenzým Q10 a Magnézium Glycinát, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba.
 
 **Ako produkty užívať spolu?**
@@ -130,3 +130,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 
 1. **Kód produktu a EAN** – doplní admin.
 2. **Fotka balíčka v obale** – je (hero obrázok z Google Disku).
+
+## Zmena názvu 11. 11. 2026
+
+Na pokyn klienta v chate: „Muž. Pohyb a sila“ → „Muž 2. Pohyb a sila“. Adresa stránky (/muz-pohyb-a-sila/) ostala pôvodná.

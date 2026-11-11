@@ -1,8 +1,8 @@
-# Karta produktu — Muž. Energia a imunita
+# Karta produktu — Muž 1. Energia a imunita
 
 | | |
 |---|---|
-| **Názov** | Muž. Energia a imunita |
+| **Názov** | Muž 1. Energia a imunita |
 | **Archetyp** | **F — Balíček** |
 | **Skladba** | V7 × 5 (4 produkty + vianočná krabička) · S4 · V9 · S5 |
 | **Záloha zdrojov** | `zdroje/word-2026-11-10.md`, `zdroje/web-2026-11-10.md` |
@@ -11,9 +11,9 @@
 | **Sklad** | podľa najnižšieho množstva z produktov v balíčku |
 | **Náhľad** | https://silwer-klon.vercel.app/muz-energia-a-imunita/ |
 
-**Title:** Muž. Energia a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.
+**Title:** Muž 1. Energia a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.
 
-**Meta description:** Muž. Energia a imunita od Silwer. Vianočný balíček: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok v originálnom balení. 33 € namiesto 44,89 €.
+**Meta description:** Muž 1. Energia a imunita od Silwer. Vianočný balíček: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok v originálnom balení. 33 € namiesto 44,89 €.
 
 ▶ *Súbory na vloženie do Shoptetu: `kratky-popis.html` → Krátky popis, `blok.html` → Detailný popis (zdrojový kód).*
 
@@ -100,7 +100,7 @@ Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporú
 
 ## S5 — Časté otázky [doplnené]
 
-**Čo je v balíčku Muž. Energia a imunita a pre koho je?**
+**Čo je v balíčku Muž 1. Energia a imunita a pre koho je?**
 Štyri doplnky Silwer pre mužov po 50-ke: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba.
 
 **Ako produkty užívať spolu?**
@@ -130,3 +130,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 
 1. **Kód produktu a EAN** – doplní admin.
 2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.
+
+## Zmena názvu 11. 11. 2026
+
+Na pokyn klienta v chate: „Muž. Energia a imunita“ → „Muž 1. Energia a imunita“. Adresa stránky (/muz-energia-a-imunita/) ostala pôvodná.
