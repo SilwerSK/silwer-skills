@@ -598,7 +598,7 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
     '.sw-pd-save{margin:14px 0 4px;border:1.5px solid #CFE5D7;background:#F1F8F3;border-radius:12px;padding:14px 16px}' +
     '.sw-pd-save__row{display:flex;justify-content:space-between;gap:12px;font-size:15px;color:#3A3A3F;padding:2px 0}' +
     '.sw-pd-save__row s{color:#55555A}' +
-    '.sw-pd-save__row--save{color:#1E6B3B;font-weight:800;font-size:17px}' +
+    '.sw-pd-save__row--save{color:#1A1A1C;font-weight:800;font-size:17px}' +
     '.sw-pd-save__big{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px;padding-top:10px;' +
     'border-top:1px dashed #B9D8C4;font-weight:900;font-size:24px;color:#1A1A1C}' +
     '.sw-pd-save__ship{margin-top:6px;font-size:14px;font-weight:700;color:#1E6B3B}' +
