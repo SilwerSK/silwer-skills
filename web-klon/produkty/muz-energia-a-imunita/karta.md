@@ -23,7 +23,7 @@
 
 ## Krátky popis
 
-Balíček pre mužov po 50-ke, ktorí chcú podporiť energiu aj imunitu počas zimy. Spája **tribulus so ženšenom**, **omega-3 mastné kyseliny**, **vitamín C so zinkom** a **komplex vitamínov a minerálov pre mužov po 50-ke**. Vitamíny skupiny B prispievajú k zníženiu vyčerpania a únavy, vitamín C a zinok k normálnej funkcii imunitného systému. Balíček je v originálnej krabičke s vianočnými motívmi.
+Balíček pre mužov po 50-ke, ktorí chcú podporiť energiu aj imunitu počas zimy. Spája **tribulus so ženšenom**, **omega-3 mastné kyseliny**, **vitamín C so zinkom** a **komplex vitamínov a minerálov pre mužov po 50-ke**. Vitamíny skupiny B prispievajú k zníženiu únavy, vitamín C a zinok k normálnej funkcii imunitného systému. Balíček je v originálnej krabičke s vianočnými motívmi.
 
 ▶ *[doplnené] Boxy pod textom: Obsah balenia – 4 produkty + vianočná krabička · Vydrží – 2 až 4 mesiace · Pre koho – Muži po 50-ke, Imunita.*
 
@@ -37,7 +37,7 @@ Komplex vitamínov a minerálov, tribulus so ženšenom, omega-3 a vitamín C so
 
 ## V7 — Muž 50+ Komplex
 
-Jedna tableta denne obsahuje 24 vitamínov a minerálov pre mužov po 50-ke vrátane všetkých vitamínov skupiny B. Tie prispievajú k normálnemu energetickému metabolizmu a k zníženiu vyčerpania a únavy. Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému.
+Jedna tableta denne obsahuje 24 vitamínov a minerálov pre mužov po 50-ke vrátane všetkých vitamínov skupiny B. Tie prispievajú k normálnemu energetickému metabolizmu a k zníženiu únavy. Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému.
 
 Balenie vydrží **3 mesiace**. Pozrieť produkt a zloženie → `/silwer-joj-play-muz-50--komplex/`
 
@@ -53,7 +53,7 @@ Balenie je na **3 mesiace**. Pozrieť produkt a zloženie → `/omega-3/`
 
 ## V7 — Tribulus 50+
 
-Tribulus terrestris a ženšen sú rastliny, ktoré muži tradične vyhľadávajú v súvislosti s vitalitou a energiou. Jedna kapsula obsahuje 500 mg extraktu z tribulusu a 100 mg extraktu zo ženšenu, doplnené o zinok a vitamín B12. Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi a vitamín B12 k zníženiu vyčerpania a únavy.
+Tribulus terrestris a ženšen sú rastliny, ktoré muži tradične vyhľadávajú v súvislosti s vitalitou a energiou. Jedna kapsula obsahuje 500 mg extraktu z tribulusu a 100 mg extraktu zo ženšenu, doplnené o zinok a vitamín B12. Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi a vitamín B12 k zníženiu únavy.
 
 Balenie je na **2 mesiace**. Pozrieť produkt a zloženie → `/tribulus-50-/`
 
@@ -79,7 +79,7 @@ Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balí�
 
 ## S4 — Benefity [doplnené – zložené z claimov v zadaní]
 
-1. Vitamíny skupiny B prispievajú k normálnemu energetickému metabolizmu a k zníženiu vyčerpania a únavy
+1. Vitamíny skupiny B prispievajú k normálnemu energetickému metabolizmu a k zníženiu únavy
 2. Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému
 3. Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi
 4. EPA a DHA prispievajú k normálnej funkcii srdca
@@ -120,20 +120,13 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 
 ## Zmeny oproti zdroju
 
-| Miesto | Pôvodne | Teraz | Prečo |
-|---|---|---|---|
-| Krátky popis, Muž 50+, Tribulus | „k zníženiu únavy“ | „k zníženiu vyčerpania a únavy“ | doslovné znenie EFSA claimu |
+Texty zo zadania (Word) sú prevzaté **doslovne** – krátky popis aj texty pri jednotlivých produktoch. Rozhodnutie klienta 11. 11. 2026: úpravy formulácií kvôli EFSA sa neakceptujú.
 
-Doplnené (nie je v zadaní): úvod, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO.
+Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 až 2 kapsuly denne).
 
-Overené 15 % RVH: vitamíny B 100–214 %, vitamín C 150 % / 282 %, vitamín D 100 %, zinok 100 % / 50 % / 23 %, vitamín B12 (Tribulus) 2 000 %. EPA + DHA 300 mg v kapsule.
-Zinok spolu: 10 + 5 + 2,25 = 17,25 mg denne – pod hranicou 25 mg.
+Časti označené **[doplnené]** (úvod, boxy, číselné karty, benefity, dávkovanie, FAQ, SEO) nie sú v zadaní – klient ich posúdi neskôr. Ich formulácie sú zjednotené so znením Wordu.
 
 ## Otvorené body
 
-1. „energia, vitalita“ (krátky popis, Tribulus) sú nešpecifické pojmy – v tej istej sekcii je konkrétny claim (vitamíny B, B12), takže sú prípustné (kap. 3.4).
-2. Kontraindikácie: Omega-3 a vitamín K (Muž 50+) – lieky na riedenie krvi; ženšen – lieky na tlak a cukrovku. Vo FAQ všeobecne.
-3. **Fotka balíčka v obale** chýba – galéria zatiaľ ukazuje packshoty produktov.
-4. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
-5. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
-6. **Kód produktu a EAN** – doplní admin.
+1. **Kód produktu a EAN** – doplní admin.
+2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.

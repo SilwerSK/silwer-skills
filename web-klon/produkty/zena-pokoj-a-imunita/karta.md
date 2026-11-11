@@ -45,7 +45,7 @@ Balenie vydrží **3 mesiace**. Pozrieť produkt a zloženie → `/silwer-joj-pl
 
 ## V7 — Ashwagandha
 
-Ashwagandha je bylina z ajurvédskej tradície, ktorú ľudia vyhľadávajú v obdobiach stresu a psychickej záťaže. V dennej dávke je 300 mg extraktu s 5 % withanolidov, doplneného o horčík vo forme glycinátu, vitamín B6 a zinok. Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy.
+Ashwagandha je bylina z ajurvédskej tradície, ktorú ľudia vyhľadávajú v obdobiach stresu a psychickej záťaže. V dennej dávke je 300 mg extraktu s 5 % withanolidov, doplneného o horčík vo forme glycinátu, vitamín B6 a zinok. Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu únavy.
 
 Balenie je na **mesiac**. Pozrieť produkt a zloženie → `/ashwagandha/`
 
@@ -61,7 +61,7 @@ Balenie je na **3 mesiace**. Pozrieť produkt a zloženie → `/omega-3/`
 
 ## V7 — Vitamín C + Zinok
 
-Klasická zimná kombinácia vitamínu C a zinku. Jedna tableta obsahuje 225 mg vitamínu C a zinok. Vitamín C a zinok prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu vyčerpania a únavy.
+Klasická zimná kombinácia vitamínu C a zinku. Jedna tableta obsahuje 225 mg vitamínu C a zinok. Vitamín C a zinok prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu únavy.
 
 Balenie má 120 tabliet a vystačí na **4 mesiace**, teda na celú zimu. Pozrieť produkt a zloženie → `/vitamin-c-zinok/`
 
@@ -80,7 +80,7 @@ Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balí�
 ## S4 — Benefity [doplnené – zložené z claimov v zadaní]
 
 1. Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému
-2. Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy
+2. Horčík a vitamín B6 prispievajú k normálnej psychickej funkcii a k zníženiu únavy
 3. EPA a DHA prispievajú k normálnej funkcii srdca
 4. Vitamíny C a E, selén a zinok prispievajú k ochrane buniek pred oxidačným stresom
 5. Ashwagandha – bylina z ajurvédskej tradície, extrakt s 5 % withanolidov
@@ -120,21 +120,13 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 
 ## Zmeny oproti zdroju
 
-| Miesto | Pôvodne | Teraz | Prečo |
-|---|---|---|---|
-| Ashwagandha | „k zníženiu únavy“ | „k zníženiu vyčerpania a únavy“ | doslovné znenie EFSA claimu |
-| Vitamín C + Zinok | „vitamín C aj k zníženiu únavy“ | „…vyčerpania a únavy“ | doslovné znenie EFSA claimu |
+Texty zo zadania (Word) sú prevzaté **doslovne** – krátky popis aj texty pri jednotlivých produktoch. Rozhodnutie klienta 11. 11. 2026: úpravy formulácií kvôli EFSA sa neakceptujú.
 
-Doplnené (nie je v zadaní): úvod, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO.
+Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 až 2 kapsuly denne).
 
-Overené 15 % RVH: vitamín C 150 % / 282 %, vitamín D 100 %, zinok 50 % / 20 % / 23 %, selén 45 %, vitamín E 100 %, horčík (Ashwagandha) 16 %, vitamín B6 (Ashwagandha) 16 %. EPA + DHA 300 mg v kapsule – podmienka 250 mg denne splnená.
-Horčík spolu (Žena 50+ 100 mg + Ashwagandha 60 mg) = 160 mg z doplnkov denne – pod hranicou 250 mg.
+Časti označené **[doplnené]** (úvod, boxy, číselné karty, benefity, dávkovanie, FAQ, SEO) nie sú v zadaní – klient ich posúdi neskôr. Ich formulácie sú zjednotené so znením Wordu.
 
 ## Otvorené body
 
-1. Ashwagandha: horčík 16 % a vitamín B6 16 % RVH – tesne nad hranicou 15 %. Claim je prípustný, overiť na etikete.
-2. Kontraindikácie: Omega-3 a vitamín K (Žena 50+) – lieky na riedenie krvi; ashwagandha – tehotenstvo a lieky na štítnu žľazu. Vo FAQ je to všeobecne („poraďte sa s lekárom“), zvážiť, či to klient chce konkrétnejšie.
-3. **Fotka balíčka v obale** chýba – galéria zatiaľ ukazuje packshoty produktov.
-4. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
-5. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
-6. **Kód produktu a EAN** – doplní admin.
+1. **Kód produktu a EAN** – doplní admin.
+2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.

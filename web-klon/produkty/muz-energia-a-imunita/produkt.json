@@ -1,214 +1,214 @@
 {
-  "nazov": "Muž. Energia a imunita",
-  "slug": "muz-energia-a-imunita",
-  "cena": 33.0,
-  "cena_povodna": 44.89,
-  "kod": "NOVÝ",
-  "sablona": "balicek-pre-nu",
-  "kategoria": "/vianoce-2026/",
-  "kategorie": [
-    "/vianoce-2026/",
-    "/pre-muzov/",
-    "/nalada-a-energia/",
-    "/na-imunitu/",
-    "/testosteron-a-prostata/",
-    "/super-zlavy/",
-    "/novinky/"
-  ],
-  "stitky": [
-    "Vianoce"
-  ],
-  "mnozstevne_zlavy": [],
-  "obrazky": [
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/379_silwer-joj-play-muz-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/107_tribulus-50--balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe"
-  ],
-  "kratky_popis": "kratky-popis.html",
-  "parametre": {
-    "Obsah balíčka": "Silwer JOJ play Muž 50+ Komplex, Omega-3, Tribulus 50+, Vitamín C + Zinok, vianočná krabička"
+ "nazov": "Muž. Energia a imunita",
+ "slug": "muz-energia-a-imunita",
+ "cena": 33.0,
+ "cena_povodna": 44.89,
+ "kod": "NOVÝ",
+ "sablona": "balicek-pre-nu",
+ "kategoria": "/vianoce-2026/",
+ "kategorie": [
+  "/vianoce-2026/",
+  "/pre-muzov/",
+  "/nalada-a-energia/",
+  "/na-imunitu/",
+  "/testosteron-a-prostata/",
+  "/super-zlavy/",
+  "/novinky/"
+ ],
+ "stitky": [
+  "Vianoce"
+ ],
+ "mnozstevne_zlavy": [],
+ "obrazky": [
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/379_silwer-joj-play-muz-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/107_tribulus-50--balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe"
+ ],
+ "kratky_popis": "kratky-popis.html",
+ "parametre": {
+  "Obsah balíčka": "Silwer JOJ play Muž 50+ Komplex, Omega-3, Tribulus 50+, Vitamín C + Zinok, vianočná krabička"
+ },
+ "seo": {
+  "title": "Muž. Energia a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.",
+  "meta_description": "Muž. Energia a imunita od Silwer. Vianočný balíček: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok v originálnom balení. 33 € namiesto 44,89 €."
+ },
+ "obrazky_base": "",
+ "blok": [
+  {
+   "typ": "hero",
+   "nadpis": "Štyri produkty pre mužov po 50-ke v jednej krabičke",
+   "podnadpis": "Komplex vitamínov a minerálov, tribulus so ženšenom, omega-3 a vitamín C so zinkom. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
   },
-  "seo": {
-    "title": "Muž. Energia a imunita od Silwer. Vianočný balíček štyroch doplnkov. Pre mužov po 50-ke.",
-    "meta_description": "Muž. Energia a imunita od Silwer. Vianočný balíček: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok v originálnom balení. 33 € namiesto 44,89 €."
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/379_silwer-joj-play-muz-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Silwer JOJ play Muž 50+ Komplex – balenie",
+   "nadpis": "Muž 50+ Komplex",
+   "text": [
+    "Jedna tableta denne obsahuje 24 vitamínov a minerálov pre mužov po 50-ke vrátane všetkých vitamínov skupiny B. Tie prispievajú k normálnemu energetickému metabolizmu a k zníženiu únavy. Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému.",
+    "Balenie vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-muz-50--komplex/\">Pozrieť produkt a zloženie</a>"
+   ]
   },
-  "obrazky_base": "",
-  "blok": [
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
+   "alt": "Omega-3 – balenie",
+   "nadpis": "Omega-3",
+   "text": [
+    "Omega-3 mastné kyseliny z rybieho oleja, praktická voľba pre mužov po 50-ke, v ktorých jedálničku sa ryby objavujú zriedka. V jednej kapsule je 180 mg EPA a 120 mg DHA. EPA a DHA prispievajú k normálnej funkcii srdca.",
+    "Balenie je na <strong>3 mesiace</strong>. <a href=\"/omega-3/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/107_tribulus-50--balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
+   "alt": "Tribulus 50+ – balenie",
+   "nadpis": "Tribulus 50+",
+   "text": [
+    "Tribulus terrestris a ženšen sú rastliny, ktoré muži tradične vyhľadávajú v súvislosti s vitalitou a energiou. Jedna kapsula obsahuje 500 mg extraktu z tribulusu a 100 mg extraktu zo ženšenu, doplnené o zinok a vitamín B12. Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi a vitamín B12 k zníženiu únavy.",
+    "Balenie je na <strong>2 mesiace</strong>. <a href=\"/tribulus-50-/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
+   "alt": "Vitamín C + Zinok – balenie",
+   "nadpis": "Vitamín C + Zinok",
+   "text": [
+    "Vitamín C a zinok v jednej tablete denne na celú zimu. Vitamín C a zinok prispievajú k normálnej funkcii imunitného systému, vitamín C aj k ochrane buniek pred oxidačným stresom.",
+    "Balenie má 120 tabliet a vystačí na <strong>4 mesiace</strong>. <a href=\"/vitamin-c-zinok/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "text",
+   "nadpis": "Vianočná krabička",
+   "text": [
+    "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer. Je taká pekná, že poteší už pri rozbaľovaní a obdarovaní si ju radi nechajú aj po sviatkoch. Zmestia sa do nej štyri produkty Silwer, takže ju stačí položiť rovno pod stromček. Krabička v hodnote 6 € je súčasťou vianočného balíčka."
+   ]
+  },
+  {
+   "typ": "cisla",
+   "nadpis": "Čo je v balíčku",
+   "polozky": [
     {
-      "typ": "hero",
-      "nadpis": "Štyri produkty pre mužov po 50-ke v jednej krabičke",
-      "podnadpis": "Komplex vitamínov a minerálov, tribulus so ženšenom, omega-3 a vitamín C so zinkom. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
+     "hodnota": "4",
+     "popis": "produkty Silwer.",
+     "pozn": "a vianočná krabička"
     },
     {
-      "typ": "split",
-      "strana": "right",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/379_silwer-joj-play-muz-50--komplex---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-      "alt": "Silwer JOJ play Muž 50+ Komplex – balenie",
-      "nadpis": "Muž 50+ Komplex",
-      "text": [
-        "Jedna tableta denne obsahuje 24 vitamínov a minerálov pre mužov po 50-ke vrátane všetkých vitamínov skupiny B. Tie prispievajú k normálnemu energetickému metabolizmu a k zníženiu vyčerpania a únavy. Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému.",
-        "Balenie vydrží <strong>3 mesiace</strong>. <a href=\"/silwer-joj-play-muz-50--komplex/\">Pozrieť produkt a zloženie</a>"
-      ]
+     "hodnota": "4",
+     "popis": "mesiace",
+     "pozn": "najdlhšie balenie v balíčku"
     },
     {
-      "typ": "split",
-      "strana": "left",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/262_omega-3---balenie-produktu.jpg?ff=1&x=1024&y=1024&q=85&ts=6abcc08e&sg=38cb01fe",
-      "alt": "Omega-3 – balenie",
-      "nadpis": "Omega-3",
-      "text": [
-        "Omega-3 mastné kyseliny z rybieho oleja, praktická voľba pre mužov po 50-ke, v ktorých jedálničku sa ryby objavujú zriedka. V jednej kapsule je 180 mg EPA a 120 mg DHA. EPA a DHA prispievajú k normálnej funkcii srdca.",
-        "Balenie je na <strong>3 mesiace</strong>. <a href=\"/omega-3/\">Pozrieť produkt a zloženie</a>"
-      ]
+     "hodnota": "33 €",
+     "popis": "cena balíčka",
+     "pozn": "namiesto 44,89 €"
     },
     {
-      "typ": "split",
-      "strana": "right",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/107_tribulus-50--balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
-      "alt": "Tribulus 50+ – balenie",
-      "nadpis": "Tribulus 50+",
-      "text": [
-        "Tribulus terrestris a ženšen sú rastliny, ktoré muži tradične vyhľadávajú v súvislosti s vitalitou a energiou. Jedna kapsula obsahuje 500 mg extraktu z tribulusu a 100 mg extraktu zo ženšenu, doplnené o zinok a vitamín B12. Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi a vitamín B12 k zníženiu vyčerpania a únavy.",
-        "Balenie je na <strong>2 mesiace</strong>. <a href=\"/tribulus-50-/\">Pozrieť produkt a zloženie</a>"
-      ]
-    },
-    {
-      "typ": "split",
-      "strana": "left",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/68_vitamin-c-zinok---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08d&sg=38cb01fe",
-      "alt": "Vitamín C + Zinok – balenie",
-      "nadpis": "Vitamín C + Zinok",
-      "text": [
-        "Vitamín C a zinok v jednej tablete denne na celú zimu. Vitamín C a zinok prispievajú k normálnej funkcii imunitného systému, vitamín C aj k ochrane buniek pred oxidačným stresom.",
-        "Balenie má 120 tabliet a vystačí na <strong>4 mesiace</strong>. <a href=\"/vitamin-c-zinok/\">Pozrieť produkt a zloženie</a>"
-      ]
-    },
-    {
-      "typ": "text",
-      "nadpis": "Vianočná krabička",
-      "text": [
-        "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer. Je taká pekná, že poteší už pri rozbaľovaní a obdarovaní si ju radi nechajú aj po sviatkoch. Zmestia sa do nej štyri produkty Silwer, takže ju stačí položiť rovno pod stromček. Krabička v hodnote 6 € je súčasťou vianočného balíčka."
-      ]
-    },
-    {
-      "typ": "cisla",
-      "nadpis": "Čo je v balíčku",
-      "polozky": [
-        {
-          "hodnota": "4",
-          "popis": "produkty Silwer.",
-          "pozn": "a vianočná krabička"
-        },
-        {
-          "hodnota": "4",
-          "popis": "mesiace",
-          "pozn": "najdlhšie balenie v balíčku"
-        },
-        {
-          "hodnota": "33 €",
-          "popis": "cena balíčka",
-          "pozn": "namiesto 44,89 €"
-        },
-        {
-          "hodnota": "11,89 €",
-          "popis": "ušetríte",
-          "pozn": "oproti nákupu jednotlivo vrátane krabičky"
-        }
-      ]
-    },
-    {
-      "typ": "benefits",
-      "nadpis": "Benefity",
-      "polozky": [
-        "Vitamíny skupiny B prispievajú k normálnemu energetickému metabolizmu a k zníženiu vyčerpania a únavy",
-        "Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému",
-        "Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi",
-        "EPA a DHA prispievajú k normálnej funkcii srdca",
-        "Tribulus a ženšen – rastliny, ktoré muži tradične vyhľadávajú v súvislosti s vitalitou",
-        "Vitamín C + Zinok vystačí na 4 mesiace",
-        "Štyri produkty v originálnej vianočnej krabičke"
-      ]
-    },
-    {
-      "typ": "dose",
-      "nadpis": "Ako a kedy užívať",
-      "bunky": [
-        {
-          "label": "Muž 50+ Komplex",
-          "value": "1 tableta denne s jedlom"
-        },
-        {
-          "label": "Omega-3",
-          "value": "1 kapsula denne, zapiť vodou"
-        },
-        {
-          "label": "Tribulus 50+",
-          "value": "1 kapsula denne, zapiť vodou"
-        },
-        {
-          "label": "Vitamín C + Zinok",
-          "value": "1 tableta denne s jedlom"
-        }
-      ],
-      "text": [
-        "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
-      ]
-    },
-    {
-      "typ": "faq",
-      "nadpis": "Časté otázky",
-      "polozky": [
-        {
-          "otazka": "Čo je v balíčku Muž. Energia a imunita a pre koho je?",
-          "odpoved": "Štyri doplnky Silwer pre mužov po 50-ke: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
-        },
-        {
-          "otazka": "Ako produkty užívať spolu?",
-          "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Muž 50+ Komplex – 1 tableta denne s jedlom; Omega-3 – 1 kapsula denne, zapiť vodou; Tribulus 50+ – 1 kapsula denne, zapiť vodou; Vitamín C + Zinok – 1 tableta denne s jedlom."
-        },
-        {
-          "otazka": "Ako dlho balíček vydrží?",
-          "odpoved": "Muž 50+ Komplex 3 mesiace; Omega-3 3 mesiace; Tribulus 50+ 2 mesiace; Vitamín C + Zinok 4 mesiace."
-        },
-        {
-          "otazka": "Pre koho balíček nie je vhodný?",
-          "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
-        }
-      ]
-    },
-    {
-      "typ": "note",
-      "text": [
-        "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
-      ]
+     "hodnota": "11,89 €",
+     "popis": "ušetríte",
+     "pozn": "oproti nákupu jednotlivo vrátane krabičky"
     }
-  ],
-  "balicek": [
+   ]
+  },
+  {
+   "typ": "benefits",
+   "nadpis": "Benefity",
+   "polozky": [
+    "Vitamíny skupiny B prispievajú k normálnemu energetickému metabolizmu a k zníženiu únavy",
+    "Vitamíny C a D a zinok prispievajú k normálnej funkcii imunitného systému",
+    "Zinok prispieva k udržaniu normálnej hladiny testosterónu v krvi",
+    "EPA a DHA prispievajú k normálnej funkcii srdca",
+    "Tribulus a ženšen – rastliny, ktoré muži tradične vyhľadávajú v súvislosti s vitalitou",
+    "Vitamín C + Zinok vystačí na 4 mesiace",
+    "Štyri produkty v originálnej vianočnej krabičke"
+   ]
+  },
+  {
+   "typ": "dose",
+   "nadpis": "Ako a kedy užívať",
+   "bunky": [
     {
-      "u": "/silwer-joj-play-muz-50--komplex/",
-      "n": "Silwer JOJ play Muž 50+ Komplex",
-      "p": 13.95
+     "label": "Muž 50+ Komplex",
+     "value": "1 tableta denne s jedlom"
     },
     {
-      "u": "/omega-3/",
-      "n": "Omega-3",
-      "p": 9.95
+     "label": "Omega-3",
+     "value": "1 kapsula denne, zapiť vodou"
     },
     {
-      "u": "/tribulus-50-/",
-      "n": "Tribulus 50+",
-      "p": 7.5
+     "label": "Tribulus 50+",
+     "value": "1 kapsula denne, zapiť vodou"
     },
     {
-      "u": "/vitamin-c-zinok/",
-      "n": "Vitamín C + Zinok",
-      "p": 7.49
-    },
-    {
-      "u": null,
-      "n": "Vianočná krabička",
-      "p": 6.0
+     "label": "Vitamín C + Zinok",
+     "value": "1 tableta denne s jedlom"
     }
-  ]
+   ],
+   "text": [
+    "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  },
+  {
+   "typ": "faq",
+   "nadpis": "Časté otázky",
+   "polozky": [
+    {
+     "otazka": "Čo je v balíčku Muž. Energia a imunita a pre koho je?",
+     "odpoved": "Štyri doplnky Silwer pre mužov po 50-ke: Muž 50+ Komplex, Omega-3, Tribulus 50+ a Vitamín C + Zinok, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
+    },
+    {
+     "otazka": "Ako produkty užívať spolu?",
+     "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Muž 50+ Komplex – 1 tableta denne s jedlom; Omega-3 – 1 kapsula denne, zapiť vodou; Tribulus 50+ – 1 kapsula denne, zapiť vodou; Vitamín C + Zinok – 1 tableta denne s jedlom."
+    },
+    {
+     "otazka": "Ako dlho balíček vydrží?",
+     "odpoved": "Muž 50+ Komplex 3 mesiace; Omega-3 3 mesiace; Tribulus 50+ 2 mesiace; Vitamín C + Zinok 4 mesiace."
+    },
+    {
+     "otazka": "Pre koho balíček nie je vhodný?",
+     "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Komplex obsahuje vitamín K – ak užívate lieky na riedenie krvi, poraďte sa pred užívaním s lekárom. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
+    }
+   ]
+  },
+  {
+   "typ": "note",
+   "text": [
+    "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  }
+ ],
+ "balicek": [
+  {
+   "u": "/silwer-joj-play-muz-50--komplex/",
+   "n": "Silwer JOJ play Muž 50+ Komplex",
+   "p": 13.95
+  },
+  {
+   "u": "/omega-3/",
+   "n": "Omega-3",
+   "p": 9.95
+  },
+  {
+   "u": "/tribulus-50-/",
+   "n": "Tribulus 50+",
+   "p": 7.5
+  },
+  {
+   "u": "/vitamin-c-zinok/",
+   "n": "Vitamín C + Zinok",
+   "p": 7.49
+  },
+  {
+   "u": "/vianocna-krabicka/",
+   "n": "Vianočná krabička",
+   "p": 6.0
+  }
+ ]
 }

@@ -45,7 +45,7 @@ Balenie má 90 tabliet a vydrží **3 mesiace**. Pozrieť produkt a zloženie �
 
 ## V7 — Silwer JOJ play Vitamín D3
 
-V zime si telo vitamín D zo slnka takmer nevyrobí, a po 50-ke ešte ťažšie. Jedna tableta obsahuje 2 000 IU vitamínu D3 a užíva sa každý druhý deň. Vitamín D prispieva k normálnej funkcii imunitného systému, k udržaniu zdravých kostí a k udržaniu normálnej funkcie svalov.
+V zime si telo vitamín D zo slnka takmer nevyrobí, a po 50-ke ešte ťažšie. Jedna tableta obsahuje 2 000 IU vitamínu D3 a užíva sa každý druhý deň. Vitamín D prispieva k normálnej funkcii imunitného systému a k udržaniu zdravých kostí a svalov.
 
 Balenie vydrží **celý rok**. Pozrieť produkt a zloženie → `/silwer-joj-play-vitamin-d3/`
 
@@ -53,7 +53,7 @@ Balenie vydrží **celý rok**. Pozrieť produkt a zloženie → `/silwer-joj-pl
 
 ## V7 — Silwer JOJ play Vitamín C + Zinok
 
-Vitamín C a zinok sú klasická dvojica na zimné mesiace. Prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu vyčerpania a únavy.
+Vitamín C a zinok sú klasická dvojica na zimné mesiace. Prispievajú k normálnej funkcii imunitného systému, vitamín C aj k zníženiu únavy.
 
 Balenie má 120 tabliet a vystačí na **4 mesiace**. Pozrieť produkt a zloženie → `/silwer-joj-play-vitamin-c-zinok/`
 
@@ -74,7 +74,7 @@ Naši dizajnéri navrhli originálne vianočné balenie vo forme čarovného tub
 1. Vitamíny C a D, zinok a selén prispievajú k normálnej funkcii imunitného systému
 2. Vápnik a vitamín D prispievajú k udržaniu zdravých kostí
 3. Vitamín D prispieva k udržaniu normálnej funkcie svalov
-4. Vitamín C prispieva k zníženiu vyčerpania a únavy
+4. Vitamín C prispieva k zníženiu únavy
 5. Vitamín D3 sa užíva každý druhý deň – balenie vydrží celý rok
 6. Tri produkty Silwer JOJ play vo vianočnom tubuse
 
@@ -110,23 +110,13 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 
 ## Zmeny oproti zdroju
 
-| Miesto | Pôvodne | Teraz | Prečo |
-|---|---|---|---|
-| Vitamín D3 | „k udržaniu zdravých kostí a svalov“ | „k udržaniu zdravých kostí a k udržaniu normálnej funkcie svalov“ | kosti a svaly sú dva samostatné claimy s vlastným znením |
-| Vitamín C + Zinok | „vitamín C aj k zníženiu únavy“ | „…vyčerpania a únavy“ | doslovné znenie claimu |
+Texty zo zadania (Word) sú prevzaté **doslovne** – krátky popis aj texty pri jednotlivých produktoch. Rozhodnutie klienta 11. 11. 2026: úpravy formulácií kvôli EFSA sa neakceptujú.
 
-Doplnené (nie je v zadaní): úvod, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO.
+Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 až 2 kapsuly denne).
 
-Overené 15 % RVH: vitamín D 100 % / 1 000 %, vitamín C 150 % / 282 %, zinok 50 % / 23 %, selén 45 %, vápnik 25 %.
+Časti označené **[doplnené]** (úvod, boxy, číselné karty, benefity, dávkovanie, FAQ, SEO) nie sú v zadaní – klient ich posúdi neskôr. Ich formulácie sú zjednotené so znením Wordu.
 
 ## Otvorené body
 
-1. Text zo zadania prevzatý takmer bez zmeny.
-2. **Fotka balíčka v obale** chýba – galéria zatiaľ ukazuje packshoty produktov.
-3. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
-4. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
-5. **Kód produktu a EAN** – doplní admin.
-
-## Zmena názvu 11. 11. 2026
-
-Podľa dokumentu „Vianoce - podstránka - zmeny.docx“ (Google Disk, priečinok Vianoce 2026): názov skrátený z „SILWER JOJ play. Žena. Imunita“ na „SILWER JOJ play. Žena.“. Adresa stránky (/joj-play-zena-imunita/) ostala pôvodná. SEO title a otázka v FAQ upravené, aby nevznikla dvojitá bodka.
+1. **Kód produktu a EAN** – doplní admin.
+2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.

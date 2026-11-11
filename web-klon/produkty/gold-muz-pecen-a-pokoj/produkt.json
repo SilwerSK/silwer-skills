@@ -1,192 +1,192 @@
 {
-  "nazov": "Silwer Gold. Muž.",
-  "slug": "gold-muz-pecen-a-pokoj",
-  "cena": 69.0,
-  "cena_povodna": 91.83,
-  "kod": "NOVÝ",
-  "sablona": "balicek-pre-nu",
-  "kategoria": "/vianoce-2026/",
-  "kategorie": [
-    "/vianoce-2026/",
-    "/pre-muzov/",
-    "/pecen/",
-    "/proti-stresu/",
-    "/gold/",
-    "/super-zlavy/",
-    "/novinky/"
-  ],
-  "stitky": [
-    "Vianoce"
-  ],
-  "mnozstevne_zlavy": [],
-  "obrazky": [
-    "fotky/hero.jpg",
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/495_zdrava-pecen-forte---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/489_lipozomalny-vitamin-c---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-    "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/492_magnezium-treonat---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe"
-  ],
-  "kratky_popis": "kratky-popis.html",
-  "parametre": {
-    "Obsah balíčka": "Zdravá Pečeň Forte, Lipozomálny Vitamín C, Magnézium Treonát, vianočný zlatý tubus"
+ "nazov": "Silwer Gold. Muž.",
+ "slug": "gold-muz-pecen-a-pokoj",
+ "cena": 69.0,
+ "cena_povodna": 91.83,
+ "kod": "NOVÝ",
+ "sablona": "balicek-pre-nu",
+ "kategoria": "/vianoce-2026/",
+ "kategorie": [
+  "/vianoce-2026/",
+  "/pre-muzov/",
+  "/pecen/",
+  "/proti-stresu/",
+  "/gold/",
+  "/super-zlavy/",
+  "/novinky/"
+ ],
+ "stitky": [
+  "Vianoce"
+ ],
+ "mnozstevne_zlavy": [],
+ "obrazky": [
+  "fotky/hero.jpg",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/495_zdrava-pecen-forte---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/489_lipozomalny-vitamin-c---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+  "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/492_magnezium-treonat---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe"
+ ],
+ "kratky_popis": "kratky-popis.html",
+ "parametre": {
+  "Obsah balíčka": "Zdravá Pečeň Forte, Lipozomálny Vitamín C, Magnézium Treonát, vianočný zlatý tubus"
+ },
+ "seo": {
+  "title": "Silwer Gold. Muž. Vianočný balíček troch doplnkov. Pre mužov po 50-ke.",
+  "meta_description": "Silwer Gold. Muž. Vianočný balíček: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát v originálnom balení. 69 € namiesto 91,83 €."
+ },
+ "obrazky_base": "",
+ "blok": [
+  {
+   "typ": "hero",
+   "nadpis": "Tri produkty pre mužov po 50-ke v jednom zlatom tubuse",
+   "podnadpis": "Bylinný komplex Zdravá Pečeň Forte, lipozomálny vitamín C a horčík vo forme treonátu z línie Silwer Gold. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
   },
-  "seo": {
-    "title": "Silwer Gold. Muž. Vianočný balíček troch doplnkov. Pre mužov po 50-ke.",
-    "meta_description": "Silwer Gold. Muž. Vianočný balíček: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát v originálnom balení. 69 € namiesto 91,83 €."
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/495_zdrava-pecen-forte---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+   "alt": "Zdravá Pečeň Forte – balenie",
+   "nadpis": "Zdravá Pečeň Forte",
+   "text": [
+    "Bylinný komplex pre mužov po 50-ke, ktorí chcú podporiť pečeň. Spája extrakty z ostropestreca, artičoky a púpavy, tri rastliny, ktoré sa tradične používajú v zmesiach zameraných na trávenie a metabolizmus.",
+    "Balenie je na <strong>3 mesiace</strong>. <a href=\"/zdrava-pecen-komplex-forte/\">Pozrieť produkt a zloženie</a>"
+   ]
   },
-  "obrazky_base": "",
-  "blok": [
+  {
+   "typ": "split",
+   "strana": "left",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/489_lipozomalny-vitamin-c---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+   "alt": "Lipozomálny Vitamín C – balenie",
+   "nadpis": "Lipozomálny Vitamín C",
+   "text": [
+    "Lipozomálna forma s technológiou Liposovit® je modernejší spôsob, ako dopĺňať vitamín C. Jedna kapsula obsahuje 500 mg vitamínu C. Prispieva k normálnej funkcii imunitného systému a k ochrane buniek pred oxidačným stresom.",
+    "Balenie je na <strong>3 mesiace</strong>. <a href=\"/lipozomalny-vitamin-c/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "split",
+   "strana": "right",
+   "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/492_magnezium-treonat---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
+   "alt": "Magnézium Treonát – balenie",
+   "nadpis": "Magnézium Treonát",
+   "text": [
+    "Magnézium Treonát je technologicky pokročilá forma horčíka, ktorú muži po 50-ke vyhľadávajú v obdobiach vysokej pracovnej a mentálnej záťaže. Denná dávka obsahuje 950 mg treonátu horčíka. Horčík prispieva k normálnej psychickej funkcii a k zníženiu únavy.",
+    "Balenie je na <strong>mesiac</strong>. <a href=\"/magnezium-treonat/\">Pozrieť produkt a zloženie</a>"
+   ]
+  },
+  {
+   "typ": "text",
+   "nadpis": "Vianočný zlatý tubus",
+   "text": [
+    "Naši dizajnéri navrhli originálne vianočné balenie vo forme zlatého tubusu. Už sám osebe poteší každého obdarovaného a pod stromčekom pôsobí slávnostne ešte predtým, ako ho niekto otvorí. Zmestia sa doň tri produkty Silwer. Zlatý tubus v hodnote 6 € je súčasťou vianočného balíčka."
+   ]
+  },
+  {
+   "typ": "cisla",
+   "nadpis": "Čo je v balíčku",
+   "polozky": [
     {
-      "typ": "hero",
-      "nadpis": "Tri produkty pre mužov po 50-ke v jednom zlatom tubuse",
-      "podnadpis": "Bylinný komplex Zdravá Pečeň Forte, lipozomálny vitamín C a horčík vo forme treonátu z línie Silwer Gold. Každý produkt sa užíva samostatne podľa vlastného dávkovania."
+     "hodnota": "3",
+     "popis": "produkty Silwer.",
+     "pozn": "a vianočný zlatý tubus"
     },
     {
-      "typ": "split",
-      "strana": "right",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/495_zdrava-pecen-forte---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-      "alt": "Zdravá Pečeň Forte – balenie",
-      "nadpis": "Zdravá Pečeň Forte",
-      "text": [
-        "Bylinný komplex pre mužov po 50-ke. Spája extrakty z ostropestreca, artičoky a púpavy, tri rastliny, ktoré sa tradične používajú v zmesiach zameraných na trávenie.",
-        "Balenie je na <strong>3 mesiace</strong>. <a href=\"/zdrava-pecen-komplex-forte/\">Pozrieť produkt a zloženie</a>"
-      ]
+     "hodnota": "3",
+     "popis": "mesiace",
+     "pozn": "najdlhšie balenie v balíčku"
     },
     {
-      "typ": "split",
-      "strana": "left",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/489_lipozomalny-vitamin-c---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-      "alt": "Lipozomálny Vitamín C – balenie",
-      "nadpis": "Lipozomálny Vitamín C",
-      "text": [
-        "Lipozomálna forma s technológiou Liposovit® je modernejší spôsob, ako dopĺňať vitamín C. Jedna kapsula obsahuje 500 mg vitamínu C. Prispieva k normálnej funkcii imunitného systému a k ochrane buniek pred oxidačným stresom.",
-        "Balenie je na <strong>3 mesiace</strong>. <a href=\"/lipozomalny-vitamin-c/\">Pozrieť produkt a zloženie</a>"
-      ]
+     "hodnota": "69 €",
+     "popis": "cena balíčka",
+     "pozn": "namiesto 91,83 €"
     },
     {
-      "typ": "split",
-      "strana": "right",
-      "obrazok": "https://cdn.myshoptet.com/usr/www.silwer.sk/user/shop/big/492_magnezium-treonat---balenie-produktu.png?ff=1&x=1024&y=1024&q=85&ts=6abcc08f&sg=38cb01fe",
-      "alt": "Magnézium Treonát – balenie",
-      "nadpis": "Magnézium Treonát",
-      "text": [
-        "Magnézium Treonát je technologicky pokročilá forma horčíka, ktorú muži po 50-ke vyhľadávajú v obdobiach vysokej pracovnej a mentálnej záťaže. Denná dávka obsahuje 950 mg treonátu horčíka. Horčík prispieva k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy.",
-        "Balenie je na <strong>mesiac</strong>. <a href=\"/magnezium-treonat/\">Pozrieť produkt a zloženie</a>"
-      ]
-    },
-    {
-      "typ": "text",
-      "nadpis": "Vianočný zlatý tubus",
-      "text": [
-        "Naši dizajnéri navrhli originálne vianočné balenie vo forme zlatého tubusu. Už sám osebe poteší každého obdarovaného a pod stromčekom pôsobí slávnostne ešte predtým, ako ho niekto otvorí. Zmestia sa doň tri produkty Silwer. Zlatý tubus v hodnote 6 € je súčasťou vianočného balíčka."
-      ]
-    },
-    {
-      "typ": "cisla",
-      "nadpis": "Čo je v balíčku",
-      "polozky": [
-        {
-          "hodnota": "3",
-          "popis": "produkty Silwer.",
-          "pozn": "a vianočný zlatý tubus"
-        },
-        {
-          "hodnota": "3",
-          "popis": "mesiace",
-          "pozn": "najdlhšie balenie v balíčku"
-        },
-        {
-          "hodnota": "69 €",
-          "popis": "cena balíčka",
-          "pozn": "namiesto 91,83 €"
-        },
-        {
-          "hodnota": "22,83 €",
-          "popis": "ušetríte",
-          "pozn": "oproti nákupu jednotlivo vrátane tubusu"
-        }
-      ]
-    },
-    {
-      "typ": "benefits",
-      "nadpis": "Benefity",
-      "polozky": [
-        "Vitamín C prispieva k normálnej funkcii imunitného systému a k ochrane buniek pred oxidačným stresom",
-        "Horčík prispieva k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy",
-        "Ostropestrec, artičoka a púpava – rastliny tradične používané v zmesiach zameraných na trávenie",
-        "Lipozomálna forma vitamínu C s technológiou Liposovit®",
-        "Tri produkty z línie Silwer Gold vo vianočnom zlatom tubuse"
-      ]
-    },
-    {
-      "typ": "dose",
-      "nadpis": "Ako a kedy užívať",
-      "bunky": [
-        {
-          "label": "Zdravá Pečeň Forte",
-          "value": "1 kapsula denne s jedlom"
-        },
-        {
-          "label": "Lipozomálny Vitamín C",
-          "value": "1 kapsula denne s jedlom"
-        },
-        {
-          "label": "Magnézium Treonát",
-          "value": "2 kapsuly denne s jedlom"
-        }
-      ],
-      "text": [
-        "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
-      ]
-    },
-    {
-      "typ": "faq",
-      "nadpis": "Časté otázky",
-      "polozky": [
-        {
-          "otazka": "Čo je v balíčku a pre koho je?",
-          "odpoved": "Tri doplnky Silwer pre mužov po 50-ke: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
-        },
-        {
-          "otazka": "Ako produkty užívať spolu?",
-          "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Zdravá Pečeň Forte – 1 kapsula denne s jedlom; Lipozomálny Vitamín C – 1 kapsula denne s jedlom; Magnézium Treonát – 2 kapsuly denne s jedlom."
-        },
-        {
-          "otazka": "Ako dlho balíček vydrží?",
-          "odpoved": "Zdravá Pečeň Forte 3 mesiace; Lipozomálny Vitamín C 3 mesiace; Magnézium Treonát mesiac."
-        },
-        {
-          "otazka": "Pre koho balíček nie je vhodný?",
-          "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
-        }
-      ]
-    },
-    {
-      "typ": "note",
-      "text": [
-        "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
-      ]
+     "hodnota": "22,83 €",
+     "popis": "ušetríte",
+     "pozn": "oproti nákupu jednotlivo vrátane tubusu"
     }
-  ],
-  "balicek": [
+   ]
+  },
+  {
+   "typ": "benefits",
+   "nadpis": "Benefity",
+   "polozky": [
+    "Vitamín C prispieva k normálnej funkcii imunitného systému a k ochrane buniek pred oxidačným stresom",
+    "Horčík prispieva k normálnej psychickej funkcii a k zníženiu únavy",
+    "Ostropestrec, artičoka a púpava – rastliny tradične používané v zmesiach zameraných na trávenie",
+    "Lipozomálna forma vitamínu C s technológiou Liposovit®",
+    "Tri produkty z línie Silwer Gold vo vianočnom zlatom tubuse"
+   ]
+  },
+  {
+   "typ": "dose",
+   "nadpis": "Ako a kedy užívať",
+   "bunky": [
     {
-      "u": "/zdrava-pecen-komplex-forte/",
-      "n": "Zdravá Pečeň Forte",
-      "p": 31.13
+     "label": "Zdravá Pečeň Forte",
+     "value": "1 kapsula denne s jedlom"
     },
     {
-      "u": "/lipozomalny-vitamin-c/",
-      "n": "Lipozomálny Vitamín C",
-      "p": 27.35
+     "label": "Lipozomálny Vitamín C",
+     "value": "1 kapsula denne s jedlom"
     },
     {
-      "u": "/magnezium-treonat/",
-      "n": "Magnézium Treonát",
-      "p": 27.35
-    },
-    {
-      "u": null,
-      "n": "Vianočný zlatý tubus",
-      "p": 6.0
+     "label": "Magnézium Treonát",
+     "value": "2 kapsuly denne s jedlom"
     }
-  ]
+   ],
+   "text": [
+    "Každý produkt sa užíva podľa vlastného dávkovania. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  },
+  {
+   "typ": "faq",
+   "nadpis": "Časté otázky",
+   "polozky": [
+    {
+     "otazka": "Čo je v balíčku a pre koho je?",
+     "odpoved": "Tri doplnky Silwer pre mužov po 50-ke: Zdravá Pečeň Forte, Lipozomálny Vitamín C a Magnézium Treonát, uložené v originálnom vianočnom balení. Hodí sa ako darček pod stromček aj pre seba."
+    },
+    {
+     "otazka": "Ako produkty užívať spolu?",
+     "odpoved": "Každý produkt sa užíva samostatne podľa vlastného dávkovania: Zdravá Pečeň Forte – 1 kapsula denne s jedlom; Lipozomálny Vitamín C – 1 kapsula denne s jedlom; Magnézium Treonát – 2 kapsuly denne s jedlom."
+    },
+    {
+     "otazka": "Ako dlho balíček vydrží?",
+     "odpoved": "Zdravá Pečeň Forte 3 mesiace; Lipozomálny Vitamín C 3 mesiace; Magnézium Treonát mesiac."
+    },
+    {
+     "otazka": "Pre koho balíček nie je vhodný?",
+     "odpoved": "Výživové doplnky nie sú určené pre tehotné a dojčiace ženy a pre deti. Ak pravidelne užívate lieky, poraďte sa pred užívaním s lekárom."
+    }
+   ]
+  },
+  {
+   "typ": "note",
+   "text": [
+    "Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Neprekračujte odporúčané denné dávkovanie."
+   ]
+  }
+ ],
+ "balicek": [
+  {
+   "u": "/zdrava-pecen-komplex-forte/",
+   "n": "Zdravá Pečeň Forte",
+   "p": 31.13
+  },
+  {
+   "u": "/lipozomalny-vitamin-c/",
+   "n": "Lipozomálny Vitamín C",
+   "p": 27.35
+  },
+  {
+   "u": "/magnezium-treonat/",
+   "n": "Magnézium Treonát",
+   "p": 27.35
+  },
+  {
+   "u": "/vianocny-zlaty-tubus/",
+   "n": "Vianočný zlatý tubus",
+   "p": 6.0
+  }
+ ]
 }

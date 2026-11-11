@@ -45,7 +45,7 @@ Balenie je na **mesiac**. Pozrieť produkt a zloženie → `/ziariva-plet/`
 
 ## V7 — Lipozomálny Vitamín C
 
-Vitamín C v lipozomálnej forme s technológiou Liposovit®, ktorá chráni účinnú látku pri prechode tráviacim traktom. Jedna kapsula obsahuje 500 mg vitamínu C. Prispieva k normálnej funkcii imunitného systému a k tvorbe kolagénu na zabezpečenie normálnej funkcie kože.
+Vitamín C v lipozomálnej forme s technológiou Liposovit®, ktorá chráni účinnú látku pri prechode tráviacim traktom. Jedna kapsula obsahuje 500 mg vitamínu C. Prispieva k normálnej funkcii imunitného systému a k tvorbe kolagénu pre normálnu funkciu kože.
 
 Balenie je na **3 mesiace**. Pozrieť produkt a zloženie → `/lipozomalny-vitamin-c/`
 
@@ -53,7 +53,7 @@ Balenie je na **3 mesiace**. Pozrieť produkt a zloženie → `/lipozomalny-vita
 
 ## V7 — Magnézium Treonát
 
-Treonát je technologicky pokročilá forma horčíka, ktorú ľudia vyhľadávajú v obdobiach psychickej a mentálnej záťaže. Denná dávka obsahuje 950 mg treonátu horčíka. Horčík prispieva k normálnej psychickej funkcii a k normálnej činnosti nervového systému.
+Treonát je technologicky pokročilá forma horčíka, ktorú ľudia vyhľadávajú v obdobiach psychickej a mentálnej záťaže. Denná dávka obsahuje 950 mg treonátu horčíka. Horčík prispieva k normálnej psychickej funkcii a k činnosti nervového systému.
 
 Balenie je na **mesiac**. Pozrieť produkt a zloženie → `/magnezium-treonat/`
 
@@ -72,9 +72,9 @@ Naši dizajnéri navrhli originálne vianočné balenie vo forme zlatého tubusu
 ## S4 — Benefity [doplnené – zložené z claimov v zadaní]
 
 1. Niacín prispieva k udržaniu normálnej pokožky
-2. Vitamín C prispieva k tvorbe kolagénu na zabezpečenie normálnej funkcie kože
+2. Vitamín C prispieva k tvorbe kolagénu pre normálnu funkciu kože
 3. Vitamín C prispieva k normálnej funkcii imunitného systému
-4. Horčík prispieva k normálnej psychickej funkcii a k normálnej činnosti nervového systému
+4. Horčík prispieva k normálnej psychickej funkcii a k činnosti nervového systému
 5. Lipozomálna forma vitamínu C s technológiou Liposovit®
 6. Tri produkty z línie Silwer Gold vo vianočnom zlatom tubuse
 
@@ -110,25 +110,13 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 
 ## Zmeny oproti zdroju
 
-| Miesto | Pôvodne | Teraz | Prečo |
-|---|---|---|---|
-| Lipozomálny Vitamín C | „k tvorbe kolagénu pre normálnu funkciu kože“ | „…na zabezpečenie normálnej funkcie kože“ | doslovné znenie claimu |
-| Magnézium Treonát | „k činnosti nervového systému“ | „k normálnej činnosti nervového systému“ | doslovné znenie claimu |
+Texty zo zadania (Word) sú prevzaté **doslovne** – krátky popis aj texty pri jednotlivých produktoch. Rozhodnutie klienta 11. 11. 2026: úpravy formulácií kvôli EFSA sa neakceptujú.
 
-Doplnené (nie je v zadaní): úvod, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO.
+Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 až 2 kapsuly denne).
 
-Overené 15 % RVH: vitamín C 625 %, horčík (treonát) 20 %, niacín 50 mg = 313 % (na webe je v tabuľke Žiarivej pleti chybne „**“).
+Časti označené **[doplnené]** (úvod, boxy, číselné karty, benefity, dávkovanie, FAQ, SEO) nie sú v zadaní – klient ich posúdi neskôr. Ich formulácie sú zjednotené so znením Wordu.
 
 ## Otvorené body
 
-1. Krátky popis: „technologicky pokročilé formy účinných látok a dobrú vstrebateľnosť“ a „chráni účinnú látku pri prechode tráviacim traktom“ sú tvrdenia o forme, nie zdravotné claimy – ponechané; pri kontrole by ich mal klient vedieť doložiť (dokumentácia Liposovit®).
-2. Žiarivá pleť: v tabuľke na webe doplniť RVH niacínu (313 %).
-3. Žiarivá pleť a Magnézium Treonát vydržia mesiac – „Zlaté Vianoce“ teda nie sú na celú zimu (len Lipozomálny vitamín C 3 mesiace).
-4. **Fotka balíčka v obale** chýba – galéria zatiaľ ukazuje packshoty produktov.
-5. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
-6. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
-7. **Kód produktu a EAN** – doplní admin.
-
-## Zmena názvu 11. 11. 2026
-
-Podľa dokumentu „Vianoce - podstránka - zmeny.docx“ (Google Disk, priečinok Vianoce 2026): názov skrátený z „Silwer GOLD. Žena. Pleť a pokoj“ na „Silwer GOLD. Žena.“. Adresa stránky (/gold-zena-plet-a-pokoj/) ostala pôvodná. SEO title a otázka v FAQ upravené, aby nevznikla dvojitá bodka.
+1. **Kód produktu a EAN** – doplní admin.
+2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.

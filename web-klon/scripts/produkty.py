@@ -577,6 +577,7 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
    dá sa vložiť aj do Shoptetu (Editor → HTML kód). */
 (function () {
   var B = __DATA__, FREE = __FREE__;
+  var OBAL = /^vianočn/i;  /* krabička, tubus, zlatý tubus – obal, nie produkt */
   function eur(x) { return x.toFixed(2).replace('.', ',') + ' €'; }
   var FIR = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="currentColor">' +
     '<path d="M12 2 7.5 8.5h2.6L6 14h3.3L5 20h6v2h2v-2h6l-4.3-6H18l-4.1-5.5h2.6z"/></svg>';
@@ -641,8 +642,8 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
   }
   /* „4 produkty + krabička“ – obal nie je produkt */
   function what(d) {
-    var n = d.items.filter(function (i) { return i[2]; }).length;
-    var obal = d.items.filter(function (i) { return !i[2]; }).map(function (i) {
+    var n = d.items.filter(function (i) { return !OBAL.test(i[0]); }).length;
+    var obal = d.items.filter(function (i) { return OBAL.test(i[0]); }).map(function (i) {
       return i[0].replace(/^vianočn\S*\s+/i, '').toLowerCase(); })[0];
     return n + (n > 4 ? ' produktov' : ' produkty') + (obal ? ' + ' + obal : '');
   }
@@ -662,7 +663,7 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
      hodnotenia produktov, z ktorých je zložený (každý so svojím počtom hodnotení) */
   function reviews() {
     var d = B[location.pathname]; if (!d) return;
-    var rated = d.items.filter(function (i) { return i[2] && i[3]; });
+    var rated = d.items.filter(function (i) { return i[2] && i[3] && !OBAL.test(i[0]); });
     [].forEach.call(document.querySelectorAll('.p-detail .stars-wrapper'), function (w) {
       if (w.getAttribute('data-sw-bal') || !/Neohodnoten/i.test(w.textContent)) return;
       w.setAttribute('data-sw-bal', '1');

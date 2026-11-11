@@ -1,0 +1,23 @@
+{
+ "nazov": "Vianočná krabička",
+ "slug": "vianocna-krabicka",
+ "cena": 6.0,
+ "kategoria": "/vianoce-2026/",
+ "kategorie": [],
+ "stitky": [
+  "Vianoce"
+ ],
+ "mnozstevne_zlavy": [],
+ "obrazky": [
+  "fotky/zastupny.jpg"
+ ],
+ "kratky_popis": "kratky-popis.html",
+ "parametre": {
+  "Kapacita": "4 produkty Silwer"
+ },
+ "seo": {
+  "title": "Vianočná krabička Silwer – originálne vianočné balenie",
+  "meta_description": "Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balíčky Silwer."
+ },
+ "sablona": "balicek-pre-nu"
+}

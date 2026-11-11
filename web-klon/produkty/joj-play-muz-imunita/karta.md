@@ -110,21 +110,13 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 
 ## Zmeny oproti zdroju
 
-Texty zo zadania prevzaté bez zmeny.
+Texty zo zadania (Word) sú prevzaté **doslovne** – krátky popis aj texty pri jednotlivých produktoch. Rozhodnutie klienta 11. 11. 2026: úpravy formulácií kvôli EFSA sa neakceptujú.
 
-Doplnené (nie je v zadaní): úvod, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO.
+Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 až 2 kapsuly denne).
 
-Overené 15 % RVH: vitamín D 100 % / 1 000 %, vitamín C 150 % / 282 %, zinok 100 % / 23 %.
-Vitamín D spolu: 5 µg (komplex) + priemerne 25 µg (2 000 IU každý druhý deň) = 30 µg denne – pod hranicou 100 µg.
+Časti označené **[doplnené]** (úvod, boxy, číselné karty, benefity, dávkovanie, FAQ, SEO) nie sú v zadaní – klient ich posúdi neskôr. Ich formulácie sú zjednotené so znením Wordu.
 
 ## Otvorené body
 
-1. Text zo zadania prevzatý bez zmeny – claimy sú v doslovnom znení.
-2. **Fotka balíčka v obale** chýba – galéria zatiaľ ukazuje packshoty produktov.
-3. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
-4. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
-5. **Kód produktu a EAN** – doplní admin.
-
-## Zmena názvu 11. 11. 2026
-
-Podľa dokumentu „Vianoce - podstránka - zmeny.docx“ (Google Disk, priečinok Vianoce 2026): názov skrátený z „SILWER JOJ play. Muž. Imunita“ na „SILWER JOJ play. Muž.“. Adresa stránky (/joj-play-muz-imunita/) ostala pôvodná. SEO title a otázka v FAQ upravené, aby nevznikla dvojitá bodka.
+1. **Kód produktu a EAN** – doplní admin.
+2. **Fotka balíčka v obale** – chýba, galéria zatiaľ ukazuje packshoty produktov.

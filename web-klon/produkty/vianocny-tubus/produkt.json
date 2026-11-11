@@ -1,0 +1,23 @@
+{
+ "nazov": "Vianočný tubus",
+ "slug": "vianocny-tubus",
+ "cena": 6.0,
+ "kategoria": "/vianoce-2026/",
+ "kategorie": [],
+ "stitky": [
+  "Vianoce"
+ ],
+ "mnozstevne_zlavy": [],
+ "obrazky": [
+  "fotky/zastupny.jpg"
+ ],
+ "kratky_popis": "kratky-popis.html",
+ "parametre": {
+  "Kapacita": "3 produkty Silwer"
+ },
+ "seo": {
+  "title": "Vianočný tubus Silwer – originálne vianočné balenie",
+  "meta_description": "Naši dizajnéri navrhli originálne vianočné balenie vo forme čarovného tubusu."
+ },
+ "sablona": "balicek-pre-nu"
+}

@@ -23,7 +23,7 @@
 
 ## Krátky popis
 
-Zlaté Vianoce pre mužov po 50-ke. Balíček je z línie Silwer Gold, ktorú sme vyvinuli na základe dopytu našich najnáročnejších zákazníkov. Spája **bylinný komplex Zdravá Pečeň Forte**, **lipozomálny vitamín C** a **horčík vo forme treonátu**. Všetky tri produkty stavajú na modernej forme a dobrej vstrebateľnosti a sú uložené v tubuse s vianočnými motívmi.
+Zlaté Vianoce pre mužov po 50-ke. Balíček je z línie Silwer Gold, ktorú sme vyvinuli na základe dopytu našich najnáročnejších zákazníkov. Spája **bylinný komplex pre pečeň**, **lipozomálny vitamín C** a **horčík vo forme treonátu**. Všetky tri produkty stavajú na modernej forme a dobrej vstrebateľnosti a sú uložené v tubuse s vianočnými motívmi.
 
 ▶ *[doplnené] Boxy pod textom: Obsah balenia – 3 produkty + vianočný zlatý tubus · Vydrží – 1 až 3 mesiace · Pre koho – Muži po 50-ke, Pečeň.*
 
@@ -37,7 +37,7 @@ Bylinný komplex Zdravá Pečeň Forte, lipozomálny vitamín C a horčík vo fo
 
 ## V7 — Zdravá Pečeň Forte
 
-Bylinný komplex pre mužov po 50-ke. Spája extrakty z ostropestreca, artičoky a púpavy, tri rastliny, ktoré sa tradične používajú v zmesiach zameraných na trávenie.
+Bylinný komplex pre mužov po 50-ke, ktorí chcú podporiť pečeň. Spája extrakty z ostropestreca, artičoky a púpavy, tri rastliny, ktoré sa tradične používajú v zmesiach zameraných na trávenie a metabolizmus.
 
 Balenie je na **3 mesiace**. Pozrieť produkt a zloženie → `/zdrava-pecen-komplex-forte/`
 
@@ -53,7 +53,7 @@ Balenie je na **3 mesiace**. Pozrieť produkt a zloženie → `/lipozomalny-vita
 
 ## V7 — Magnézium Treonát
 
-Magnézium Treonát je technologicky pokročilá forma horčíka, ktorú muži po 50-ke vyhľadávajú v obdobiach vysokej pracovnej a mentálnej záťaže. Denná dávka obsahuje 950 mg treonátu horčíka. Horčík prispieva k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy.
+Magnézium Treonát je technologicky pokročilá forma horčíka, ktorú muži po 50-ke vyhľadávajú v obdobiach vysokej pracovnej a mentálnej záťaže. Denná dávka obsahuje 950 mg treonátu horčíka. Horčík prispieva k normálnej psychickej funkcii a k zníženiu únavy.
 
 Balenie je na **mesiac**. Pozrieť produkt a zloženie → `/magnezium-treonat/`
 
@@ -72,7 +72,7 @@ Naši dizajnéri navrhli originálne vianočné balenie vo forme zlatého tubusu
 ## S4 — Benefity [doplnené – zložené z claimov v zadaní]
 
 1. Vitamín C prispieva k normálnej funkcii imunitného systému a k ochrane buniek pred oxidačným stresom
-2. Horčík prispieva k normálnej psychickej funkcii a k zníženiu vyčerpania a únavy
+2. Horčík prispieva k normálnej psychickej funkcii a k zníženiu únavy
 3. Ostropestrec, artičoka a púpava – rastliny tradične používané v zmesiach zameraných na trávenie
 4. Lipozomálna forma vitamínu C s technológiou Liposovit®
 5. Tri produkty z línie Silwer Gold vo vianočnom zlatom tubuse
@@ -109,28 +109,15 @@ Výživový doplnok. Nenahrádza pestrú stravu a zdravý životný štýl. Nepr
 
 ## Zmeny oproti zdroju
 
-| Miesto | Pôvodne | Teraz | Prečo |
-|---|---|---|---|
-| Krátky popis | „bylinný komplex pre pečeň“ | „bylinný komplex Zdravá Pečeň Forte“ | byliny nemajú claim (kap. 4.1); názov produktu sa nerozvíja do tvrdenia (kap. 3.2) |
-| Zdravá Pečeň Forte | „…pre mužov po 50-ke, ktorí chcú podporiť pečeň“ | „Bylinný komplex pre mužov po 50-ke.“ | priame tvrdenie o účinku bylín na pečeň – nepovolené (kap. 3.2, 4.1) |
-| Zdravá Pečeň Forte | „…zameraných na trávenie a metabolizmus“ | „…zameraných na trávenie“ | „metabolizmus“ je nešpecifický pojem bez claimu v sekcii (kap. 3.4) |
-| Zdravá Pečeň Forte | „Dopĺňajú ich vitamíny C a E, zinok a selén.“ | vypustené | tabuľka zloženia na webe obsahuje len 3 extrakty – zložky sa nedajú overiť (kap. 0.3) |
-| Magnézium Treonát | „k zníženiu únavy“ | „k zníženiu vyčerpania a únavy“ | doslovné znenie claimu |
+Texty zo zadania (Word) sú prevzaté **doslovne** – krátky popis aj texty pri jednotlivých produktoch. Rozhodnutie klienta 11. 11. 2026: úpravy formulácií kvôli EFSA sa neakceptujú.
 
-Doplnené (nie je v zadaní): úvod, boxy pod krátkym popisom, číselné karty, benefity, dávkovanie, FAQ, disclaimer, SEO.
+**Jediná výnimka – Zdravá Pečeň Forte:** vypustená veta „Dopĺňajú ich vitamíny C a E, zinok a selén.“ Produkt ich podľa zloženia na webe neobsahuje (len extrakty ostropestreca, artičoky a púpavy); klient 11. 11. 2026 potvrdil, že ide o chybu v zadaní.
 
-Overené 15 % RVH: vitamín C 625 %, horčík (treonát) 20 %.
+Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 až 2 kapsuly denne).
+
+Časti označené **[doplnené]** (úvod, boxy, číselné karty, benefity, dávkovanie, FAQ, SEO) nie sú v zadaní – klient ich posúdi neskôr. Ich formulácie sú zjednotené so znením Wordu.
 
 ## Otvorené body
 
-1. **Zdravá Pečeň Forte – zloženie:** Word uvádza vitamíny C a E, zinok a selén, web len ostropestrec, artičoku a púpavu. Potrebujem etiketu. Ak tie vitamíny a minerály v produkte sú, dá sa vrátiť vetu aj s claimom (napr. vitamín C – imunita).
-2. Názov balíčka „Pečeň a pokoj“ – názov produktu nie je claim (kap. 3.2), ale v texte sa nesmie rozvinúť do tvrdenia o pečeni. Karta to dodržiava.
-3. Magnézium Treonát vydrží mesiac.
-4. **Fotka balíčka v obale** chýba – galéria zatiaľ ukazuje packshoty produktov.
-5. **Prečiarknutá cena** zahŕňa obal v hodnote 6 €, ktorý sa samostatne nepredáva – rovnaká otázka ako pri balíčku Žena. Krása a vitalita.
-6. **Znenie claimov** overiť v EU Registri (kap. 4.2) – odtiaľto nie je dostupný.
-7. **Kód produktu a EAN** – doplní admin.
-
-## Zmena názvu 11. 11. 2026
-
-Podľa dokumentu „Vianoce - podstránka - zmeny.docx“ (Google Disk, priečinok Vianoce 2026): názov skrátený z „Silwer Gold. Muž. Pečeň a pokoj“ na „Silwer Gold. Muž.“. Adresa stránky (/gold-muz-pecen-a-pokoj/) ostala pôvodná. SEO title a otázka v FAQ upravené, aby nevznikla dvojitá bodka.
+1. **Kód produktu a EAN** – doplní admin.
+2. **Fotka balíčka v obale** – je (hero obrázok z Google Disku).
