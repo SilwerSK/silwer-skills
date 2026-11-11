@@ -583,15 +583,16 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
   var css =
     /* karta vo výpise */
     '.sw-bal{margin:10px 0 4px;font-size:13.5px;line-height:1.35}' +
+    '.sw-bal-h{font-weight:600;color:#1A1A1C;margin:0 0 5px}' +
     '.sw-bal ul{list-style:none;margin:0;padding:0;border-top:1px solid #E5E3DE}' +
     '.sw-bal li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid #E5E3DE}' +
     '.sw-bal li a,.sw-bal li span:first-child{color:#1A1A1C;text-decoration:none}' +
     '.sw-bal li span:last-child{color:#55555A;white-space:nowrap;font-variant-numeric:tabular-nums}' +
-    '.sw-bal-sum{display:flex;justify-content:space-between;gap:10px;padding:6px 0 0;font-weight:700;color:#1A1A1C}' +
+    '.sw-bal-sum{display:flex;justify-content:space-between;gap:10px;padding:6px 10px 0;font-weight:400;color:#1A1A1C}' +
     '.sw-bal-sum span:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}' +
     '.sw-save{margin-top:8px;background:#1E6B3B;color:#fff;font-weight:700;font-size:13.5px;border-radius:8px;' +
-    'padding:7px 10px;line-height:1.3}' +
-    '.sw-save b{font-weight:900;white-space:nowrap}' +
+    'padding:7px 10px;line-height:1.3;display:flex;justify-content:space-between;gap:10px}' +
+    '.sw-save b{font-weight:900;white-space:nowrap;font-variant-numeric:tabular-nums}' +
     '.sw-bal-ship{margin-top:8px;font-weight:700;color:#1E6B3B}' +
     /* panel v detaile */
     '.sw-pd-save{margin:14px 0 4px;border:1.5px solid #CFE5D7;background:#F1F8F3;border-radius:12px;padding:14px 16px}' +
@@ -615,12 +616,12 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
       var d = B[a.getAttribute('href')]; if (!d) return;
       var save = d.povodna ? d.povodna - d.cena : 0;
       var box = document.createElement('div'); box.className = 'sw-bal';
-      box.innerHTML = '<ul>' + d.items.map(function (i) {
+      box.innerHTML = '<div class="sw-bal-h">Balíček obsahuje</div><ul>' + d.items.map(function (i) {
         var name = i[2] ? '<a href="' + i[2] + '">' + i[0] + '</a>' : '<span>' + i[0] + '</span>';
         return '<li>' + name + '</li>';
       }).join('') + '</ul>' +
         (save > 0 ? '<div class="sw-bal-sum"><span>Spolu jednotlivo</span><span>' + eur(d.povodna) + '</span></div>' +
-          '<div class="sw-save">Kúpou balíčka ušetríte <b>' + eur(save) + '</b></div>' : '') +
+          '<div class="sw-save"><span>Kúpou balíčka ušetríte</span><b>' + eur(save) + '</b></div>' : '') +
         (d.cena >= FREE ? '<div class="sw-bal-ship">✓ Doprava zadarmo</div>' : '');
       var anchor = card.querySelector('.p-in-in') || a;
       anchor.parentNode.insertBefore(box, anchor.nextSibling);
