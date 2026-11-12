@@ -30,6 +30,8 @@ s bannerom je nasadený. Medzera v ceste `VIANOCE 2026` musí byť v popise zap�
 inak prehliadač mobilný obrázok v `srcset` ignoruje. Kontrola na webe: banner počítač 1200×498,
 mobil 351×351, úvod, Gold, JOJ play a detaily produktov bez chýb JS.
 
+## Krok 4 – hotový
+Príznak Vianoce (kód `vianoce`) založený v Shoptete a priradený všetkým 11 produktom.
+
 ## Ďalej
-- Krok 4 – príznak `vianoce`, potom ho Claude priradí balíčkom
 - Krok 5 – ručne v admine: DPH, bežná cena, sada, množstevné zľavy
