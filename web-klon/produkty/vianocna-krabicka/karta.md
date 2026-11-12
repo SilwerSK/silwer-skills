@@ -31,4 +31,4 @@ Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balí�
 
 ## Galéria (12. 11. 2026)
 
-Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (krab z ruky do ruky.png), `fotky/galeria-02.jpg` (krab dcera mame.png), `fotky/galeria-03.jpg` (krab dcera otcovi.png), `fotky/galeria-04.jpg` (krab dedko v rukach.png), `fotky/galeria-05.jpg` (krab muz odovzdava.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.
+Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`. Fotky s rozmazaným pozadím vyradené, nahradia ich verzie 1:1 z Higgsfieldu. Prehľad: `produkty/VIZUALY-vianoce-2026.md`.

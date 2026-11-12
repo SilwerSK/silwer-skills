@@ -137,4 +137,4 @@ Na pokyn klienta v chate: „Muž. Energia a imunita“ → „Muž 1. Energia a
 
 ## Galéria (12. 11. 2026)
 
-Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (muz energia imun krabica otvorena.png), `fotky/galeria-02.jpg` (muz energia imun balicek.png), `fotky/galeria-03.jpg` (muz energia imunita_4x5_1536x1920.png), `fotky/galeria-04.jpg` (krab dcera otcovi.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.
+Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`, `fotky/galeria-03.jpg`. Fotky s rozmazaným pozadím vyradené, nahradia ich verzie 1:1 z Higgsfieldu. Prehľad: `produkty/VIZUALY-vianoce-2026.md`.

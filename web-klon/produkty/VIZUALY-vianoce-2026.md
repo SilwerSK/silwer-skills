@@ -23,14 +23,12 @@
 2. `fotky/galeria-01.jpg` ← muz pohyb sila krabica otvorena.png
 3. `fotky/galeria-02.jpg` ← Silwer_MUZ2_krabicka_zatvorena.png
 4. `fotky/galeria-03.jpg` ← muz pohyb sila_4x5_1536x1920.png
-5. `fotky/galeria-04.jpg` ← krab dedko v rukach.png
 
 ### Muž 1. Energia a imunita (`/muz-energia-a-imunita/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← muz energia imun krabica otvorena.png
 3. `fotky/galeria-02.jpg` ← muz energia imun balicek.png
 4. `fotky/galeria-03.jpg` ← muz energia imunita_4x5_1536x1920.png
-5. `fotky/galeria-04.jpg` ← krab dcera otcovi.png
 
 ### Silwer GOLD. Žena. (`/gold-zena-plet-a-pokoj/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
@@ -38,7 +36,7 @@
 3. `fotky/galeria-02.jpg` ← gold zena scena iba produkty.png
 
 ### Silwer Gold. Muž. (`/gold-muz-pecen-a-pokoj/`)
-- zatiaľ nič – vhodné vizuály sú na Disku len vo veľkých súboroch (pozri nižšie)
+- zatiaľ nič
 
 ### SILWER JOJ play. Muž. (`/joj-play-muz-imunita/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
@@ -50,21 +48,15 @@
 
 ### Vianočný tubus (`/vianocny-tubus/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
-2. `fotky/galeria-01.jpg` ← tubus cierny cerv masla 1.png
-3. `fotky/galeria-02.jpg` ← tubus cierny cerv masla 2.png
-4. `fotky/galeria-03.jpg` ← Firefly_Gemini Flash_v obrázku z referencie1 nahraď darčekovú krabicu darčekovým tubusom z referencie 2. r 605037.png
+2. `fotky/galeria-01.jpg` ← tubus cierny cerv masla 1.png (rozšírené na 1:1 cez Higgsfield)
 
 ### Vianočný zlatý tubus (`/vianocny-zlaty-tubus/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
-2. `fotky/galeria-01.jpg` ← Firefly_Gemini Flash_tubus urob o 20- vyšší. šírku zachovaj 473363.png
 
 ### Vianočná krabička (`/vianocna-krabicka/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← krab z ruky do ruky.png
 3. `fotky/galeria-02.jpg` ← krab dcera mame.png
-4. `fotky/galeria-03.jpg` ← krab dcera otcovi.png
-5. `fotky/galeria-04.jpg` ← krab dedko v rukach.png
-6. `fotky/galeria-05.jpg` ← krab muz odovzdava.png
 
 Úpravy: štvorcový výrez, kde to kompozícia dovolila; JPG, max. 2000 px, 150–450 kB.
 
