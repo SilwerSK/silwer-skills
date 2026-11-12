@@ -35,3 +35,14 @@ Príznak Vianoce (kód `vianoce`) založený v Shoptete a priradený všetkým 1
 
 ## Ďalej
 - Krok 5 – ručne v admine: DPH, bežná cena, sada, množstevné zľavy
+
+## Kontrola po zverejnení – 12. 11. 2026
+Všetkých 11 produktov je zverejnených. Ceny, prečiarknuté ceny, sady (vrátane obalu), príznak Vianoce,
+kategória s bannerom a skript balíčkov na webe fungujú (počítač aj mobil, bez chýb JS).
+Množstevné zľavy nemá žiadny z 11 produktov. Zľavové kupóny cez API overiť nejde.
+
+Zostáva ručne:
+- Žena 1 (511): DPH je stále 23 % → 19 %; zmazať 4 staré fotky 511.png, 511-1.png, 511-2.png, 511-3.png
+- Zlatý tubus (520): sklad 200 ks, podľa podkladov 100 ks – overiť
+- JOJ play Muž (538): v galérii 5 fotiek namiesto 6 (chýba jedna imidžová) – overiť, či zámerne
+- Žena 2 a Muž 1: dostupnosť sady len 39 ks – obmedzuje ju sklad niektorej položky (kód 71 alebo 262)
