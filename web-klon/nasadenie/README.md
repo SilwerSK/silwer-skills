@@ -56,9 +56,10 @@ Redizajn skladá hlavičku kategórie len z textu popisu, obrázky z popisu nezo
 (preto nie je vidieť ani banner pri Silwer Gold a JOJ play). Upravený `silwer-redesign.js`
 zobrazí nad nadpisom **len obrázok s triedou `sw-cathero`** – ostatné kategórie sa nemenia.
 
-1. Nahrať `web-klon/kategorie/vianoce-2026/obrazky/vianoce_kategoria.jpg` (1920 × 796 px)
-   do **Správca súborov → upload/VIANOCE 2026/**.
+1. Nahrať z `web-klon/kategorie/vianoce-2026/obrazky/` do **Správca súborov → upload/VIANOCE 2026/**:
+   `vianoce_kategoria.jpg` (1920 × 796 px, počítač) a `vianoce_kategoria_mobil.jpg` (829 × 829 px,
+   zobrazí sa na displeji do 767 px – obrázok s triedou `sw-cathero-m`).
 2. Popis kategórie Vianoce 2026 = obsah `web-klon/kategorie/vianoce-2026/popis.html`
-   (vložiť cez zdrojový kód editora, prvý riadok je obrázok s `class="sw-cathero"`).
-   Po uložení skontrolovať, že editor triedu nezmazal.
+   (vložiť cez zdrojový kód editora, prvé dva riadky sú obrázky s `class="sw-cathero"` a `class="sw-cathero-m"`).
+   Po uložení skontrolovať, že editor triedy nezmazal.
 3. Nahrať upravený `silwer-redesign.js` a zvýšiť verziu (časť *Postup* vyššie).

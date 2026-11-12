@@ -2710,10 +2710,14 @@
        (obrázky bez tejto triedy sa naďalej nezobrazujú, Gold a JOJ play ostávajú bez zmeny) */
     var heroImg = srcDesc && srcDesc.querySelector('img.sw-cathero');
     if (heroImg && !document.querySelector('div.sw-cathero')) {
+      /* voliteľne iný obrázok pre mobil (do 767 px): img s triedou sw-cathero-m v tom istom popise */
+      var heroM = srcDesc.querySelector('img.sw-cathero-m');
       var hero = S.el('div', 'sw-cathero');
       hero.style.cssText = 'margin:0 0 28px';
-      hero.innerHTML = '<img src="' + esc(heroImg.getAttribute('src')) + '" alt="' + esc(heroImg.getAttribute('alt') || '') +
-        '" style="display:block;width:100%;height:auto;border-radius:16px">';
+      hero.innerHTML = '<picture>' +
+        (heroM ? '<source media="(max-width: 767px)" srcset="' + esc(heroM.getAttribute('src')) + '">' : '') +
+        '<img src="' + esc(heroImg.getAttribute('src')) + '" alt="' + esc(heroImg.getAttribute('alt') || '') +
+        '" style="display:block;width:100%;height:auto;border-radius:16px"></picture>';
       head.parentNode.insertBefore(hero, head);
     }
 
