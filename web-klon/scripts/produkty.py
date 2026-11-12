@@ -317,6 +317,18 @@ def build_page(public, p, images):
         if i >= 0:
             inner = html.find("<div", i + 10)
             html = html[:inner] + "<div>" + thumbs + "</div>" + html[block_end(html, inner):]
+        elif len(images) > 1:
+            # šablóna s jednou fotkou (napr. balicek-pre-nu) nemá náhľady – doplní sa rovnaký
+            # blok ako pri produktoch s galériou, prázdny <div class="row"> hneď za p-image
+            m = re.search(r'(<div class="p-image"[^>]*data-testid="mainImage">)', html)
+            if m:
+                end = block_end(html, m.start())
+                r = re.match(r'\s*<div class="row">\s*</div>', html[end:])
+                block = ('<div class="row"><div class="col-sm-12 p-thumbnails-wrapper"><div class="p-thumbnails">'
+                         '<div class="p-thumbnails-inner"><div>' + thumbs + '</div></div>'
+                         '<a href="#" class="thumbnail-prev"></a><a href="#" class="thumbnail-next"></a>'
+                         '</div></div></div>')
+                html = html[:end] + block + html[end + (r.end() if r else 0):]
     i = html.find('class="p-image"')
     if i >= 0:
         f = html.find('<div class="flags flags-default">', i)

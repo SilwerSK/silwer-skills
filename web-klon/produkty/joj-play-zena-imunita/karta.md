@@ -120,3 +120,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 
 1. **Kód produktu a EAN** – doplní admin.
 2. **Fotka balíčka v obale** – je (hero obrázok z Google Disku).
+
+## Galéria (12. 11. 2026)
+
+Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (joj zena_1x1_2160x2160.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.

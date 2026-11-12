@@ -134,3 +134,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 ## Zmena názvu 11. 11. 2026
 
 Na pokyn klienta v chate: „Žena. Pokoj a imunita“ → „Žena 2. Pokoj a imunita“. Adresa stránky (/zena-pokoj-a-imunita/) ostala pôvodná.
+
+## Galéria (12. 11. 2026)
+
+Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (zena pokoj imun krabica otvorena.png), `fotky/galeria-02.jpg` (Silwer_ZENA2_krabicka_zatvorena.png), `fotky/galeria-03.jpg` (zena pokoj imun_4x5_1536x1920.png), `fotky/galeria-04.jpg` (krab z ruky do ruky.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.

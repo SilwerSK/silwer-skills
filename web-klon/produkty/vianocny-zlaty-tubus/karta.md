@@ -28,3 +28,7 @@ Naši dizajnéri navrhli originálne vianočné balenie vo forme zlatého tubusu
 1. **Fotka** – hero z Google Disku (priečinok Vianoce 2026 / hero images), 11. 11. 2026.
 2. **Sklad 100 ks** – nastaviť v Shoptete (klon sklad nezobrazuje počtom).
 3. **Kód produktu a EAN** – doplní admin.
+
+## Galéria (12. 11. 2026)
+
+Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (Firefly_Gemini Flash_tubus urob o 20- vyšší. šírku zachovaj 473363.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.

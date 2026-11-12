@@ -28,3 +28,7 @@ Naši dizajnéri navrhli originálne vianočné balenie vo forme čarovného tub
 1. **Fotka** – hero z Google Disku (priečinok Vianoce 2026 / hero images), 11. 11. 2026.
 2. **Sklad 200 ks** – nastaviť v Shoptete (klon sklad nezobrazuje počtom).
 3. **Kód produktu a EAN** – doplní admin.
+
+## Galéria (12. 11. 2026)
+
+Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (tubus cierny cerv masla 1.png), `fotky/galeria-02.jpg` (tubus cierny cerv masla 2.png), `fotky/galeria-03.jpg` (Firefly_Gemini Flash_v obrázku z referencie1 nahraď darčekovú krabicu darčekovým tubusom z referencie 2. r 605037.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.

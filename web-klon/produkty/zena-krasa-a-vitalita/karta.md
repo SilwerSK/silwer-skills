@@ -134,3 +134,7 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 ## Zmena názvu 11. 11. 2026
 
 Na pokyn klienta v chate: „Žena. Krása a vitalita“ → „Žena 1. Krása a vitalita“. Adresa stránky (/zena-krasa-a-vitalita/) ostala pôvodná.
+
+## Galéria (12. 11. 2026)
+
+Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (zena krasa vitalita krabica otvorena.png), `fotky/galeria-02.jpg` (Silwer_ZENA1_krabicka_zatvorena.png), `fotky/galeria-03.jpg` (zena krasa vitalita_4x5_1536x1920.png), `fotky/galeria-04.jpg` (krab dcera mame.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.

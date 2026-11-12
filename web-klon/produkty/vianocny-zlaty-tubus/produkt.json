@@ -11,7 +11,8 @@
  ],
  "mnozstevne_zlavy": [],
  "obrazky": [
-  "fotky/hero.jpg"
+  "fotky/hero.jpg",
+  "fotky/galeria-01.jpg"
  ],
  "kratky_popis": "kratky-popis.html",
  "parametre": {
