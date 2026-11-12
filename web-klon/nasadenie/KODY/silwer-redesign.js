@@ -2714,7 +2714,8 @@
       var heroM = srcDesc.querySelector('img.sw-cathero-m');
       var hero = S.el('div', 'sw-cathero');
       hero.style.cssText = 'margin:0 0 28px';
-      hero.innerHTML = '<picture>' +
+      /* na mobile je nad bannerom priamo čierna lišta (bez drobčekov) – odsadenie */
+      hero.innerHTML = '<style>@media(max-width:767px){div.sw-cathero{margin-top:16px!important}}</style><picture>' +
         (heroM ? '<source media="(max-width: 767px)" srcset="' + esc(heroM.getAttribute('src')) + '">' : '') +
         '<img src="' + esc(heroImg.getAttribute('src')) + '" alt="' + esc(heroImg.getAttribute('alt') || '') +
         '" style="display:block;width:100%;height:auto;border-radius:16px"></picture>';
