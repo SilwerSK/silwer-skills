@@ -455,6 +455,16 @@ def build_category(public, k):
         html = re.sub(pat, lambda x: x.group(1) + esc(desc), html)
     html = html.replace(jstr(tpl_name), jstr(name)) if len(tpl_name) > 3 else html
     popis = html_field(k, "popis", "popis.html")
+    # obrázky v popise, ktoré ešte nie sú v Správcovi súborov Shoptetu: kategorie/<slug>/obrazky/
+    local = k["_dir"] / "obrazky"
+    if local.is_dir():
+        target = public / "klon" / "kategorie" / slug
+        target.mkdir(parents=True, exist_ok=True)
+        for f in local.iterdir():
+            if f.is_file():
+                shutil.copy2(f, target / f.name)
+                popis = re.sub(r'(src=")[^"]*/' + re.escape(f.name) + '"',
+                               lambda x: x.group(1) + f"/klon/kategorie/{slug}/{f.name}" + '"', popis)
     html, _ = replace_block(html, 'class="category-perex"', "\n" + popis + "\n")
     i = html.find('id="products"')
     start = html.rfind("<div", 0, i)

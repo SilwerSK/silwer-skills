@@ -2706,6 +2706,17 @@
     h1.parentNode.insertBefore(head, h1);
     h1.style.display = 'none';
 
+    /* Vianoce 2026: banner kategórie = obrázok s triedou sw-cathero v popise kategórie
+       (obrázky bez tejto triedy sa naďalej nezobrazujú, Gold a JOJ play ostávajú bez zmeny) */
+    var heroImg = srcDesc && srcDesc.querySelector('img.sw-cathero');
+    if (heroImg && !document.querySelector('div.sw-cathero')) {
+      var hero = S.el('div', 'sw-cathero');
+      hero.style.cssText = 'margin:0 0 28px';
+      hero.innerHTML = '<img src="' + esc(heroImg.getAttribute('src')) + '" alt="' + esc(heroImg.getAttribute('alt') || '') +
+        '" style="display:block;width:100%;height:auto;border-radius:16px">';
+      head.parentNode.insertBefore(hero, head);
+    }
+
     /* Klient 20. 10.: na „Hľadám niečo na" boli podkategórie zo Shoptetu, teda stará
        štruktúra (Hormóny, Svaly, chýbali Chudnutie, Menopauza…). Namiesto nich tie isté
        oblasti ako v mega menu. Podkategórie v admine sa tým nemenia. */
