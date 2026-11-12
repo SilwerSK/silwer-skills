@@ -48,6 +48,9 @@
     '.sw-bal-rev b{color:#1A1A1C}' +
     '.sw-bal-rev .sw-star{color:#F5A623}' +
     '.sw-bal-rev .sw-sep{color:#B5B3AE;margin:0 6px}' +
+    /* len jeden blok: na mobile z mobilnej hlavičky, na počítači z desktopovej (iPhone ukazoval oba) */
+    '@media(max-width:767px){.p-data-wrapper .sw-bal-rev{display:none!important}}' +
+    '@media(min-width:768px){.p-detail-inner-header-mobile .sw-bal-rev{display:none!important}}' +
     /* štítok Vianoce – redizajn ho inak sfarbí na sivo (sw-flag--info) */
     '.flag.sw-xmas,.flag.sw-xmas.sw-flag{background:#1E6B3B!important;color:#fff!important;border-color:#1E6B3B!important;gap:5px}' +
     '.flag.sw-xmas svg{flex:0 0 auto}' +
