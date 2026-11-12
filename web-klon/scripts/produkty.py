@@ -700,6 +700,7 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
       if (w.getAttribute('data-sw-bal') || !/Neohodnoten/i.test(w.textContent)) return;
       w.setAttribute('data-sw-bal', '1');
       w.style.setProperty('display', 'none', 'important');
+      return; /* blok „Hodnotenia produktov v balíčku“ vypnutý 12. 11. 2026 na želanie Silwer */
       if (!rated.length) return;
       var el = document.createElement('div'); el.className = 'sw-bal-rev';
       el.innerHTML = '<span class="sw-bal-rev__h">Hodnotenia produktov v balíčku:</span> ' +
