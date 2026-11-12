@@ -137,4 +137,4 @@ Na pokyn klienta v chate: „Žena. Pokoj a imunita“ → „Žena 2. Pokoj a i
 
 ## Galéria (12. 11. 2026)
 
-Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (zena pokoj imun krabica otvorena.png), `fotky/galeria-02.jpg` (Silwer_ZENA2_krabicka_zatvorena.png), `fotky/galeria-03.jpg` (zena pokoj imun_4x5_1536x1920.png), `fotky/galeria-04.jpg` (krab z ruky do ruky.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.
+Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`, `fotky/galeria-03.jpg`, `fotky/galeria-04.jpg`. Zdroje a úpravy: `produkty/VIZUALY-vianoce-2026.md`.

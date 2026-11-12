@@ -123,4 +123,4 @@ Dávkovanie v tabuľke „Ako a kedy užívať“ je podľa webu (magnézium 1 a
 
 ## Galéria (12. 11. 2026)
 
-Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (Silwer_GOLD_zelena_4x5_1536x1920 (1).png), `fotky/galeria-02.jpg` (gold zena scena iba produkty.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.
+Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`, `fotky/galeria-03.jpg`. Zdroje a úpravy: `produkty/VIZUALY-vianoce-2026.md`.

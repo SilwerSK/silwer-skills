@@ -137,4 +137,4 @@ Na pokyn klienta v chate: „Muž. Pohyb a sila“ → „Muž 2. Pohyb a sila�
 
 ## Galéria (12. 11. 2026)
 
-Za hero fotkou, v tomto poradí: `fotky/galeria-01.jpg` (muz pohyb sila krabica otvorena.png), `fotky/galeria-02.jpg` (Silwer_MUZ2_krabicka_zatvorena.png), `fotky/galeria-03.jpg` (muz pohyb sila_4x5_1536x1920.png), `fotky/galeria-04.jpg` (krab dedko v rukach.png). Prehľad všetkých vizuálov: `produkty/VIZUALY-vianoce-2026.md`.
+Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`, `fotky/galeria-03.jpg`, `fotky/galeria-04.jpg`. Zdroje a úpravy: `produkty/VIZUALY-vianoce-2026.md`.

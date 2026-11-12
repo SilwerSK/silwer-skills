@@ -31,4 +31,4 @@ Originálnu krabičku navrhli naši dizajnéri špeciálne pre vianočné balí�
 
 ## Galéria (12. 11. 2026)
 
-Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`. Fotky s rozmazaným pozadím vyradené, nahradia ich verzie 1:1 z Higgsfieldu. Prehľad: `produkty/VIZUALY-vianoce-2026.md`.
+Za hero fotkou: `fotky/galeria-01.jpg`, `fotky/galeria-02.jpg`, `fotky/galeria-03.jpg`, `fotky/galeria-04.jpg`, `fotky/galeria-05.jpg`, `fotky/galeria-06.jpg`, `fotky/galeria-07.jpg`. Zdroje a úpravy: `produkty/VIZUALY-vianoce-2026.md`.
