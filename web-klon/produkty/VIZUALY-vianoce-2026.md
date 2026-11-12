@@ -66,7 +66,9 @@
 5. `fotky/galeria-04.jpg` ← krab dedko v rukach.png
 6. `fotky/galeria-05.jpg` ← krab muz odovzdava.png
 
-Úpravy: štvorcový výrez (kde to kompozícia dovolila), inak doplnené rozmazané pozadie do štvorca; JPG, max. 2000 px, 150–450 kB.
+Úpravy: štvorcový výrez, kde to kompozícia dovolila; JPG, max. 2000 px, 150–450 kB.
+
+**12. 11. 2026:** obrázky s doplneným rozmazaným pozadím (8 ks: scény s ľuďmi, tubusy) sú z galérií vyradené – klient: „nevyzerajú dobre“. Nahradia ich verzie 1:1 rozšírené cez Higgsfield (outpaint, 2 kredity/obrázok, výstup 2048 × 2048). Prvý: Vianočný tubus `galeria-01.jpg` ← tubus cierny cerv masla 1.png. Ktoré ďalšie, vyberie klient.
 
 ## Nepoužité (stiahnuté, ale do galérie nevhodné)
 
