@@ -1,65 +1,67 @@
-# Nasadenie na ostrý web – Vianoce 2026 v menu
+# Nasadenie Vianoce 2026 na www.silwer.sk
 
-Horné menu (aj rozbaľovacie „Produkty“ a mobilné menu) nekreslí Shoptet, ale skript
-redizajnu – položky sú natvrdo v `silwer-redesign.js` (zoznamy `PRODUKTY` a `MENU`)
-a záložne v `silwer-header-footer.js`. Zapnutie kategórie v administrácii ich nepridá.
+Overené 12. 11. 2026 proti ostrému webu: súbory v `KODY/` vychádzajú z **aktuálnych** skriptov
+na webe (`silwer-redesign.min.js`, `silwer-header-footer.min.js`, verzia `20261111c`).
+Vyskúšané na ostrých stránkach (úvod, kategória, Gold, detail produktu, počítač aj mobil) bez chýb.
 
-V `KODY/` sú aktuálne súbory z ostrého webu (stiahnuté 10. 11. 2026) so zmenami:
-- pribudlo `['Vianoce 2026','/vianoce-2026/']` – v hlavnom menu pred Superzľavami,
-  v menu Produkty za Novinkami 2026,
-- `silwer-redesign.js` (12. 11.): banner kategórie – pozri časť *Banner kategórie Vianoce 2026*.
+## Čo je zmenené oproti webu
+
+| Súbor | Zmena |
+|---|---|
+| `KODY/silwer-redesign.min.js` | položka **Vianoce 2026** v hlavnom menu (pred Superzľavami) a v menu Produkty (za Novinkami); banner kategórie z obrázka s triedou `sw-cathero` (mobil: `sw-cathero-m`) |
+| `KODY/silwer-header-footer.min.js` | tá istá položka menu (záloha, keď redizajn nenačíta) |
+| `KODY/silwer-balicky.js` | **nový** – zoznam produktov a úspora v karte balíčka, panel úspory v detaile, zelený štítok Vianoce, hodnotenia produktov v balíčku, skrytie detailu pri obaloch |
+| `VIANOCE 2026/*.jpg` | banner kategórie – počítač a mobil |
+
+Ostatné súbory (`silwer-redesign.css`, `silwer-ux.js`, `silwer-reviews.min.js`…) sa nemenia.
+
+⚠️ Ak by niekto medzitým na webe nahral novšie `silwer-redesign.min.js` alebo
+`silwer-header-footer.min.js`, nenahrávajte tieto – dajte vedieť, zmeny sa prenesú do novej verzie.
+
+---
 
 ## Postup
 
-1. **Vzhľad a obsah → Správca súborov → upload/KODY/** – nahrať a prepísať oba súbory.
-2. **Vzhľad a obsah → Editor → HTML kód** (kde sú `<script src=…KODY/…>`): zvýšiť verziu,
-   inak ostane rok v cache:
-   - `silwer-redesign.js?v=20261107b` → `silwer-redesign.js?v=20261112a`
-   - `silwer-header-footer.js?v=20261023g` → `silwer-header-footer.js?v=20261110a`
-3. Skontrolovať v anonymnom okne, desktop aj mobil.
+### Krok 1 – produkty a kategória (urobí Claude cez API)
+Založí 10 produktov ako **skryté**, prepíše testovací produkt „Žena. Krása a vitalita“,
+nastaví adresy, texty, kategórie, fotky, sklad obalov a popis kategórie Vianoce 2026.
 
-⚠️ Ak medzitým niekto upravil tieto súbory na webe, treba zmenu urobiť do jeho verzie
-(sú to 2 riadky v `silwer-redesign.js` a 2 v `silwer-header-footer.js`).
+### Krok 2 – súbory (5 min)
+**Vzhľad a obsah → Správca súborov**
+1. do priečinka `upload/KODY/` nahrať a prepísať: `silwer-redesign.min.js`, `silwer-header-footer.min.js`, a nahrať nový `silwer-balicky.js`
+2. vytvoriť priečinok `upload/VIANOCE 2026/` a nahrať oba obrázky z `VIANOCE 2026/`
 
-# Obsah balíčka vo výpise kategórie + doprava zadarmo
+### Krok 3 – HTML kód (2 min)
+**Vzhľad a obsah → Editor → HTML kód**
+1. v dvoch riadkoch zmeniť `?v=20261111c` na `?v=20261112a`:
+   - `…/KODY/silwer-redesign.min.js?v=20261112a`
+   - `…/KODY/silwer-header-footer.min.js?v=20261112a`
+2. do **pätičky** pridať riadok:
+   ```html
+   <script src="https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/KODY/silwer-balicky.js?v=20261112a" defer></script>
+   ```
 
-`KODY/silwer-balicky.js`:
-- **výpis kategórie** – do karty balíčka dopíše zoznam produktov (bez cien), „Spolu jednotlivo“
-  a zelený štítok **Ušetríte xx,xx €**; pri balíčku od 40 € riadok „✓ Doprava zadarmo“,
-- **detail balíčka** – pod cenu zelený panel: jednotlivo → cena balíčka → **Ušetríte xx,xx €**,
-- **štítok Vianoce** – zelený s ikonou jedličky (príznak s kódom `vianoce` alebo textom „Vianoce“). Dáta (zloženie a ceny) sú priamo
-v súbore – generuje ho `web-klon/scripts/produkty.py` z `produkt.json` (pole `balicek`).
-Pri zmene ceny alebo zloženia balíčka treba súbor vygenerovať a nahrať znova.
+### Krok 4 – príznak Vianoce (1 min, ak ešte nie je)
+**Nastavenia → Produkty → Príznaky** → nový príznak **Vianoce**, kód **`vianoce`**, farba hocijaká
+(zelenú s jedličkou doplní skript). Potom napíšte Claudovi – priradí ho balíčkom.
 
-⚠️ Adresy v ňom sú adresy z klonu (`/zena-krasa-a-vitalita/` …). Ak sa produkt v Shoptete
-založí s inou adresou, treba ju v súbore zmeniť.
+### Krok 5 – v každom z 11 produktov (cca 3 min / produkt)
+| Čo | 8 balíčkov | 3 obaly |
+|---|---|---|
+| DPH **19 %** | ✔ | ✔ |
+| **Bežná (prečiarknutá) cena** – zoznam nižšie | ✔ | – |
+| Typ **Sada** + položky sady (zoznam v `produkty/<balíček>/karta.md`) | ✔ | – |
+| Vypnúť **množstevné zľavy** | ✔ | ✔ |
+| Pri testovacom produkte zmazať 4 staré fotky (prvá má byť hero) | len Žena 1 | – |
 
-1. Nahrať `silwer-balicky.js` do **Správca súborov → upload/KODY/**.
-2. Do **Editor → HTML kód → pätička** pridať:
-   `<script src="https://cdn.myshoptet.com/usr/www.silwer.sk/user/documents/upload/KODY/silwer-balicky.js?v=20261111k" defer></script>`
+Bežné ceny: Žena 1 – 42,59 € · Žena 2 – 48,89 € · Muž 1 – 44,89 € · Muž 2 – 45,34 € ·
+Silwer Gold Muž / GOLD Žena – 91,83 € · JOJ play Muž / Žena – 42,40 €.
 
-# Príznaky nad názvom (Imunita, Stres, …)
+### Krok 6 – kontrola a zverejnenie
+1. v anonymnom okne otvoriť `/vianoce-2026/` a jeden balíček (počítač aj mobil)
+2. produkty zviditeľniť (alebo napíšte Claudovi)
 
-Kreslí ich redizajn z kategórií „Hľadám niečo na“, v ktorých je produkt zaradený
-(dáta z silwer-data.vercel.app, obnova do hodiny). V Shoptete stačí zaradiť balíček
-do príslušných podkategórií „Hľadám niečo na“ – zoznam je v `produkt.json` → `kategorie`.
-
-# Štítok Vianoce
-
-V Shoptete: **Nastavenia → Produkty → Príznaky** – nový príznak „Vianoce“ (kód `vianoce`),
-pridať ho balíčkom. Farbu a ikonu jedličky doplní `silwer-balicky.js`, farba v administrácii
-nehrá rolu (redizajn by ho inak vykreslil sivo).
-
-# Banner kategórie Vianoce 2026
-
-Redizajn skladá hlavičku kategórie len z textu popisu, obrázky z popisu nezobrazuje
-(preto nie je vidieť ani banner pri Silwer Gold a JOJ play). Upravený `silwer-redesign.js`
-zobrazí nad nadpisom **len obrázok s triedou `sw-cathero`** – ostatné kategórie sa nemenia.
-
-1. Nahrať z `web-klon/kategorie/vianoce-2026/obrazky/` do **Správca súborov → upload/VIANOCE 2026/**:
-   `vianoce_kategoria.jpg` (1920 × 796 px, počítač) a `vianoce_kategoria_mobil.jpg` (829 × 829 px,
-   zobrazí sa na displeji do 767 px – obrázok s triedou `sw-cathero-m`).
-2. Popis kategórie Vianoce 2026 = obsah `web-klon/kategorie/vianoce-2026/popis.html`
-   (vložiť cez zdrojový kód editora, prvé dva riadky sú obrázky s `class="sw-cathero"` a `class="sw-cathero-m"`).
-   Po uložení skontrolovať, že editor triedy nezmazal.
-3. Nahrať upravený `silwer-redesign.js` a zvýšiť verziu (časť *Postup* vyššie).
+## Návrat späť
+V `zaloha-pred-nasadenim/` sú súbory, ktoré sú na webe teraz (stiahnuté 12. 11. 2026).
+Ak by niečo nefungovalo: nahrať ich späť do `upload/KODY/`, v HTML kóde vrátiť `?v=20261111c`
+a odstrániť riadok so `silwer-balicky.js`. Produkty ostávajú skryté, kým ich nezverejníte.
