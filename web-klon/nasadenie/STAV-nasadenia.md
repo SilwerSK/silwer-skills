@@ -57,4 +57,4 @@ texty podľa Marketing Mineru) a `silwer-header-footer.min.js?v=20261112b`. Over
 ## Obaly (krabička, tubus, zlatý tubus) – finálne texty, 13. 11. 2026
 Krátky popis a Popis zapísané cez API (zdroj: Google Doc „Balenia texty“). Aby sa Popis zobrazil, `silwer-balicky.js`
 už na obaloch neskrýva celú sekciu detailu, len záložky Hodnotenie, Diskusia a hviezdičky. Treba nahrať
-`KODY/silwer-balicky.js` a v HTML kóde zvýšiť verziu na `?v=20261113a`.
+`KODY/silwer-balicky.js` a v HTML kóde zvýšiť verziu na `?v=20261113a` (hotové 13. 11.). Blok „Darčekové balenie“ na kartách obalov v kategórii: `?v=20261113b`.
