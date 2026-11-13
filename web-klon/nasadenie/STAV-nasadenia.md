@@ -46,3 +46,10 @@ Zostáva ručne:
 - Zlatý tubus (520): sklad 200 ks, podľa podkladov 100 ks – overiť
 - JOJ play Muž (538): v galérii 5 fotiek namiesto 6 (chýba jedna imidžová) – overiť, či zámerne
 - Žena 2 a Muž 1: dostupnosť sady len 39 ks – obmedzuje ju sklad niektorej položky (kód 71 alebo 262)
+
+## Vianočný slide v karuseli – nasadený 13. 11. 2026
+Na webe je `hero-vianoce.jpg`, `silwer-redesign.min.js?v=20261112b` (nadpis „Vianočné darčeky pre vašich blízkych“,
+texty podľa Marketing Mineru) a `silwer-header-footer.min.js?v=20261112b`. Overené na ostrom webe: počítač aj mobil,
+8 slidov, tlačidlo vedie na /vianoce-2026/, bez chýb JS. Pri nasadzovaní sa omylom zmazal `silwer-header-footer.min.js`
+(web na chvíľu bez novej hlavičky a pätičky), nahratý znova z `KODY/`.
+Úvodný text (SSR blok) zatiaľ nie je vymenený – nepovinné, skript karusel postaví sám.
