@@ -38,7 +38,7 @@
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← Silwer_GOLD_zelena_4x5_1536x1920 (1).png
 3. `fotky/galeria-02.jpg` ← gold zena scena iba produkty.png
-4. `fotky/galeria-03.jpg` ← Firefly … odstráň čierny uzáver (913187) (1:1 cez Higgsfield)
+4. `fotky/galeria-03.jpg` ← Firefly … odstráň čierny uzáver (913187) (13. 11.: štvorcový výrez priamo z originálu, bez AI dopĺňania)
 
 ## Silwer Gold. Muž. (`/gold-muz-pecen-a-pokoj/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
@@ -63,7 +63,7 @@
 ## Vianočný zlatý tubus (`/vianocny-zlaty-tubus/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← Firefly … tubus urob o 20- vyšší (473363) (1:1 cez Higgsfield)
-3. `fotky/galeria-02.jpg` ← Firefly … odstráň čierny uzáver (913187) (1:1 cez Higgsfield)
+3. `fotky/galeria-02.jpg` ← Firefly … odstráň čierny uzáver (913187) (13. 11.: štvorcový výrez priamo z originálu, bez AI dopĺňania)
 4. `fotky/galeria-03.jpg` ← Firefly … zaostri potlač tubusu (414896) (1:1 cez Higgsfield)
 
 ## Vianočná krabička (`/vianocna-krabicka/`)
