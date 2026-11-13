@@ -29,11 +29,8 @@
     'padding:7px 10px;line-height:1.3;display:flex;justify-content:space-between;gap:10px}' +
     '.sw-save b{font-weight:900;white-space:nowrap;font-variant-numeric:tabular-nums}' +
     '.sw-bal-ship{margin-top:8px;font-weight:700;color:#1E6B3B}' +
-    /* karta samostatného obalu (krabička, tubus) */
-    '.sw-bal-h2{margin-top:12px}' +
-    '.sw-bal--obal li span:last-child{white-space:normal}' +
-    '.sw-obal-note{margin-top:10px;background:#F2EEE6;color:#1A1A1C;font-weight:600;font-size:13.5px;' +
-    'border-radius:8px;padding:7px 10px;line-height:1.3}' +
+    /* karta samostatného obalu (krabička, tubus): popisok z produkt.json → text_kategoria */
+    '.sw-obal-desc{margin:10px 0 4px;font-size:14px;line-height:1.45;color:#3A3A3E}' +
     /* panel v detaile */
     '.sw-pd-save{margin:14px 0 4px;border:1.5px solid #CFE5D7;background:#F1F8F3;border-radius:12px;padding:14px 16px}' +
     '.sw-pd-save__row{display:flex;justify-content:space-between;gap:12px;font-size:15px;color:#3A3A3F;padding:2px 0}' +
@@ -64,27 +61,10 @@
     '.flag.sw-xmas,.flags .flag.sw-xmas{order:-9999!important}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
-  /* obal -> balíčky, v ktorých je, a koľko produktov sa doň zmestí */
-  var OB = {};
-  Object.keys(B).forEach(function (k) {
-    var d = B[k], n = d.items.filter(function (i) { return !OBAL.test(i[0]); }).length;
-    d.items.forEach(function (i) {
-      if (!i[2] || !OBAL.test(i[0])) return;
-      var o = OB[i[2]] || (OB[i[2]] = { n: 0, pk: [] });
-      o.n = Math.max(o.n, n); o.pk.push([d.nazov || k, k]);
-    });
-  });
-  function obalCard(card, href, name) {
-    var o = OB[href]; if (!o) return;
-    var f = /krabičk/i.test(name);
-    var box = document.createElement('div'); box.className = 'sw-bal sw-bal--obal';
-    box.innerHTML = '<div class="sw-bal-h">Darčekové balenie</div><ul>' +
-      '<li><span>Zmestia sa do' + (f ? ' nej ' : 'ň ') + o.n + ' produkty Silwer</span></li>' +
-      '<li><span>Navrhnut' + (f ? 'á' : 'ý') + ' pre Vianoce 2026</span></li></ul>' +
-      '<div class="sw-bal-h sw-bal-h2">Súčasťou balíčkov</div><ul>' + o.pk.map(function (p) {
-        return '<li><a href="' + p[1] + '">' + p[0] + '</a></li>';
-      }).join('') + '</ul>' +
-      '<div class="sw-obal-note">' + (OBT[href] || 'Môžete ' + (f ? 'ju' : 'ho') + ' kúpiť aj samostatne') + '</div>';
+  /* obal (krabička, tubus): na karte v kategórii len popisok z dokumentu */
+  function obalCard(card, href) {
+    var box = document.createElement('div'); box.className = 'sw-bal sw-obal-desc';
+    box.textContent = OBT[href];
     var anchor = card.querySelector('.p-in-in') || card.querySelector('a[href]');
     anchor.parentNode.insertBefore(box, anchor.nextSibling);
   }
@@ -93,7 +73,7 @@
       if (card.querySelector('.sw-bal')) return;
       var a = card.querySelector('a[href]'); if (!a) return;
       var href = a.getAttribute('href');
-      if (OB[href]) return obalCard(card, href, card.textContent);
+      if (OBT[href]) return obalCard(card, href);
       var d = B[href]; if (!d) return;
       var save = d.povodna ? d.povodna - d.cena : 0;
       var box = document.createElement('div'); box.className = 'sw-bal';

@@ -62,3 +62,4 @@ už na obaloch neskrýva celú sekciu detailu, len záložky Hodnotenie, Diskusi
 Zmena 13. 11. podľa upraveného dokumentu: krátky popis = celý text, Popis prázdny, sekcia detailu na obaloch
 opäť skrytá; na karte v kategórii blok „Darčekové balenie“ s vetou z dokumentu („… môžete kúpiť aj samostatne“).
 Skript `silwer-balicky.js` s `?v=20261113b`.
+Úprava: na karte obalu v kategórii je len popisok z dokumentu (riadok „kategória“), bez bloku „Darčekové balenie“ – `?v=20261113c`.
