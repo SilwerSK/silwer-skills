@@ -1,6 +1,6 @@
 # Vianočný slide v karuseli na úvodnej stránke (12. 11. 2026)
 
-Nový prvý slide: obrázok `hero-vianoce.jpg`, nadpis „Vianočné balíčky Silwer“,
+Nový prvý slide: obrázok `hero-vianoce.jpg` (od 13. 11. podľa `hero_vianoce_kategoria.png` z Disku, 1920×824), nadpis „Vianočné balíčky Silwer“,
 text „8 balíčkov pre mamu, babku, otca aj dedka. Od 29 do 69 €, už zabalené pod stromček.“,
 tlačidlo „Vybrať balíček“ → /vianoce-2026/. Vyskúšané na ostrom webe (počítač, tablet, mobil) bez chýb.
 
@@ -8,6 +8,8 @@ Slidy karuselu definuje skript `silwer-redesign.min.js` (zoznam heroSlides). HTM
 je len rýchla kópia na prvé zobrazenie – keď sa od skriptu líši, skript ho zahodí a postaví karusel znova.
 
 ## Postup (v tomto poradí)
+Stav 13. 11.: na webe ešte nie je nič z tohto (obrázok na CDN chýba, HTML kód načítava `?v=20261112a`).
+
 1. **Správca súborov** → `upload/obrazky/` → nahrať `hero-vianoce.jpg`
 2. **Správca súborov** → `upload/KODY/` → nahradiť `silwer-redesign.min.js` (z priečinka KODY)
 3. **HTML kód** → v riadku so `silwer-redesign.min.js` zmeniť `?v=20261112a` na `?v=20261112b`
