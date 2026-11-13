@@ -75,8 +75,9 @@
 6. `fotky/galeria-05.jpg` ← krab muz odovzdava.png (1:1 cez Higgsfield)
 7. `fotky/galeria-06.jpg` ← krab dedko v rukach.png (1:1 cez Higgsfield)
 8. `fotky/galeria-07.jpg` ← krab zena v ruke.png (1:1 cez Higgsfield)
-9. `fotky/galeria-08.jpg` ← variant #0 (dcéra po 50 dáva mame krabičku; Nano Banana 2.1, 13. 11.) – nová fotka navyše
-10. `fotky/galeria-09.jpg` ← variant #60 (žena po 50 s krabičkou so stuhou, za ňou muž; Nano Banana 2.1, 13. 11.) – nová fotka navyše
+9. `fotky/galeria-08.jpg` ← variant #60 (žena po 50 s krabičkou so stuhou, za ňou muž; Nano Banana 2.1, 13. 11.) – nová fotka navyše, výber používateľa
+
+Variant #0 (dcéra po 50 dáva mame krabičku) používateľ nevybral – odložený v `kreativa/nepouzite/krabicka-dcera-dava-mame.jpg`.
 
 ## Rozšírené cez Higgsfield, ale nepoužité
 
