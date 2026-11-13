@@ -1,6 +1,6 @@
 # Vianočný slide v karuseli na úvodnej stránke (12. 11. 2026)
 
-Nový prvý slide: obrázok `hero-vianoce.jpg` (od 13. 11. podľa `hero_vianoce_kategoria.png` z Disku, 1920×824), nadpis „Vianočné darčeky pre rodičov“,
+Nový prvý slide: obrázok `hero-vianoce.jpg` (od 13. 11. podľa `hero_vianoce_kategoria.png` z Disku, 1920×824), nadpis „Vianočné darčeky pre vašich blízkych“,
 text „Darček pre mamu, otca, babku aj dedka. 8 balíčkov od 29 do 69 €, už zabalené pod stromček.“,
 tlačidlo „Vybrať darček“ → /vianoce-2026/.
 
@@ -24,4 +24,4 @@ Stav 13. 11.: na webe ešte nie je nič z tohto (obrázok na CDN chýba, HTML k�
 
 ## Po Vianociach
 Vrátiť súbory z `zaloha-pred-hero-vianoce/` (skript + úvodný text) a v HTML kóde zvýšiť `?v=`.
-Pozor: kým je vianočný slide prvý, nadpis H1 úvodnej stránky je „Vianočné darčeky pre rodičov“.
+Pozor: kým je vianočný slide prvý, nadpis H1 úvodnej stránky je „Vianočné darčeky pre vašich blízkych“.
