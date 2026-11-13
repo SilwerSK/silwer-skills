@@ -25,7 +25,7 @@
 2. `fotky/galeria-01.jpg` ← muz pohyb sila krabica otvorena.png
 3. `fotky/galeria-02.jpg` ← Silwer_MUZ2_krabicka_zatvorena.png
 4. `fotky/galeria-03.jpg` ← muz pohyb sila_4x5_1536x1920.png
-5. `fotky/galeria-04.jpg` ← krab dedko v rukach.png (1:1 cez Higgsfield)
+5. `fotky/galeria-04.jpg` ← krab dedko v rukach.png (1:1 cez Higgsfield; 13. 11. Nano Banana 2.1: menšia krabica, odstránená osoba vľavo)
 
 ## Muž 1. Energia a imunita (`/muz-energia-a-imunita/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
