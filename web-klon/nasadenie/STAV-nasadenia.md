@@ -63,3 +63,5 @@ Zmena 13. 11. podľa upraveného dokumentu: krátky popis = celý text, Popis pr
 opäť skrytá; na karte v kategórii blok „Darčekové balenie“ s vetou z dokumentu („… môžete kúpiť aj samostatne“).
 Skript `silwer-balicky.js` s `?v=20261113b`.
 Úprava: na karte obalu v kategórii je len popisok z dokumentu (riadok „kategória“), bez bloku „Darčekové balenie“ – `?v=20261113c`.
+Pozor: `?v=20261113c` má CDN uloženú ako 404 (verzia sa zmenila skôr, než bol súbor nahratý) – použiť `?v=20261113d`.
+Pravidlo: vždy najprv nahrať súbor, až potom zvýšiť `?v=` v HTML kóde. CDN si chybu pamätá až rok.
