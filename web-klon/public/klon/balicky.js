@@ -3,7 +3,7 @@
    („balicek“, „cena“, „cena_povodna“). Samostatný skript – dáta sú priamo v ňom,
    dá sa vložiť aj do Shoptetu (Editor → HTML kód). */
 (function () {
-  var B = {"/gold-muz-pecen-a-pokoj/": {"cena": 69.0, "povodna": 91.83, "items": [["Zdravá Pečeň Forte", 31.13, "/zdrava-pecen-komplex-forte/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, "/vianocny-zlaty-tubus/"]]}, "/gold-zena-plet-a-pokoj/": {"cena": 69.0, "povodna": 91.83, "items": [["Žiarivá pleť", 31.13, "/ziariva-plet/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, "/vianocny-zlaty-tubus/"]]}, "/joj-play-muz-imunita/": {"cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, "/vianocny-tubus/"]]}, "/joj-play-zena-imunita/": {"cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, "/vianocny-tubus/"]]}, "/muz-energia-a-imunita/": {"cena": 33.0, "povodna": 44.89, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Omega-3", 9.95, "/omega-3/", 4.2, 31], ["Tribulus 50+", 7.5, "/tribulus-50-/", 4.5, 32], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/", 5.0, 5], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}, "/muz-pohyb-a-sila/": {"cena": 33.0, "povodna": 45.34, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Kĺby Kosti Chrupavky", 8.95, "/klby-kosti-chrupavky/", 4.7, 21], ["Koenzým Q10", 9.49, "/koenzym-q10/", 5.0, 3], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/", 5.0, 10], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}, "/zena-krasa-a-vitalita/": {"cena": 32.0, "povodna": 42.59, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Vlasy Nechty Pokožka", 6.2, "/vlasy-nechty-pokozka/", 4.8, 8], ["Koenzým Q10", 9.49, "/koenzym-q10/", 5.0, 3], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/", 5.0, 10], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}, "/zena-pokoj-a-imunita/": {"cena": 39.0, "povodna": 48.89, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Ashwagandha", 11.5, "/ashwagandha/", 5.0, 10], ["Omega-3", 9.95, "/omega-3/", 4.2, 31], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/", 5.0, 5], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}}, FREE = 40.0, BEZ = ["/vianocna-krabicka/", "/vianocny-tubus/", "/vianocny-zlaty-tubus/"];
+  var B = {"/gold-muz-pecen-a-pokoj/": {"nazov": "Silwer Gold. Muž.", "cena": 69.0, "povodna": 91.83, "items": [["Zdravá Pečeň Forte", 31.13, "/zdrava-pecen-komplex-forte/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, "/vianocny-zlaty-tubus/"]]}, "/gold-zena-plet-a-pokoj/": {"nazov": "Silwer GOLD. Žena.", "cena": 69.0, "povodna": 91.83, "items": [["Žiarivá pleť", 31.13, "/ziariva-plet/"], ["Lipozomálny Vitamín C", 27.35, "/lipozomalny-vitamin-c/"], ["Magnézium Treonát", 27.35, "/magnezium-treonat/"], ["Vianočný zlatý tubus", 6.0, "/vianocny-zlaty-tubus/"]]}, "/joj-play-muz-imunita/": {"nazov": "SILWER JOJ play. Muž.", "cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, "/vianocny-tubus/"]]}, "/joj-play-zena-imunita/": {"nazov": "SILWER JOJ play. Žena.", "cena": 29.0, "povodna": 42.4, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Silwer JOJ play Vitamín D3", 14.95, "/silwer-joj-play-vitamin-d3/"], ["Silwer JOJ play Vitamín C + Zinok", 7.5, "/silwer-joj-play-vitamin-c-zinok/"], ["Vianočný tubus", 6.0, "/vianocny-tubus/"]]}, "/muz-energia-a-imunita/": {"nazov": "Muž 1. Energia a imunita", "cena": 33.0, "povodna": 44.89, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Omega-3", 9.95, "/omega-3/", 4.2, 31], ["Tribulus 50+", 7.5, "/tribulus-50-/", 4.5, 32], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/", 5.0, 5], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}, "/muz-pohyb-a-sila/": {"nazov": "Muž 2. Pohyb a sila", "cena": 33.0, "povodna": 45.34, "items": [["Silwer JOJ play Muž 50+ Komplex", 13.95, "/silwer-joj-play-muz-50--komplex/", 5.0, 10], ["Kĺby Kosti Chrupavky", 8.95, "/klby-kosti-chrupavky/", 4.7, 21], ["Koenzým Q10", 9.49, "/koenzym-q10/", 5.0, 3], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/", 5.0, 10], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}, "/zena-krasa-a-vitalita/": {"nazov": "Žena 1. Krása a vitalita", "cena": 32.0, "povodna": 42.59, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Vlasy Nechty Pokožka", 6.2, "/vlasy-nechty-pokozka/", 4.8, 8], ["Koenzým Q10", 9.49, "/koenzym-q10/", 5.0, 3], ["Magnézium Glycinát 550 mg Super Forte Plus", 6.95, "/magnezium-glycinat/", 5.0, 10], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}, "/zena-pokoj-a-imunita/": {"nazov": "Žena 2. Pokoj a imunita", "cena": 39.0, "povodna": 48.89, "items": [["Silwer JOJ play Žena 50+ Komplex", 13.95, "/silwer-joj-play-zena-50-komplex/", 5.0, 11], ["Ashwagandha", 11.5, "/ashwagandha/", 5.0, 10], ["Omega-3", 9.95, "/omega-3/", 4.2, 31], ["Vitamín C + Zinok", 7.49, "/vitamin-c-zinok/", 5.0, 5], ["Vianočná krabička", 6.0, "/vianocna-krabicka/"]]}}, FREE = 40.0, BEZ = ["/vianocna-krabicka/", "/vianocny-tubus/", "/vianocny-zlaty-tubus/"];
   /* obaly (krabička, tubusy): bez záložiek Hodnotenie / Diskusia a hviezdičiek; Popis a Parametre ostávajú */
   if (BEZ.indexOf(location.pathname) > -1) {
     var sb = document.createElement('style');
@@ -28,6 +28,11 @@
     'padding:7px 10px;line-height:1.3;display:flex;justify-content:space-between;gap:10px}' +
     '.sw-save b{font-weight:900;white-space:nowrap;font-variant-numeric:tabular-nums}' +
     '.sw-bal-ship{margin-top:8px;font-weight:700;color:#1E6B3B}' +
+    /* karta samostatného obalu (krabička, tubus) */
+    '.sw-bal-h2{margin-top:12px}' +
+    '.sw-bal--obal li span:last-child{white-space:normal}' +
+    '.sw-obal-note{margin-top:10px;background:#F2EEE6;color:#1A1A1C;font-weight:600;font-size:13.5px;' +
+    'border-radius:8px;padding:7px 10px;line-height:1.3}' +
     /* panel v detaile */
     '.sw-pd-save{margin:14px 0 4px;border:1.5px solid #CFE5D7;background:#F1F8F3;border-radius:12px;padding:14px 16px}' +
     '.sw-pd-save__row{display:flex;justify-content:space-between;gap:12px;font-size:15px;color:#3A3A3F;padding:2px 0}' +
@@ -58,11 +63,37 @@
     '.flag.sw-xmas,.flags .flag.sw-xmas{order:-9999!important}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
+  /* obal -> balíčky, v ktorých je, a koľko produktov sa doň zmestí */
+  var OB = {};
+  Object.keys(B).forEach(function (k) {
+    var d = B[k], n = d.items.filter(function (i) { return !OBAL.test(i[0]); }).length;
+    d.items.forEach(function (i) {
+      if (!i[2] || !OBAL.test(i[0])) return;
+      var o = OB[i[2]] || (OB[i[2]] = { n: 0, pk: [] });
+      o.n = Math.max(o.n, n); o.pk.push([d.nazov || k, k]);
+    });
+  });
+  function obalCard(card, href, name) {
+    var o = OB[href]; if (!o) return;
+    var f = /krabičk/i.test(name);
+    var box = document.createElement('div'); box.className = 'sw-bal sw-bal--obal';
+    box.innerHTML = '<div class="sw-bal-h">Darčekové balenie</div><ul>' +
+      '<li><span>Zmestia sa do' + (f ? ' nej ' : 'ň ') + o.n + ' produkty Silwer</span></li>' +
+      '<li><span>Navrhnut' + (f ? 'á' : 'ý') + ' pre Vianoce 2026</span></li></ul>' +
+      '<div class="sw-bal-h sw-bal-h2">Súčasťou balíčkov</div><ul>' + o.pk.map(function (p) {
+        return '<li><a href="' + p[1] + '">' + p[0] + '</a></li>';
+      }).join('') + '</ul>' +
+      '<div class="sw-obal-note">Môžete ' + (f ? 'ju' : 'ho') + ' kúpiť aj samostatne</div>';
+    var anchor = card.querySelector('.p-in-in') || card.querySelector('a[href]');
+    anchor.parentNode.insertBefore(box, anchor.nextSibling);
+  }
   function cards() {
     [].forEach.call(document.querySelectorAll('.product'), function (card) {
       if (card.querySelector('.sw-bal')) return;
       var a = card.querySelector('a[href]'); if (!a) return;
-      var d = B[a.getAttribute('href')]; if (!d) return;
+      var href = a.getAttribute('href');
+      if (OB[href]) return obalCard(card, href, card.textContent);
+      var d = B[href]; if (!d) return;
       var save = d.povodna ? d.povodna - d.cena : 0;
       var box = document.createElement('div'); box.className = 'sw-bal';
       box.innerHTML = '<div class="sw-bal-h">Balíček obsahuje</div><ul>' + d.items.map(function (i) {
