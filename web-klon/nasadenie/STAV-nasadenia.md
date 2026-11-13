@@ -53,3 +53,8 @@ texty podľa Marketing Mineru) a `silwer-header-footer.min.js?v=20261112b`. Over
 8 slidov, tlačidlo vedie na /vianoce-2026/, bez chýb JS. Pri nasadzovaní sa omylom zmazal `silwer-header-footer.min.js`
 (web na chvíľu bez novej hlavičky a pätičky), nahratý znova z `KODY/`.
 Úvodný text (SSR blok) zatiaľ nie je vymenený – nepovinné, skript karusel postaví sám.
+
+## Obaly (krabička, tubus, zlatý tubus) – finálne texty, 13. 11. 2026
+Krátky popis a Popis zapísané cez API (zdroj: Google Doc „Balenia texty“). Aby sa Popis zobrazil, `silwer-balicky.js`
+už na obaloch neskrýva celú sekciu detailu, len záložky Hodnotenie, Diskusia a hviezdičky. Treba nahrať
+`KODY/silwer-balicky.js` a v HTML kóde zvýšiť verziu na `?v=20261113a`.

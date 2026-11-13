@@ -600,10 +600,10 @@ BALICKY_JS = r"""/* Vianočné balíčky: obsah a úspora v karte vo výpise, pa
    dá sa vložiť aj do Shoptetu (Editor → HTML kód). */
 (function () {
   var B = __DATA__, FREE = __FREE__, BEZ = __BEZ__;
-  /* produkty bez sekcie detailu (obaly): bez záložiek Popis / Hodnotenie / Diskusia, odkazu Viac… a hviezdičiek */
+  /* obaly (krabička, tubusy): bez záložiek Hodnotenie / Diskusia a hviezdičiek; Popis a Parametre ostávajú */
   if (BEZ.indexOf(location.pathname) > -1) {
     var sb = document.createElement('style');
-    sb.textContent = '.p-detail-full-width,.sw-desc-more,.p-detail .stars-wrapper{display:none!important}';
+    sb.textContent = '[data-testid="tabRating"],[data-testid="tabDiscussion"],#ratingTab,#productDiscussion,.p-detail .stars-wrapper{display:none!important}';
     document.head.appendChild(sb);
   }
   var OBAL = /^vianočn/i;  /* krabička, tubus, zlatý tubus – obal, nie produkt */
