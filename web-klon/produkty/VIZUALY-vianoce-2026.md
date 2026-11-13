@@ -11,7 +11,7 @@
 2. `fotky/galeria-01.jpg` ← zena krasa vitalita krabica otvorena.png
 3. `fotky/galeria-02.jpg` ← Silwer_ZENA1_krabicka_zatvorena.png
 4. `fotky/galeria-03.jpg` ← zena krasa vitalita_4x5_1536x1920.png
-5. `fotky/galeria-04.jpg` ← krab dcera mame.png → **13. 11. nahradené variantom #1** (dcéra po 50, pôvodná pôsobila mlado)
+5. `fotky/galeria-04.jpg` ← krab dcera mame.png
 
 ## Žena 2. Pokoj a imunita (`/zena-pokoj-a-imunita/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
@@ -32,7 +32,7 @@
 2. `fotky/galeria-01.jpg` ← muz energia imun krabica otvorena.png
 3. `fotky/galeria-02.jpg` ← muz energia imun balicek.png
 4. `fotky/galeria-03.jpg` ← muz energia imunita_4x5_1536x1920.png
-5. `fotky/galeria-04.jpg` ← krab dcera otcovi.png → **13. 11. nahradené variantom #12** (dcéra po 50)
+5. `fotky/galeria-04.jpg` ← krab dcera otcovi.png (1:1 cez Higgsfield)
 
 ## Silwer GOLD. Žena. (`/gold-zena-plet-a-pokoj/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
@@ -48,17 +48,17 @@
 ## SILWER JOJ play. Muž. (`/joj-play-muz-imunita/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← joj muz_1x1_2160x2160.png
-3. `fotky/galeria-02.jpg` ← Firefly 605037 → **13. 11. nahradené variantom #42** (pôvodne bez hlavy)
+3. `fotky/galeria-02.jpg` ← Firefly … tubusom z referencie 2 (605037) (1:1 cez Higgsfield)
 
 ## SILWER JOJ play. Žena. (`/joj-play-zena-imunita/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← joj zena_1x1_2160x2160.png
-3. `fotky/galeria-02.jpg` ← Firefly 605037 → **13. 11. nahradené variantom #43** (pôvodne bez hlavy)
+3. `fotky/galeria-02.jpg` ← Firefly … tubusom z referencie 2 (605037) (1:1 cez Higgsfield)
 
 ## Vianočný tubus (`/vianocny-tubus/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← tubus cierny cerv masla 1.png (1:1 cez Higgsfield)
-3. `fotky/galeria-02.jpg` ← Firefly 605037 → **13. 11. nahradené variantom #44** (pôvodne bez hlavy)
+3. `fotky/galeria-02.jpg` ← Firefly … tubusom z referencie 2 (605037) (1:1 cez Higgsfield)
 
 ## Vianočný zlatý tubus (`/vianocny-zlaty-tubus/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
@@ -69,12 +69,14 @@
 ## Vianočná krabička (`/vianocna-krabicka/`)
 1. `fotky/hero.jpg` – hero (priečinok hero images)
 2. `fotky/galeria-01.jpg` ← krab z ruky do ruky.png
-3. `fotky/galeria-02.jpg` ← krab dcera mame.png → **13. 11. nahradené variantom #0**
+3. `fotky/galeria-02.jpg` ← krab dcera mame.png
 4. `fotky/galeria-03.jpg` ← krab stari manzelia.png (1:1 cez Higgsfield)
-5. `fotky/galeria-04.jpg` ← krab dcera otcovi.png → **13. 11. nahradené variantom #13**
+5. `fotky/galeria-04.jpg` ← krab dcera otcovi.png (1:1 cez Higgsfield)
 6. `fotky/galeria-05.jpg` ← krab muz odovzdava.png (1:1 cez Higgsfield)
 7. `fotky/galeria-06.jpg` ← krab dedko v rukach.png (1:1 cez Higgsfield)
-8. `fotky/galeria-07.jpg` ← krab zena v ruke.png → **13. 11. nahradené variantom #60** (pôvodne bez hlavy)
+8. `fotky/galeria-07.jpg` ← krab zena v ruke.png (1:1 cez Higgsfield)
+9. `fotky/galeria-08.jpg` ← variant #0 (dcéra po 50 dáva mame krabičku; Nano Banana 2.1, 13. 11.) – nová fotka navyše
+10. `fotky/galeria-09.jpg` ← variant #60 (žena po 50 s krabičkou so stuhou, za ňou muž; Nano Banana 2.1, 13. 11.) – nová fotka navyše
 
 ## Rozšírené cez Higgsfield, ale nepoužité
 
@@ -91,5 +93,5 @@
 
 V TEMP: 4 unboxingy (Žena 1, Žena 2, Muž 1, Muž 2) a 2 videá GOLD Žena (4:5, 9:16). Galéria Shoptetu video nepodporuje – na webe je doplnok jg-media (video v galérii), alternatíva YouTube v popise. Čaká na rozhodnutie.
 
-## Výmena 13. 11. 2026
-Čísla variantov (#) sú indexy v `web-klon/kreativa/varianty-2026-11-13.json` (Nano Banana 2.1, 1:1, zmenšené na 2000 px).
+## Varianty 13. 11. 2026
+Z 8 navrhnutých náhrad používateľ vybral 2 (#0, #60), nie ako náhradu, ale ako nové fotky navyše do Vianočnej krabičky. Ostatné fotky ostávajú pôvodné. Čísla variantov (#) sú indexy v `web-klon/kreativa/varianty-2026-11-13.json` (Nano Banana 2.1, 1:1, zmenšené na 2000 px).
