@@ -58,3 +58,7 @@ texty podľa Marketing Mineru) a `silwer-header-footer.min.js?v=20261112b`. Over
 Krátky popis a Popis zapísané cez API (zdroj: Google Doc „Balenia texty“). Aby sa Popis zobrazil, `silwer-balicky.js`
 už na obaloch neskrýva celú sekciu detailu, len záložky Hodnotenie, Diskusia a hviezdičky. Treba nahrať
 `KODY/silwer-balicky.js` a v HTML kóde zvýšiť verziu na `?v=20261113a` (hotové 13. 11.). Blok „Darčekové balenie“ na kartách obalov v kategórii: `?v=20261113b`.
+
+Zmena 13. 11. podľa upraveného dokumentu: krátky popis = celý text, Popis prázdny, sekcia detailu na obaloch
+opäť skrytá; na karte v kategórii blok „Darčekové balenie“ s vetou z dokumentu („… môžete kúpiť aj samostatne“).
+Skript `silwer-balicky.js` s `?v=20261113b`.
