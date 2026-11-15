@@ -65,3 +65,7 @@ Skript `silwer-balicky.js` s `?v=20261113b`.
 Úprava: na karte obalu v kategórii je len popisok z dokumentu (riadok „kategória“), bez bloku „Darčekové balenie“ – `?v=20261113c`.
 Pozor: `?v=20261113c` má CDN uloženú ako 404 (verzia sa zmenila skôr, než bol súbor nahratý) – použiť `?v=20261113d`.
 Pravidlo: vždy najprv nahrať súbor, až potom zvýšiť `?v=` v HTML kóde. CDN si chybu pamätá až rok.
+
+## Kategória Vianoce 2026 – blikanie bannera (15. 11. 2026)
+Pred načítaním skriptu boli viditeľné oba obrázky (počítač aj mobil) pod sebou. Popis kategórie má teraz jeden
+`<picture>` (prehliadač vyberie obrázok hneď) a mobilný `img.sw-cathero-m` je v skrytom odseku – skript si z neho berie adresu.
