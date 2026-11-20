@@ -74,3 +74,5 @@ Pred načítaním skriptu boli viditeľné oba obrázky (počítač aj mobil) po
 `silwer-redesign.min.js`: slide môže mať v heroSlides `dur` (ms), vianočný má `dur:15e3` (15 s), ostatné 7 s ako doteraz.
 Úvodný text (`HERO VIANOCE/uvodny-text-karusel.html`) má na vianočnom slide `data-dur="15000"` – bez neho by pri zhodnom HTML platilo 7 s.
 Nasadenie: nahrať skript, potom HTML kód `?v=20261120a`, potom vymeniť blok sw-ssr v úvodnom texte.
+Nasadené 20. 11.: `silwer-redesign.min.js?v=20261120a` (pätička HTML kódu) a kompletný úvodný text. Overené naživo: vianočný slide prvý hneď pri načítaní (počítač aj mobil), drží 15 s, potom 7 s, bez chýb JS.
+Poznámka: v HEAD sa zmenil aj `silwer-redesign.css?v=20261120a` – súbor sa nemenil, nevadí.
