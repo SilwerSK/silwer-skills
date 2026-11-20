@@ -69,3 +69,8 @@ Pravidlo: vždy najprv nahrať súbor, až potom zvýšiť `?v=` v HTML kóde. C
 ## Kategória Vianoce 2026 – blikanie bannera (15. 11. 2026)
 Pred načítaním skriptu boli viditeľné oba obrázky (počítač aj mobil) pod sebou. Popis kategórie má teraz jeden
 `<picture>` (prehliadač vyberie obrázok hneď) a mobilný `img.sw-cathero-m` je v skrytom odseku – skript si z neho berie adresu.
+
+## Karusel – vianočný slide dlhšie (20. 11. 2026)
+`silwer-redesign.min.js`: slide môže mať v heroSlides `dur` (ms), vianočný má `dur:15e3` (15 s), ostatné 7 s ako doteraz.
+Úvodný text (`HERO VIANOCE/uvodny-text-karusel.html`) má na vianočnom slide `data-dur="15000"` – bez neho by pri zhodnom HTML platilo 7 s.
+Nasadenie: nahrať skript, potom HTML kód `?v=20261120a`, potom vymeniť blok sw-ssr v úvodnom texte.
